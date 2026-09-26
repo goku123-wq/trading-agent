@@ -101,5 +101,16 @@ def make_basket(ideas: list[Suggestion], goal: Optional[float] = None, size: int
     if budget > 0 and exposure > limit:
         f = limit / exposure
         qtys = [math.floor(q * f) for q in qtys]
+        # Rounding down leaves spare cash: top up one share at a time, best profit per rupee first.
+        spare = limit - sum(q * s.entry for q, s in zip(qtys, picks))
+        order = sorted(range(len(picks)), key=lambda i: -abs(picks[i].target - picks[i].entry) / picks[i].entry)
+        profit = sum(q * abs(s.target - s.entry) for q, s in zip(qtys, picks))
+        while profit < goal:
+            i = next((i for i in order if picks[i].entry <= spare), None)
+            if i is None:
+                break
+            qtys[i] += 1
+            spare -= picks[i].entry
+            profit += abs(picks[i].target - picks[i].entry)
     legs = [_leg(s, q) for s, q in zip(picks, qtys) if q > 0]
     return Basket(legs, goal, budget, leverage)

@@ -72,3 +72,12 @@ def test_intraday_leverage_uses_margin():
 def test_capital_env(monkeypatch):
     monkeypatch.setenv("CAPITAL", "20000")
     assert make_basket([S("A", 90)], goal=5000).capital <= 20000
+
+
+def test_top_up_uses_spare_capital():
+    # expensive shares: floor-scaling alone would leave lots of cash idle
+    ideas = [S("BIG", 90, entry=4988.5, stop=4785.67, target=5394.17), S("CHEAP", 80, entry=165.71, stop=158.1, target=180.92)]
+    b = make_basket(ideas, goal=5000, budget=30000)
+    assert b.capital <= 30000
+    assert 30000 - b.capital < 4988.5  # nothing affordable left over but less than one BIG share
+    assert b.profit > 2500
