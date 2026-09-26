@@ -7,7 +7,7 @@ import argparse
 import json
 import logging
 import re
-from datetime import datetime, timezone, timedelta
+from datetime import date, datetime, time, timezone, timedelta
 from pathlib import Path
 
 import pandas as pd
@@ -26,13 +26,15 @@ INDICES = {"NIFTY 50": "^NSEI", "BANK NIFTY": "^NSEBANK", "INDIA VIX": "^INDIAVI
 log = logging.getLogger(__name__)
 
 
-def fetch_intraday(tickers: list[str]) -> dict[str, pd.DataFrame]:
-    """Today's 5-minute bars in IST, keyed by the ticker passed in."""
+REPLAY_CUTOFF = time(10, 15)  # --replay: pretend it is 10:15 AM on the last trading day
+
+
+def fetch_intraday(tickers: list[str], replay: bool = False) -> tuple[dict[str, pd.DataFrame], date]:
+    """5-minute bars in IST for today (or, with replay, the last trading day up to 10:15 AM)."""
     import yfinance as yf
 
     raw = yf.download(tickers, period="5d", interval="5m", group_by="ticker", progress=False)
-    today = datetime.now(IST).date()
-    out = {}
+    frames = {}
     for tk in tickers:
         try:
             df = (raw[tk] if isinstance(raw.columns, pd.MultiIndex) else raw).dropna()
@@ -41,10 +43,18 @@ def fetch_intraday(tickers: list[str]) -> dict[str, pd.DataFrame]:
         if df.empty:
             continue
         df.index = df.index.tz_convert("Asia/Kolkata") if df.index.tz else df.index.tz_localize("Asia/Kolkata")
+        frames[tk] = df
+    today = datetime.now(IST).date()
+    if replay and frames:
+        today = max(df.index[-1].date() for df in frames.values())
+    out = {}
+    for tk, df in frames.items():
         df = df[df.index.date == today]
+        if replay:
+            df = df[df.index.time < REPLAY_CUTOFF]
         if not df.empty:
             out[tk] = df
-    return out
+    return out, today
 
 
 def load_previous_intraday(path: Path) -> list[Suggestion]:
@@ -62,12 +72,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default=ROOT / "config", type=Path)
     ap.add_argument("--no-send", action="store_true")
+    ap.add_argument("--replay", action="store_true", help="test on the last trading day as of 10:15 AM")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
     caps = load_universe(args.config)
     symbols = list(caps)
-    intraday = fetch_intraday([f"{s}.NS" for s in symbols] + list(INDICES.values()))
+    intraday, today = fetch_intraday([f"{s}.NS" for s in symbols] + list(INDICES.values()), args.replay)
     if not any(tk.endswith(".NS") for tk in intraday):
         log.info("no trading data for today (holiday or weekend); nothing to send")
         return
@@ -77,7 +88,6 @@ def main():
         df = daily.get(key)
         if df is None:
             return None
-        today = datetime.now(IST).date()
         df = df[df.index.date < today]
         return float(df["Close"].iloc[-1]) if len(df) else None
 
@@ -95,7 +105,6 @@ def main():
             dec += bars["Close"].iloc[-1] < pc
     market = morning.mood(moves.get("NIFTY 50"), moves.get("INDIA VIX"), adv, dec)
 
-    today = datetime.now(IST).date()
     setups = []
     for s in symbols:
         bars, d = intraday.get(f"{s}.NS"), daily.get(s)
@@ -107,13 +116,17 @@ def main():
             setups.append(x)
     setups.sort(key=lambda x: -x.score)
 
-    trig = [p for p in load_previous_intraday(ROOT / "reports" / "latest.md")
-            if f"{p.symbol}.NS" in intraday and morning.triggered(p, intraday[f"{p.symbol}.NS"])]
+    # In replay the latest report holds the *next* session's levels, so there is nothing to check.
+    trig = [] if args.replay else [p for p in load_previous_intraday(ROOT / "reports" / "latest.md")
+                                   if f"{p.symbol}.NS" in intraday and morning.triggered(p, intraday[f"{p.symbol}.NS"])]
 
     msg = morning.to_telegram(today, market, moves.get("NIFTY 50"), moves.get("BANK NIFTY"),
                               moves.get("INDIA VIX"), adv, dec, setups, trig)
+    if args.replay:
+        msg = f"🧪 TEST: replay of {today:%a %d %b} as of 10:15 AM\n\n" + msg
     print(msg)
-    write_ideas(ROOT / "docs" / "ideas.json", "morning", today, {"setups": setups}, {"mood": market})
+    if not args.replay:
+        write_ideas(ROOT / "docs" / "ideas.json", "morning", today, {"setups": setups}, {"mood": market})
     if not args.no_send:
         send_telegram(msg)
     log.info("mood %s, %d setups, %d triggered", market, len(setups), len(trig))

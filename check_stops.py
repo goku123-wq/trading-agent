@@ -5,6 +5,7 @@ position's latest price crosses its stop or target. Uses Yahoo 1-minute data, wh
 by a few minutes; a broker feed (Angel One / Upstox) is the upgrade for tick-level alerts.
 """
 import logging
+import sys
 from datetime import datetime, time, timezone, timedelta
 from pathlib import Path
 
@@ -21,13 +22,13 @@ def market_open(now: datetime) -> bool:
     return now.weekday() < 5 and time(9, 15) <= now.time() <= time(15, 30)
 
 
-def latest_prices(symbols: list[str]) -> dict[str, tuple[float, float, float]]:
-    """Today's (low, high, last) per symbol from 1-minute bars."""
+def latest_prices(symbols: list[str], period: str = "1d") -> dict[str, tuple[float, float, float]]:
+    """(low, high, last) per symbol for the latest session from 1-minute bars."""
     import pandas as pd
     import yfinance as yf
 
     tickers = [f"{s}.NS" for s in symbols]
-    raw = yf.download(tickers, period="1d", interval="1m", group_by="ticker", progress=False)
+    raw = yf.download(tickers, period=period, interval="1m", group_by="ticker", progress=False)
     out = {}
     for sym, tk in zip(symbols, tickers):
         try:
@@ -35,6 +36,7 @@ def latest_prices(symbols: list[str]) -> dict[str, tuple[float, float, float]]:
         except KeyError:
             continue
         if not df.empty:
+            df = df[df.index.date == df.index[-1].date()]  # last session only
             out[sym] = (float(df["Low"].min()), float(df["High"].max()), float(df["Close"].iloc[-1]))
     return out
 
@@ -54,9 +56,27 @@ def run(positions, prices, alerted, day):
     return alerts
 
 
+def test_run(positions) -> None:
+    """Replay the last trading session: report every position's day range vs its levels."""
+    prices = latest_prices([p.symbol for p in positions], period="5d")
+    alerts = run(positions, prices, {}, "test")
+    lines = ["🧪 TEST: stop-loss check on the last trading session", ""]
+    for p in positions:
+        if p.symbol in prices:
+            low, high, last = prices[p.symbol]
+            lines.append(f"• {p.symbol}: last {last:.2f} (day {low:.2f}-{high:.2f}) | SL {p.stop} | T {p.target or '-'}")
+    lines += ["", "Would have alerted:"] + ([a.text() for a in alerts] or ["• nothing, all within their levels"])
+    msg = "\n".join(lines)
+    print(msg)
+    send_telegram(msg)
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     now = datetime.now(IST)
+    if "--test" in sys.argv:
+        test_run([Position(**p) for p in load_json(STATE / "stops.json", [])])
+        return
     if not market_open(now):
         log.info("market closed (%s IST); nothing to do", f"{now:%a %H:%M}")
         return

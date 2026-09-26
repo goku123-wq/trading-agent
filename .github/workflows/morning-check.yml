@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "30 4 * * 1-5"   # 10:00 AM IST, Mon-Fri (GitHub may start it a few minutes late)
   workflow_dispatch:
+    inputs:
+      test:
+        description: "Test on the last trading session (works when the market is closed)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -28,7 +33,7 @@ jobs:
           PROFIT_GOAL: ${{ vars.PROFIT_GOAL }}
           CAPITAL: ${{ vars.CAPITAL }}
           INTRADAY_LEVERAGE: ${{ vars.INTRADAY_LEVERAGE }}
-        run: python run_morning.py
+        run: python run_morning.py ${{ inputs.test && '--replay' || '' }}
       - name: Save ideas for the planner page
         run: |
           git config user.name "github-actions[bot]"
