@@ -9,6 +9,7 @@ from typing import Optional
 
 import pandas as pd
 
+from agent.report import line, sizing_note
 from agent.signals import Suggestion, _r
 
 OR_END = time(10, 0)  # opening range = 9:15 to 10:00
@@ -106,14 +107,12 @@ def to_telegram(day, market, nifty, bank, vix, adv, dec, setups, trig, limit=6) 
     for title, cap in (("Large caps:", "Large"), ("Mid caps:", "Mid"), ("Watchlist:", "Watch")):
         group = [s for s in setups if s.cap == cap][:limit]
         if group:
-            lines += [title] + [f"• {s.symbol} {s.action} {s.entry} | SL {s.stop} | T {s.target} "
-                                f"({', '.join(s.reasons)})" for s in group]
+            lines += [title] + [line(s, why=True) for s in group]
     rest = [s for s in setups if s.cap not in ("Large", "Mid", "Watch")][:limit]
-    lines += [f"• {s.symbol} {s.action} {s.entry} | SL {s.stop} | T {s.target} ({', '.join(s.reasons)})"
-              for s in rest]
+    lines += [line(s, why=True) for s in rest]
     if not setups:
         lines.append("• none, better to wait")
     if trig:
         lines += ["", "Yesterday's levels triggered:"] + [f"• {s.symbol} {s.action} {s.entry}" for s in trig]
-    lines += ["", "Intraday: square off by 3:15 PM. Not financial advice."]
+    lines += ["", sizing_note(), "Intraday: square off by 3:15 PM. Not financial advice."]
     return "\n".join(lines)

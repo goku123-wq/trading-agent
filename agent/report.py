@@ -4,14 +4,28 @@ from datetime import date
 DISCLAIMER = "Rule-based signals for education only. Not financial advice. Do your own research."
 
 
+def inr(x: float) -> str:
+    """Short rupee format: ₹950, ₹12.5k, ₹1.2L, ₹2.1Cr."""
+    if x >= 1e7:
+        return f"₹{x / 1e7:.1f}Cr"
+    if x >= 1e5:
+        return f"₹{x / 1e5:.1f}L"
+    if x >= 1e3:
+        return f"₹{x / 1e3:.1f}k"
+    return f"₹{x:.0f}"
+
+
 def _table(rows):
     if not rows:
         return "_No setups today._\n"
-    lines = ["| Stock | Action | Entry | Stop | Target | R:R | Score | Cap | Why |",
-             "|---|---|---|---|---|---|---|---|---|"]
+    lines = ["| Stock | Action | Entry | Stop | Target | R:R | Score | Qty | Capital | Loss at stop | Cap | Why |",
+             "|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for s in rows:
+        z = s.sizing()
+        qty, cap_needed, loss = (z[0], inr(z[1]), inr(z[2])) if z else ("-", "-", "-")
         lines.append(f"| {s.symbol} | {s.action} | {s.entry} | {s.stop} | {s.target} | "
-                     f"{s.risk_reward} | {s.score} | {s.cap or '-'} | {'; '.join(s.reasons)} |")
+                     f"{s.risk_reward} | {s.score} | {qty} | {cap_needed} | {loss} | {s.cap or '-'} | "
+                     f"{'; '.join(s.reasons)} |")
     return "\n".join(lines) + "\n"
 
 
@@ -35,6 +49,7 @@ def to_markdown(day: date, long_term, intraday, skipped, alerts=(), positions=()
     parts = [
         f"# Daily trade report, {day:%d %b %Y}\n",
         f"> {DISCLAIMER}\n",
+        f"> {sizing_note()}\n",
         "## Stop-loss / target alerts\n", _alerts(alerts),
         "## Your positions\n", _positions(positions),
         "## Long-term buys\n", _table(buys),
@@ -48,9 +63,20 @@ def to_markdown(day: date, long_term, intraday, skipped, alerts=(), positions=()
     return "\n".join(parts)
 
 
-def line(s) -> str:
+def line(s, why: bool = False) -> str:
     tag = f"[{s.cap[0]}] " if s.cap else ""
-    return f"• {tag}{s.symbol} {s.action} {s.entry} | SL {s.stop} | T {s.target}"
+    out = f"• {tag}{s.symbol} {s.action} {s.entry} | SL {s.stop} | T {s.target}"
+    if (z := s.sizing()):
+        out += f"\n   Qty {z[0]} ({inr(z[1])}), loss at SL {inr(z[2])}"
+    if why and s.reasons:
+        out += f"\n   {', '.join(s.reasons)}"
+    return out
+
+
+def sizing_note() -> str:
+    from agent.signals import profit_goal
+    return (f"Qty = shares to make ~{inr(profit_goal())} at target. Check the loss at SL fits your budget; "
+            "intraday needs only the broker's margin, not the full capital.")
 
 
 def to_telegram(day: date, long_term, intraday, alerts=(), limit: int = 5) -> str:
@@ -71,5 +97,5 @@ def to_telegram(day: date, long_term, intraday, alerts=(), limit: int = 5) -> st
         msg += ["Exit / avoid:"] + [line(s) for s in exits[:limit]] + [""]
     msg += ["Intraday (next session):"]
     msg += [line(s) for s in intraday[:2 * limit]] or ["• none"]
-    msg += ["", DISCLAIMER]
+    msg += ["", sizing_note(), DISCLAIMER]
     return "\n".join(msg)

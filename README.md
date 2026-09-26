@@ -32,6 +32,14 @@ Every weekday at 5:00 PM IST a GitHub Actions job:
 
 On market holidays there is no data for the day, so nothing is sent.
 
+## Position size
+
+Every BUY/SELL idea shows the **quantity** that makes about ₹10,000 if the target is hit
+(`qty = profit goal / (target - entry)`, rounded up), the **capital** that needs, and the **loss if the stop-loss
+hits**. Long-term ideas aim for 2x the risk, intraday 1.5x, so the loss at stop is roughly ₹5,000 and ₹6,700.
+Change the goal with a repository variable: Settings > Secrets and variables > Actions > Variables >
+`PROFIT_GOAL` (e.g. `5000`).
+
 ## Stop-loss alerts
 
 - List your holdings in `config/positions.csv` (`symbol,entry,stop,target,side`). Leave `stop` blank for a
