@@ -47,6 +47,15 @@ is out of reach with that capital (⚠️). Ties in score go to stocks with bigg
 Change the numbers with repository variables (Settings > Secrets and variables > Actions > Variables):
 `PROFIT_GOAL` (default 5000), `CAPITAL` (default 50000), `INTRADAY_LEVERAGE` (default 5).
 
+## Basket Planner page
+
+`docs/index.html` is a small web page (served by GitHub Pages) where you type your capital and profit goal, pick
+long-term / intraday / 10 AM, large or mid caps and how many stocks, and it builds the basket with quantities from
+the latest ideas in `docs/ideas.json` (written by the evening report and the 10 AM check).
+
+Turn it on once: Settings > Pages > Build and deployment > Source: **Deploy from a branch**, Branch: **main**,
+folder **/docs**. The page is then at `https://<your-username>.github.io/trading-agent/`.
+
 ## Stop-loss alerts
 
 - List your holdings in `config/positions.csv` (`symbol,entry,stop,target,side`). Leave `stop` blank for a
