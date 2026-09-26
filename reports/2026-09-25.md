@@ -41,4 +41,3 @@ Trigger only if price crosses the entry level after 9:30 AM. Square off by 3:15 
 | INFY | SELL below | 989.09 | 1004.2 | 966.43 | 1.5 | 50 | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
 | NESTLEIND | SELL below | 1345.41 | 1362.6 | 1319.62 | 1.5 | 50 | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
 | SUNPHARMA | SELL below | 1838.55 | 1858.7 | 1808.34 | 1.5 | 50 | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
-| TITAN | SELL below | 4813.33 | 4884.0 | 4707.34 | 1.5 | 50 | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
