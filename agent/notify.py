@@ -8,7 +8,8 @@ log = logging.getLogger(__name__)
 
 
 def send_telegram(text: str) -> bool:
-    token, chat = os.getenv("TELEGRAM_BOT_TOKEN"), os.getenv("TELEGRAM_CHAT_ID")
+    token = (os.getenv("TELEGRAM_BOT_TOKEN") or "").strip()
+    chat = (os.getenv("TELEGRAM_CHAT_ID") or "").strip()
     if not token or not chat:
         log.info("Telegram not configured; skipping send")
         return False
