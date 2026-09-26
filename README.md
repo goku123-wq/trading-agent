@@ -47,6 +47,13 @@ is out of reach with that capital (⚠️). Ties in score go to stocks with bigg
 Change the numbers with repository variables (Settings > Secrets and variables > Actions > Variables):
 `PROFIT_GOAL` (default 5000), `CAPITAL` (default 50000), `INTRADAY_LEVERAGE` (default 5).
 
+## 8 AM Telegram planner
+
+At 8:00 AM on weekdays the bot asks how much you want to trade and what profit you want. Reply in Telegram with
+two numbers, e.g. `50000 5000` (also `50k 5k`, `1.5L 10k long`, `50000 5000 intraday`). Until 9:25 AM the bot
+checks for replies every ~5 minutes (GitHub can run a few minutes late) and answers with the long-term and intraday
+baskets sized for your numbers, from the previous evening's ideas. Only messages from your own chat are answered.
+
 ## Basket Planner page
 
 `docs/index.html` is a small web page (served by GitHub Pages) where you type your capital and profit goal, pick
