@@ -26,6 +26,7 @@ def test_report_shows_cap():
     mid = Suggestion("MIDDY", "long-term", "BUY", 50, 45, 60, 80, ["r"], cap="Mid")
     day = datetime.date(2026, 9, 28)
     md = to_markdown(day, [big, mid], [], [])
-    assert "| 80 | 500 | ₹50.0k | ₹5.0k | Large | r |" in md
+    assert "| 80 | Large | r |" in md
+    assert "| BIG | BUY | 100 | 90 | 120 | 125 | ₹12.5k | ₹2.5k | ₹1.2k | Large |" in md
     msg = to_telegram(day, [big, mid], [])
-    assert msg.index("large caps:") < msg.index("[L] BIG") < msg.index("mid caps:") < msg.index("[M] MIDDY")
+    assert "Long-term basket (~₹5.0k" in msg and "[L] BIG" in msg and "[M] MIDDY" in msg

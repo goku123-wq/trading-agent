@@ -32,13 +32,18 @@ Every weekday at 5:00 PM IST a GitHub Actions job:
 
 On market holidays there is no data for the day, so nothing is sent.
 
-## Position size
+## Baskets and quantity
 
-Every BUY/SELL idea shows the **quantity** that makes about ₹10,000 if the target is hit
-(`qty = profit goal / (target - entry)`, rounded up), the **capital** that needs, and the **loss if the stop-loss
-hits**. Long-term ideas aim for 2x the risk, intraday 1.5x, so the loss at stop is roughly ₹5,000 and ₹6,700.
-Change the goal with a repository variable: Settings > Secrets and variables > Actions > Variables >
-`PROFIT_GOAL` (e.g. `5000`).
+Instead of sizing each stock on its own, the report builds **baskets** whose combined profit at target is about
+₹5,000:
+
+- **Long-term basket**: the 3 best large caps + 2 best mid caps.
+- **Intraday basket**: the 5 best next-session levels. The 10 AM check builds its own basket from the setups it finds.
+
+The goal is split equally across the picks, so each stock's quantity is `(5000 / picks) / (target - entry)`,
+rounded up. Each basket shows the total capital needed, the profit if every target is hit and the loss if every
+stop is hit. Change the goal with a repository variable: Settings > Secrets and variables > Actions > Variables >
+`PROFIT_GOAL`.
 
 ## Stop-loss alerts
 

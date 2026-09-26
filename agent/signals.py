@@ -4,7 +4,6 @@ Two horizons:
 - long_term_signal: positional ideas (weeks to months) from trend + momentum.
 - intraday_setup:   levels to watch for the next session (breakout / breakdown).
 """
-import math
 import os
 from dataclasses import dataclass, field
 from typing import Optional
@@ -15,11 +14,11 @@ MIN_BARS = 210  # need SMA200 plus some history
 
 
 def profit_goal() -> float:
-    """Rupees you want to make if a target is hit. Set PROFIT_GOAL (GitHub variable) to change."""
+    """Rupees you want the whole basket to make if targets are hit. Set PROFIT_GOAL (GitHub variable) to change."""
     try:
-        return float(os.getenv("PROFIT_GOAL") or 10000)
+        return float(os.getenv("PROFIT_GOAL") or 5000)
     except ValueError:
-        return 10000.0
+        return 5000.0
 
 
 @dataclass
@@ -33,14 +32,6 @@ class Suggestion:
     score: int
     reasons: list = field(default_factory=list)
     cap: str = ""  # Large / Mid / Watch
-
-    def sizing(self, goal: Optional[float] = None) -> Optional[tuple[int, float, float]]:
-        """(quantity, capital needed, loss if stop hits) so the target makes about `goal` rupees."""
-        move = abs(self.target - self.entry)
-        if self.action == "SELL/EXIT" or move <= 0:
-            return None
-        qty = math.ceil((goal or profit_goal()) / move)
-        return qty, round(qty * self.entry, 2), round(qty * abs(self.entry - self.stop), 2)
 
     @property
     def risk_reward(self) -> float:
