@@ -29,4 +29,4 @@ def test_report_shows_cap():
     assert "| 80 | Large | r |" in md
     assert "| BIG | BUY | 100 | 90 | 120 | 125 | ₹12.5k | ₹2.5k | ₹1.2k | Large |" in md
     msg = to_telegram(day, [big, mid], [])
-    assert "Long-term basket (~₹5.0k" in msg and "[L] BIG" in msg and "[M] MIDDY" in msg
+    assert "Long-term basket: ~₹5.0k" in msg and "[L] BIG" in msg and "[M] MIDDY" in msg

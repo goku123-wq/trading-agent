@@ -20,4 +20,6 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           PROFIT_GOAL: ${{ vars.PROFIT_GOAL }}
+          CAPITAL: ${{ vars.CAPITAL }}
+          INTRADAY_LEVERAGE: ${{ vars.INTRADAY_LEVERAGE }}
         run: python run_morning.py

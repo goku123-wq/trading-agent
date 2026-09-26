@@ -9,7 +9,7 @@ from typing import Optional
 
 import pandas as pd
 
-from agent.basket import make_basket
+from agent.basket import intraday_leverage, make_basket
 from agent.report import basket_lines, sizing_note
 from agent.signals import Suggestion, _r
 
@@ -104,8 +104,8 @@ def to_telegram(day, market, nifty, bank, vix, adv, dec, setups, trig, limit=6) 
     lines = [f"🔔 10 AM market check {day:%d %b}", f"Mood: {market}",
              " | ".join(x for x in (idx(nifty), idx(bank), idx(vix)) if x),
              f"Watchlist breadth: {adv} up / {dec} down", ""]
-    lines += basket_lines("🎯 Basket now", make_basket(setups, size=min(limit, 5)), why=True)
+    lines += basket_lines("🎯 Basket now", make_basket(setups, size=min(limit, 5), leverage=intraday_leverage()), why=True)
     if trig:
         lines += ["", "Yesterday's levels triggered:"] + [f"• {s.symbol} {s.action} {s.entry}" for s in trig]
-    lines += ["", sizing_note(), "Intraday: square off by 3:15 PM. Not financial advice."]
+    lines += ["", sizing_note(), "Not financial advice."]
     return "\n".join(lines)

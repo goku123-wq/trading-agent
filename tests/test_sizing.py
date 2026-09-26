@@ -10,7 +10,7 @@ def S(sym, score, cap="Large", entry=100, stop=95, target=110, action="BUY"):
 def test_basket_total_profit_is_goal():
     ideas = [S("A", 90, entry=165.71, stop=158.10, target=180.92), S("B", 80, entry=418.95, stop=395.24, target=466.37),
              S("C", 70)]
-    b = make_basket(ideas, goal=5000, size=5)
+    b = make_basket(ideas, goal=5000, size=5, budget=10**9)
     assert [x.s.symbol for x in b.legs] == ["A", "B", "C"]
     assert 5000 <= b.profit < 5000 + sum(abs(x.s.target - x.s.entry) for x in b.legs)
     for x in b.legs:  # each leg makes about a third
@@ -31,20 +31,44 @@ def test_pick_mix_and_skips_exits():
 
 def test_short_leg_and_empty():
     short = Suggestion("X", "intraday", "SELL below", 100, 102, 97, 50)
-    b = make_basket([short], goal=5000)
+    b = make_basket([short], goal=5000, budget=10**9)
     assert b.legs[0].qty == 1667 and b.loss == 3334
     assert make_basket([], goal=5000).legs == []
 
 
 def test_profit_goal_env(monkeypatch):
     monkeypatch.setenv("PROFIT_GOAL", "")
-    assert make_basket([S("A", 90)]).legs[0].qty == 500  # default 5000 / 10
+    assert make_basket([S("A", 90)], budget=10**9).legs[0].qty == 500  # default 5000 / 10
     monkeypatch.setenv("PROFIT_GOAL", "2000")
-    assert make_basket([S("A", 90)]).legs[0].qty == 200
+    assert make_basket([S("A", 90)], budget=10**9).legs[0].qty == 200
 
 
 def test_inr_and_lines():
     assert [inr(950), inr(12500), inr(125000), inr(21000000)] == ["₹950", "₹12.5k", "₹1.2L", "₹2.1Cr"]
-    txt = "\n".join(basket_lines("Basket", make_basket([S("A", 90), S("B", 80, "Mid")], goal=5000)))
-    assert "(~₹5.0k if all hit target)" in txt and "[L] A BUY 100" in txt and "Qty 250 (₹25.0k)" in txt
-    assert "Total: ₹50.0k needed | +₹5.0k at targets | -₹2.5k if all stops hit" in txt
+    txt = "\n".join(basket_lines("Basket", make_basket([S("A", 90), S("B", 80, "Mid")], goal=5000, budget=50000)))
+    assert "Basket: ~₹5.0k if all hit target" in txt and "[L] A BUY 100" in txt and "Qty 250 (₹25.0k)" in txt
+    assert "Uses ₹50.0k of your ₹50.0k | +₹5.0k at targets | -₹2.5k if all stops hit" in txt
+    assert "⚠️" not in txt
+
+
+def test_capital_cap_scales_down_and_warns():
+    ideas = [S("A", 90), S("B", 80)]  # 10% targets: Rs 5k needs Rs 50k
+    b = make_basket(ideas, goal=5000, budget=30000)
+    assert b.capital <= 30000 and b.short_of_goal
+    assert [x.qty for x in b.legs] == [150, 150] and b.profit == 3000
+    txt = "\n".join(basket_lines("Basket", b))
+    assert "⚠️ ₹5.0k needs more capital than ₹30.0k" in txt
+
+
+def test_intraday_leverage_uses_margin():
+    short = Suggestion("X", "intraday", "SELL below", 100, 102, 97, 50)  # 3% move: Rs 5k needs 1.67L exposure
+    b = make_basket([short], goal=5000, budget=50000, leverage=5)
+    assert b.legs[0].qty == 1667 and not b.short_of_goal
+    assert round(b.margin) == 33340
+    assert "margin of your ₹50.0k" in "\n".join(basket_lines("B", b))
+    assert make_basket([short], goal=5000, budget=50000, leverage=1).short_of_goal
+
+
+def test_capital_env(monkeypatch):
+    monkeypatch.setenv("CAPITAL", "20000")
+    assert make_basket([S("A", 90)], goal=5000).capital <= 20000

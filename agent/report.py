@@ -1,7 +1,7 @@
 """Turn suggestions into a Markdown report and a short Telegram message."""
 from datetime import date
 
-from agent.basket import make_basket
+from agent.basket import intraday_leverage, make_basket
 
 LONG_MIX = {"Large": 3, "Mid": 2}  # long-term basket: 3 large caps + 2 mid caps
 
@@ -40,7 +40,18 @@ def _basket_table(b) -> str:
         lines.append(f"| {s.symbol} | {s.action} | {s.entry} | {s.stop} | {s.target} | {x.qty} | "
                      f"{inr(x.capital)} | {inr(x.profit)} | {inr(x.loss)} | {s.cap or '-'} |")
     lines.append(f"| **Total** | | | | | | **{inr(b.capital)}** | **{inr(b.profit)}** | **{inr(b.loss)}** | |")
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines) + "\n\n" + _basket_summary(b) + "\n"
+
+
+def _basket_summary(b) -> str:
+    if b.leverage > 1:
+        used = f"{inr(b.margin)} margin of your {inr(b.budget)} (exposure {inr(b.capital)} at ~{b.leverage:g}x)"
+    else:
+        used = f"{inr(b.capital)} of your {inr(b.budget)}"
+    out = f"Uses {used} | +{inr(b.profit)} at targets | -{inr(b.loss)} if all stops hit"
+    if b.short_of_goal:
+        out += f"\n⚠️ {inr(b.goal)} needs more capital than {inr(b.budget)} on these picks; sized down to fit."
+    return out
 
 
 def _alerts(alerts):
@@ -67,7 +78,7 @@ def to_markdown(day: date, long_term, intraday, skipped, alerts=(), positions=()
         "## Stop-loss / target alerts\n", _alerts(alerts),
         "## Your positions\n", _positions(positions),
         "## Long-term basket\n", _basket_table(make_basket(buys, mix=LONG_MIX)),
-        "## Intraday basket for next session\n", _basket_table(make_basket(intraday)),
+        "## Intraday basket for next session\n", _basket_table(make_basket(intraday, leverage=intraday_leverage())),
         "## All long-term buys\n", _table(buys),
         "## Long-term exits / avoid\n", _table(exits),
         "## Intraday watchlist for next session\n",
@@ -90,17 +101,18 @@ def line(s, why: bool = False) -> str:
 def basket_lines(title: str, b, why: bool = False) -> list[str]:
     if not b.legs:
         return [title, "• none"]
-    out = [f"{title} (~{inr(b.profit)} if all hit target)"]
+    out = [f"{title}: ~{inr(b.profit)} if all hit target"]
     for x in b.legs:
         out.append(line(x.s, why) + f"\n   Qty {x.qty} ({inr(x.capital)})")
-    out.append(f"Total: {inr(b.capital)} needed | +{inr(b.profit)} at targets | -{inr(b.loss)} if all stops hit")
+    out.append(_basket_summary(b))
     return out
 
 
 def sizing_note() -> str:
     from agent.signals import profit_goal
-    return (f"Baskets are sized so all picks together make ~{inr(profit_goal())} at target. "
-            "Intraday needs only the broker's margin, not the full capital.")
+    from agent.basket import capital
+    return (f"Baskets aim for ~{inr(profit_goal())} combined at target using up to {inr(capital())}. "
+            "Intraday uses broker margin (MIS); square off by 3:15 PM.")
 
 
 def to_telegram(day: date, long_term, intraday, alerts=(), limit: int = 8) -> str:
@@ -116,6 +128,6 @@ def to_telegram(day: date, long_term, intraday, alerts=(), limit: int = 8) -> st
         msg += ["More long-term ideas: " + ", ".join(f"{s.symbol} [{s.cap[:1] or '-'}]" for s in more[:limit]), ""]
     if exits:
         msg += ["Exit / avoid:"] + [line(s) for s in exits[:limit]] + [""]
-    msg += basket_lines("🎯 Intraday basket (next session)", make_basket(intraday))
+    msg += basket_lines("🎯 Intraday basket (next session)", make_basket(intraday, leverage=intraday_leverage()))
     msg += ["", sizing_note(), DISCLAIMER]
     return "\n".join(msg)

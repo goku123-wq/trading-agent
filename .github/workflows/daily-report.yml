@@ -26,6 +26,8 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           PROFIT_GOAL: ${{ vars.PROFIT_GOAL }}
+          CAPITAL: ${{ vars.CAPITAL }}
+          INTRADAY_LEVERAGE: ${{ vars.INTRADAY_LEVERAGE }}
           POSITIONS_CSV: ${{ secrets.POSITIONS_CSV }}
         run: python run_daily.py
       - name: Save report to repo

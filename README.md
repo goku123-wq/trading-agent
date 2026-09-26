@@ -32,18 +32,20 @@ Every weekday at 5:00 PM IST a GitHub Actions job:
 
 On market holidays there is no data for the day, so nothing is sent.
 
-## Baskets and quantity
+## Baskets, capital and quantity
 
-Instead of sizing each stock on its own, the report builds **baskets** whose combined profit at target is about
-₹5,000:
+The report builds **baskets** that aim for a combined profit of about ₹5,000 at target using at most ₹50,000:
 
-- **Long-term basket**: the 3 best large caps + 2 best mid caps.
-- **Intraday basket**: the 5 best next-session levels. The 10 AM check builds its own basket from the setups it finds.
+- **Long-term basket**: the 3 best large caps + 2 best mid caps. Paid in full (delivery), so it must fit in ₹50,000.
+- **Intraday basket**: the 5 best next-session levels. Intraday (MIS) only needs margin, assumed ~5x, so ₹50,000
+  of margin covers up to ₹2.5L of exposure. The 10 AM check builds its own intraday basket the same way.
 
-The goal is split equally across the picks, so each stock's quantity is `(5000 / picks) / (target - entry)`,
-rounded up. Each basket shows the total capital needed, the profit if every target is hit and the loss if every
-stop is hit. Change the goal with a repository variable: Settings > Secrets and variables > Actions > Variables >
-`PROFIT_GOAL`.
+The goal is split equally across the picks: each stock's quantity is `(goal / picks) / (target - entry)`, rounded
+up. If that needs more than the capital allows, all quantities are scaled down to fit and the report says the goal
+is out of reach with that capital (⚠️). Ties in score go to stocks with bigger % targets, which need less capital.
+
+Change the numbers with repository variables (Settings > Secrets and variables > Actions > Variables):
+`PROFIT_GOAL` (default 5000), `CAPITAL` (default 50000), `INTRADAY_LEVERAGE` (default 5).
 
 ## Stop-loss alerts
 
