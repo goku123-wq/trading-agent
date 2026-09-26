@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "entry": 1788.0,
+    "opened": "2026-09-25",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1706.65,
+    "symbol": "ADANIPORTS",
+    "target": 1950.71
+  },
+  {
+    "entry": 8889.0,
+    "opened": "2026-09-25",
+    "side": "LONG",
+    "source": "report",
+    "stop": 8586.58,
+    "symbol": "APOLLOHOSP",
+    "target": 9493.84
+  },
+  {
+    "entry": 1399.7,
+    "opened": "2026-09-25",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1350.46,
+    "symbol": "CIPLA",
+    "target": 1498.18
+  },
+  {
+    "entry": 3191.0,
+    "opened": "2026-09-25",
+    "side": "LONG",
+    "source": "report",
+    "stop": 3077.44,
+    "symbol": "GRASIM",
+    "target": 3418.12
+  },
+  {
+    "entry": 5360.0,
+    "opened": "2026-09-25",
+    "side": "LONG",
+    "source": "report",
+    "stop": 5141.74,
+    "symbol": "HEROMOTOCO",
+    "target": 5796.53
+  },
+  {
+    "entry": 1277.0,
+    "opened": "2026-09-25",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1228.61,
+    "symbol": "JSWSTEEL",
+    "target": 1373.78
+  },
+  {
+    "entry": 1548.0,
+    "opened": "2026-09-25",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1475.63,
+    "symbol": "TECHM",
+    "target": 1692.75
+  },
+  {
+    "entry": 4884.0,
+    "opened": "2026-09-25",
+    "side": "LONG",
+    "source": "report",
+    "stop": 4720.7,
+    "symbol": "TITAN",
+    "target": 5210.6
+  }
+]
