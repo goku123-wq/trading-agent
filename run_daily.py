@@ -10,12 +10,13 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from agent.data import fetch_daily
+from agent.basket import make_basket
 from agent.export import write_ideas
 from agent.indicators import add_indicators
 from agent.notify import send_telegram
 from agent.positions import (Position, check, load_json, load_manual, load_tracked, save_json,
                              save_tracked, trailing_stop)
-from agent.report import to_markdown, to_telegram
+from agent.report import LONG_MIX, to_markdown, to_telegram
 from agent.signals import intraday_setup, long_term_signal
 from agent.universe import load_universe
 
@@ -97,7 +98,9 @@ def main():
     long_term, intraday = build({s: data[s] for s in symbols if s in data}, caps)
     alerted = load_json(STATE / "alerted.json", {})
     buys = [s for s in long_term if s.action == "BUY"]
-    alerts, rows, still_open = review_positions(day, data, manual, tracked, buys, alerted)
+    # Only the long-term basket's picks get stop-loss / target tracking, not every idea.
+    picks = [leg.s for leg in make_basket(buys, mix=LONG_MIX).legs]
+    alerts, rows, still_open = review_positions(day, data, manual, tracked, picks, alerted)
 
     save_tracked(STATE / "tracked.json", still_open)
     save_json(STATE / "alerted.json", alerted)
