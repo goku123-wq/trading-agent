@@ -19,12 +19,11 @@ _No positions listed. Add them to config/positions.csv._
 | ENRIN | BUY | 3313.0 | 3103.84 | 3731.32 | 2 | ₹6.6k | ₹837 | ₹418 | Large |
 | MOTHERSON | BUY | 165.71 | 158.1 | 180.92 | 63 | ₹10.4k | ₹958 | ₹479 | Large |
 | TORNTPHARM | BUY | 4988.5 | 4785.67 | 5394.17 | 2 | ₹10.0k | ₹811 | ₹406 | Large |
-| MOTILALOFS | BUY | 1029.0 | 947.39 | 1192.23 | 6 | ₹6.2k | ₹979 | ₹490 | Mid |
+| MOTILALOFS | BUY | 1029.0 | 947.39 | 1192.23 | 9 | ₹9.3k | ₹1.5k | ₹734 | Mid |
 | BHEL | BUY | 418.95 | 395.24 | 466.37 | 21 | ₹8.8k | ₹996 | ₹498 | Mid |
-| **Total** | | | | | | **₹42.0k** | **₹4.6k** | **₹2.3k** | |
+| **Total** | | | | | | **₹45.1k** | **₹5.1k** | **₹2.5k** | |
 
-Uses ₹42.0k of your ₹50.0k | +₹4.6k at targets | -₹2.3k if all stops hit
-⚠️ ₹5.0k needs more capital than ₹50.0k on these picks; sized down to fit.
+Uses ₹45.1k of your ₹50.0k | +₹5.1k at targets | -₹2.5k if all stops hit
 
 ## Intraday basket for next session
 
