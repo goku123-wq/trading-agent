@@ -80,3 +80,12 @@ def test_build_and_report():
     md = to_markdown(pd.Timestamp("2026-09-25").date(), lt, intra, ["MISSING"])
     assert "UP" in md and "Not financial advice" in md and "MISSING" in md
     assert "UP BUY" in to_telegram(pd.Timestamp("2026-09-25").date(), lt, intra)
+
+
+def test_build_drops_conflicting_intraday(monkeypatch):
+    import run_daily
+    from agent.signals import Suggestion
+    monkeypatch.setattr(run_daily, "long_term_signal", lambda sym, df: Suggestion(sym, "long-term", "BUY", 10, 9, 12, 80))
+    monkeypatch.setattr(run_daily, "intraday_setup", lambda sym, df: Suggestion(sym, "intraday", "SELL below", 10, 11, 8, 50))
+    lt, intra = run_daily.build({"X": None})
+    assert [s.symbol for s in lt] == ["X"] and intra == []

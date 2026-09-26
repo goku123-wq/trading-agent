@@ -29,6 +29,11 @@ def build(data):
             long_term.append(s)
         if (s := intraday_setup(sym, df)):
             intraday.append(s)
+    # Don't suggest shorting intraday what we just called a long-term buy, or buying what we said to exit.
+    lt = {s.symbol: s.action for s in long_term}
+    intraday = [s for s in intraday
+                if not (lt.get(s.symbol) == "BUY" and s.action == "SELL below")
+                and not (lt.get(s.symbol) == "SELL/EXIT" and s.action == "BUY above")]
     long_term.sort(key=lambda s: (s.action != "BUY", -s.score))
     intraday.sort(key=lambda s: -s.score)
     return long_term, intraday
