@@ -13,10 +13,11 @@ from pathlib import Path
 import pandas as pd
 
 from agent import morning
-from agent.data import fetch_daily, load_watchlist
+from agent.data import fetch_daily
 from agent.indicators import add_indicators
 from agent.notify import send_telegram
 from agent.signals import Suggestion
+from agent.universe import load_universe
 
 ROOT = Path(__file__).parent
 IST = timezone(timedelta(hours=5, minutes=30))
@@ -58,12 +59,13 @@ def load_previous_intraday(path: Path) -> list[Suggestion]:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--watchlist", default=ROOT / "config" / "watchlist.txt", type=Path)
+    ap.add_argument("--config", default=ROOT / "config", type=Path)
     ap.add_argument("--no-send", action="store_true")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
-    symbols = load_watchlist(args.watchlist)
+    caps = load_universe(args.config)
+    symbols = list(caps)
     intraday = fetch_intraday([f"{s}.NS" for s in symbols] + list(INDICES.values()))
     if not any(tk.endswith(".NS") for tk in intraday):
         log.info("no trading data for today (holiday or weekend); nothing to send")
@@ -100,6 +102,7 @@ def main():
             continue
         d = d[d.index.date < today]  # yesterday's close and trend, not today's partial bar
         if (x := morning.opening_range_setup(s, bars, d, market)):
+            x.cap = caps.get(s, "")
             setups.append(x)
     setups.sort(key=lambda x: -x.score)
 

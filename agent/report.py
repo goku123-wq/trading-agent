@@ -7,11 +7,11 @@ DISCLAIMER = "Rule-based signals for education only. Not financial advice. Do yo
 def _table(rows):
     if not rows:
         return "_No setups today._\n"
-    lines = ["| Stock | Action | Entry | Stop | Target | R:R | Score | Why |",
-             "|---|---|---|---|---|---|---|---|"]
+    lines = ["| Stock | Action | Entry | Stop | Target | R:R | Score | Cap | Why |",
+             "|---|---|---|---|---|---|---|---|---|"]
     for s in rows:
         lines.append(f"| {s.symbol} | {s.action} | {s.entry} | {s.stop} | {s.target} | "
-                     f"{s.risk_reward} | {s.score} | {'; '.join(s.reasons)} |")
+                     f"{s.risk_reward} | {s.score} | {s.cap or '-'} | {'; '.join(s.reasons)} |")
     return "\n".join(lines) + "\n"
 
 
@@ -48,16 +48,28 @@ def to_markdown(day: date, long_term, intraday, skipped, alerts=(), positions=()
     return "\n".join(parts)
 
 
-def to_telegram(day: date, long_term, intraday, alerts=(), limit: int = 5) -> str:
-    def line(s):
-        return f"• {s.symbol} {s.action} {s.entry} | SL {s.stop} | T {s.target}"
+def line(s) -> str:
+    tag = f"[{s.cap[0]}] " if s.cap else ""
+    return f"• {tag}{s.symbol} {s.action} {s.entry} | SL {s.stop} | T {s.target}"
 
-    msg = [f"📊 Daily report {day:%d %b %Y}", ""]
+
+def to_telegram(day: date, long_term, intraday, alerts=(), limit: int = 5) -> str:
+    msg = [f"📊 Daily report {day:%d %b %Y}", "[L] large cap, [M] mid cap, [W] your watchlist", ""]
     if alerts:
         msg += ["Alerts:"] + [a.text() for a in alerts] + [""]
-    msg += ["Long-term:"]
-    msg += [line(s) for s in long_term[:limit]] or ["• none"]
-    msg += ["", "Intraday (next session):"]
-    msg += [line(s) for s in intraday[:limit]] or ["• none"]
+    buys = [s for s in long_term if s.action == "BUY"]
+    exits = [s for s in long_term if s.action != "BUY"]
+    for title, cap in (("Long-term buys, large caps:", "Large"), ("Long-term buys, mid caps:", "Mid"),
+                       ("Long-term buys, watchlist:", "Watch")):
+        group = [s for s in buys if s.cap == cap]
+        if group or cap != "Watch":
+            msg += [title] + ([line(s) for s in group[:limit]] or ["• none"]) + [""]
+    other = [s for s in buys if s.cap not in ("Large", "Mid", "Watch")]
+    if other:
+        msg += ["Long-term buys:"] + [line(s) for s in other[:limit]] + [""]
+    if exits:
+        msg += ["Exit / avoid:"] + [line(s) for s in exits[:limit]] + [""]
+    msg += ["Intraday (next session):"]
+    msg += [line(s) for s in intraday[:2 * limit]] or ["• none"]
     msg += ["", DISCLAIMER]
     return "\n".join(msg)

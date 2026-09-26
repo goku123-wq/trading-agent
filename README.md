@@ -7,7 +7,9 @@ Suggestion-only: it never places orders. **Not financial advice.**
 
 Every weekday at 5:00 PM IST a GitHub Actions job:
 
-1. Downloads 2 years of daily prices for `config/watchlist.txt` from Yahoo Finance (free).
+1. Downloads 2 years of daily prices from Yahoo Finance (free) for about 250 stocks: the Nifty 100 (large caps,
+   `config/largecap.txt`), the Nifty Midcap 150 (mid caps, `config/midcap.txt`) and anything extra in
+   `config/watchlist.txt`. The index lists refresh every Sunday from NSE. Every idea is tagged Large / Mid / Watch.
 2. Scores each stock with simple rules (`agent/signals.py`):
    - **Long-term BUY**: price and 50-day average above the 200-day average, pulled back near the 20/50-day
      average, RSI 45-65 and turning up. Stop below the 50-day average / 2x ATR, target 2x the risk.

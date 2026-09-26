@@ -1,4 +1,5 @@
-# NSE symbols, one per line (no .NS suffix). Roughly the Nifty 50; edit freely.
+# Your extra NSE symbols, one per line (no .NS suffix). Large caps (Nifty 100) and mid caps
+# (Midcap 150) are scanned automatically from largecap.txt and midcap.txt; this list is the fallback.
 ADANIENT
 ADANIPORTS
 APOLLOHOSP

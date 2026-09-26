@@ -103,8 +103,16 @@ def to_telegram(day, market, nifty, bank, vix, adv, dec, setups, trig, limit=6) 
              " | ".join(x for x in (idx(nifty), idx(bank), idx(vix)) if x),
              f"Watchlist breadth: {adv} up / {dec} down", ""]
     lines.append("Setups now:")
+    for title, cap in (("Large caps:", "Large"), ("Mid caps:", "Mid"), ("Watchlist:", "Watch")):
+        group = [s for s in setups if s.cap == cap][:limit]
+        if group:
+            lines += [title] + [f"• {s.symbol} {s.action} {s.entry} | SL {s.stop} | T {s.target} "
+                                f"({', '.join(s.reasons)})" for s in group]
+    rest = [s for s in setups if s.cap not in ("Large", "Mid", "Watch")][:limit]
     lines += [f"• {s.symbol} {s.action} {s.entry} | SL {s.stop} | T {s.target} ({', '.join(s.reasons)})"
-              for s in setups[:limit]] or ["• none, better to wait"]
+              for s in rest]
+    if not setups:
+        lines.append("• none, better to wait")
     if trig:
         lines += ["", "Yesterday's levels triggered:"] + [f"• {s.symbol} {s.action} {s.entry}" for s in trig]
     lines += ["", "Intraday: square off by 3:15 PM. Not financial advice."]

@@ -22,6 +22,7 @@ class Suggestion:
     target: float
     score: int
     reasons: list = field(default_factory=list)
+    cap: str = ""  # Large / Mid / Watch
 
     @property
     def risk_reward(self) -> float:

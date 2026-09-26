@@ -1,6 +1,6 @@
 """Build the end-of-day report. Run after market close (3:30 PM IST).
 
-    python run_daily.py                 # uses config/watchlist.txt and config/positions.csv
+    python run_daily.py                 # scans config/largecap.txt, midcap.txt, watchlist.txt
     python run_daily.py --no-send       # write the report, skip Telegram
 """
 import argparse
@@ -9,26 +9,28 @@ from dataclasses import asdict
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-from agent.data import fetch_daily, load_watchlist
+from agent.data import fetch_daily
 from agent.indicators import add_indicators
 from agent.notify import send_telegram
 from agent.positions import (Position, check, load_json, load_manual, load_tracked, save_json,
                              save_tracked, trailing_stop)
 from agent.report import to_markdown, to_telegram
 from agent.signals import intraday_setup, long_term_signal
+from agent.universe import load_universe
 
 ROOT = Path(__file__).parent
 STATE = ROOT / "state"
 IST = timezone(timedelta(hours=5, minutes=30))
 
 
-def build(data):
+def build(data, caps=None):
+    caps = caps or {}
     long_term, intraday = [], []
     for sym, df in data.items():
-        if (s := long_term_signal(sym, df)):
-            long_term.append(s)
-        if (s := intraday_setup(sym, df)):
-            intraday.append(s)
+        for fn, out in ((long_term_signal, long_term), (intraday_setup, intraday)):
+            if (s := fn(sym, df)):
+                s.cap = caps.get(sym, "")
+                out.append(s)
     # Don't suggest shorting intraday what we just called a long-term buy, or buying what we said to exit.
     lt = {s.symbol: s.action for s in long_term}
     intraday = [s for s in intraday
@@ -75,15 +77,15 @@ def review_positions(day: str, data, manual, tracked, new_buys, alerted):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--watchlist", default=ROOT / "config" / "watchlist.txt", type=Path)
-    ap.add_argument("--positions", default=ROOT / "config" / "positions.csv", type=Path)
+    ap.add_argument("--config", default=ROOT / "config", type=Path)
     ap.add_argument("--no-send", action="store_true")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
-    manual = load_manual(args.positions)
+    manual = load_manual(args.config / "positions.csv")
     tracked = load_tracked(STATE / "tracked.json")
-    symbols = load_watchlist(args.watchlist)
+    caps = load_universe(args.config)
+    symbols = list(caps)
     wanted = list(dict.fromkeys(symbols + [p.symbol for p in manual + tracked]))
     data = {s: add_indicators(df) for s, df in fetch_daily(wanted).items()}
     if not data:
@@ -91,7 +93,7 @@ def main():
     last_bar = max(df.index[-1] for df in data.values()).date()
     day = f"{last_bar:%Y-%m-%d}"
 
-    long_term, intraday = build({s: data[s] for s in symbols if s in data})
+    long_term, intraday = build({s: data[s] for s in symbols if s in data}, caps)
     alerted = load_json(STATE / "alerted.json", {})
     buys = [s for s in long_term if s.action == "BUY"]
     alerts, rows, still_open = review_positions(day, data, manual, tracked, buys, alerted)
