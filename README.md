@@ -17,6 +17,19 @@ Every weekday at 5:00 PM IST a GitHub Actions job:
 3. Checks your positions and past BUY ideas against their stop-loss and target.
 4. Writes `reports/YYYY-MM-DD.md` and `reports/latest.md`, and sends a summary to Telegram.
 
+## 10 AM market check
+
+`run_morning.py` runs at 10:00 AM IST on weekdays and sends one Telegram message with:
+
+- **Market mood** (Bullish / Bearish / Mixed) from Nifty 50 and Bank Nifty vs yesterday's close, India VIX,
+  and how many watchlist stocks are up vs down.
+- **Setups now**: stocks that broke out of their 9:15-10:00 range, on the right side of VWAP and their daily
+  trend, and not against the market mood. Entry is the current price, stop is the other side of the range or
+  VWAP, target 1.5x the risk. Stocks already too far from their stop are skipped.
+- **Yesterday's levels triggered**: which "buy above / sell below" levels from last evening's report were hit.
+
+On market holidays there is no data for the day, so nothing is sent.
+
 ## Stop-loss alerts
 
 - List your holdings in `config/positions.csv` (`symbol,entry,stop,target,side`). Leave `stop` blank for a

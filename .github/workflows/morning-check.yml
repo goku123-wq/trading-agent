@@ -1,0 +1,22 @@
+name: 10 AM market check
+
+on:
+  schedule:
+    - cron: "30 4 * * 1-5"   # 10:00 AM IST, Mon-Fri (GitHub may start it a few minutes late)
+  workflow_dispatch:
+
+jobs:
+  morning:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Analyse the open and send suggestions
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python run_morning.py

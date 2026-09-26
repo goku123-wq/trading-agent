@@ -15,7 +15,7 @@ def load_watchlist(path: Path) -> list[str]:
 def fetch_daily(symbols: list[str], period: str = "2y") -> dict[str, pd.DataFrame]:
     import yfinance as yf
 
-    tickers = [f"{s}.NS" for s in symbols]
+    tickers = [s if s.startswith("^") else f"{s}.NS" for s in symbols]  # ^ = index
     raw = yf.download(tickers, period=period, interval="1d", group_by="ticker",
                       auto_adjust=True, progress=False, threads=True)
     out = {}
