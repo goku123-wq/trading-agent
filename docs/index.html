@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Basket Planner</title>
+<meta name="description" content="Enter your capital and profit goal to get a sized basket from today's NSE ideas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+  :root {
+    --bg: #f3f5f2;
+    --surface: #ffffff;
+    --sunken: #e9eee9;
+    --ink: #16201c;
+    --muted: #5b6a63;
+    --line: #d5ddd7;
+    --accent: #0e6b5c;
+    --accent-ink: #ffffff;
+    --profit: #1b7f46;
+    --loss: #b8322a;
+    --warn-bg: #fff3d6;
+    --warn-ink: #7a5200;
+    --sans: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1513; --surface: #17201d; --sunken: #1e2925; --ink: #e6eeea; --muted: #93a39c;
+      --line: #2c3a35; --accent: #4fc1a8; --accent-ink: #0b1310; --profit: #5bd08a; --loss: #f07a70;
+      --warn-bg: #3a2e12; --warn-ink: #f2c66d; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1513; --surface: #17201d; --sunken: #1e2925; --ink: #e6eeea; --muted: #93a39c;
+    --line: #2c3a35; --accent: #4fc1a8; --accent-ink: #0b1310; --profit: #5bd08a; --loss: #f07a70;
+    --warn-bg: #3a2e12; --warn-ink: #f2c66d; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 var(--sans); }
+  main { max-width: 960px; margin: 0 auto; padding: 28px 16px 48px; display: grid; gap: 20px; }
+  header { display: grid; gap: 4px; }
+  h1 { margin: 0; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
+  .fresh { color: var(--muted); font-size: 0.85rem; }
+  .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+  form { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px;
+         display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .field { display: grid; gap: 6px; align-content: start; }
+  label, .legend { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  .money { display: flex; align-items: center; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+  .money span { padding: 0 10px; color: var(--muted); font-family: var(--mono); }
+  .money input { flex: 1; min-width: 0; border: 0; background: transparent; color: var(--ink); padding: 10px 10px 10px 0;
+                 font: 600 1.15rem var(--mono); font-variant-numeric: tabular-nums; }
+  input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .seg { display: flex; flex-wrap: wrap; gap: 6px; }
+  .seg button { border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 999px;
+                padding: 7px 12px; font: 500 0.88rem var(--sans); cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  select { border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 8px; padding: 9px 10px; font: 500 0.95rem var(--sans); }
+  .hint { color: var(--muted); font-size: 0.8rem; }
+
+  .summary { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: grid; gap: 2px; }
+  .stat b { font: 600 1.3rem var(--mono); font-variant-numeric: tabular-nums; }
+  .stat .sub { color: var(--muted); font-size: 0.8rem; }
+  .profit { color: var(--profit); } .loss { color: var(--loss); }
+  .warn { background: var(--warn-bg); color: var(--warn-ink); border-radius: 10px; padding: 12px 14px; font-size: 0.92rem; }
+
+  .legs { display: grid; gap: 10px; }
+  .leg { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px;
+         display: grid; gap: 10px; grid-template-columns: minmax(0, 1.4fr) repeat(4, minmax(0, 1fr)); align-items: center; }
+  .leg h3 { margin: 0; font-size: 1.05rem; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .chip { font: 600 0.68rem var(--sans); letter-spacing: 0.05em; text-transform: uppercase; padding: 2px 7px;
+          border-radius: 999px; background: var(--sunken); color: var(--muted); }
+  .how { color: var(--muted); font-size: 0.85rem; }
+  .cell { display: grid; gap: 1px; }
+  .cell small { color: var(--muted); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .cell span { font-family: var(--mono); font-variant-numeric: tabular-nums; font-weight: 600; }
+  .why { grid-column: 1 / -1; color: var(--muted); font-size: 0.82rem; border-top: 1px dashed var(--line); padding-top: 8px; }
+  .qty { font-size: 1.2rem; color: var(--accent); }
+  .empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; padding: 24px; text-align: center; color: var(--muted); }
+  footer { color: var(--muted); font-size: 0.8rem; max-width: 70ch; }
+  @media (max-width: 640px) {
+    .leg { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .leg .name { grid-column: 1 / -1; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Basket Planner</h1>
+    <div class="fresh" id="fresh">Loading today's ideas…</div>
+  </header>
+
+  <form id="plan" autocomplete="off">
+    <div class="field">
+      <label for="capital">Capital</label>
+      <div class="money"><span>₹</span><input id="capital" type="number" inputmode="numeric" min="1000" step="1000" value="50000"></div>
+      <div class="hint" id="capHint">Cash you can put in.</div>
+    </div>
+    <div class="field">
+      <label for="goal">Profit goal</label>
+      <div class="money"><span>₹</span><input id="goal" type="number" inputmode="numeric" min="100" step="500" value="5000"></div>
+      <div class="hint" id="goalHint"></div>
+    </div>
+    <div class="field">
+      <span class="legend" id="styleLabel">Trade style</span>
+      <div class="seg" role="group" aria-labelledby="styleLabel" id="style">
+        <button type="button" data-v="long" aria-pressed="true">Long-term</button>
+        <button type="button" data-v="intraday" aria-pressed="false">Intraday (next day)</button>
+        <button type="button" data-v="morning" aria-pressed="false">Intraday now (10 AM)</button>
+      </div>
+    </div>
+    <div class="field">
+      <label for="caps">Stocks</label>
+      <select id="caps">
+        <option value="mix">Large + mid caps</option>
+        <option value="Large">Large caps only</option>
+        <option value="Mid">Mid caps only</option>
+      </select>
+      <label for="size" style="margin-top:6px">How many stocks</label>
+      <select id="size">
+        <option>3</option><option>4</option><option selected>5</option><option>6</option><option>8</option>
+      </select>
+    </div>
+  </form>
+
+  <section class="summary" id="summary" aria-live="polite"></section>
+  <div class="warn" id="warn" hidden></div>
+  <section class="legs" id="legs"></section>
+
+  <footer>
+    Quantities split your profit goal equally across the picks: shares = (goal ÷ picks) ÷ (target − entry), rounded up,
+    then scaled down if they need more than your capital. Intraday assumes about 5x margin on Groww (MIS); the real
+    figure varies by stock. Ideas come from simple rules on Yahoo Finance prices and refresh after 5 PM and at 10 AM
+    on trading days. This is not financial advice.
+  </footer>
+</main>
+
+<script>
+(() => {
+  const LEVERAGE = 5;
+  const $ = (id) => document.getElementById(id);
+  let DATA = null;
+  const state = { style: "long" };
+
+  const inr = (x) => {
+    const a = Math.abs(x), s = x < 0 ? "−" : "";
+    if (a >= 1e7) return `${s}₹${(a / 1e7).toFixed(2)}Cr`;
+    if (a >= 1e5) return `${s}₹${(a / 1e5).toFixed(2)}L`;
+    return `${s}₹${Math.round(a).toLocaleString("en-IN")}`;
+  };
+  const move = (s) => Math.abs(s.target - s.entry);
+  const pct = (s) => move(s) / s.entry;
+
+  function pick(ideas, size, mix) {
+    const pool = ideas.filter((s) => s.action !== "SELL/EXIT" && s.target !== s.entry)
+      .sort((a, b) => b.score - a.score || pct(b) - pct(a));
+    const chosen = [];
+    for (const [cap, n] of Object.entries(mix || {})) chosen.push(...pool.filter((s) => s.cap === cap).slice(0, n));
+    for (const s of pool) { if (chosen.length >= size) break; if (!chosen.includes(s)) chosen.push(s); }
+    return chosen.slice(0, size);
+  }
+
+  function basket(ideas, goal, budget, lev, size, mix) {
+    const picks = pick(ideas, size, mix);
+    if (!picks.length) return { legs: [], goal, budget, lev };
+    const share = goal / picks.length;
+    let q = picks.map((s) => Math.ceil(share / move(s)));
+    const limit = budget * lev;
+    const exposure = q.reduce((t, n, i) => t + n * picks[i].entry, 0);
+    if (exposure > limit) {
+      const f = limit / exposure;
+      q = q.map((n) => Math.floor(n * f));
+      let spare = limit - q.reduce((t, n, i) => t + n * picks[i].entry, 0);
+      let profit = q.reduce((t, n, i) => t + n * move(picks[i]), 0);
+      const order = picks.map((_, i) => i).sort((a, b) => pct(picks[b]) - pct(picks[a]));
+      while (profit < goal) {
+        const i = order.find((k) => picks[k].entry <= spare);
+        if (i === undefined) break;
+        q[i] += 1; spare -= picks[i].entry; profit += move(picks[i]);
+      }
+    }
+    const legs = picks.map((s, i) => ({ s, qty: q[i], capital: q[i] * s.entry, profit: q[i] * move(s),
+                                        loss: q[i] * Math.abs(s.entry - s.stop) })).filter((l) => l.qty > 0);
+    return { legs, goal, budget, lev };
+  }
+
+  function howTo(s, style) {
+    if (s.action === "BUY") return style === "long" ? "Buy now, delivery (CNC)" : "Buy now, intraday (MIS)";
+    if (s.action === "SELL") return "Short-sell now, intraday (MIS)";
+    if (s.action === "BUY above") return `Buy only if price goes above ${s.entry}, intraday (MIS)`;
+    if (s.action === "SELL below") return `Short-sell only if price falls below ${s.entry}, intraday (MIS)`;
+    return s.action;
+  }
+
+  function ideasFor(style) {
+    if (!DATA) return { list: [], when: null };
+    if (style === "long") return { list: DATA.daily?.long_term || [], when: DATA.daily };
+    if (style === "intraday") return { list: DATA.daily?.intraday || [], when: DATA.daily };
+    return { list: DATA.morning?.setups || [], when: DATA.morning };
+  }
+
+  function render() {
+    const capital = Math.max(0, +$("capital").value || 0);
+    const goal = Math.max(0, +$("goal").value || 0);
+    const size = +$("size").value;
+    const caps = $("caps").value;
+    const style = state.style;
+    const lev = style === "long" ? 1 : LEVERAGE;
+    save({ capital, goal, size, caps, style });
+
+    $("capHint").textContent = style === "long" ? "Cash you can put in." : `Used as margin: up to ${inr(capital * lev)} of trades at ~${lev}x.`;
+    $("goalHint").textContent = capital ? `${(goal / capital * 100).toFixed(1)}% of your capital.` : "";
+
+    const { list, when } = ideasFor(style);
+    let pool = list;
+    let mix = null;
+    if (caps === "mix") {
+      if (style === "long") { const l = Math.ceil(size * 0.6); mix = { Large: l, Mid: size - l }; }
+    } else pool = list.filter((s) => s.cap === caps);
+
+    if (when) {
+      const label = style === "morning" ? "10 AM check" : "Evening report";
+      $("fresh").textContent = `${label} for ${new Date(when.day).toLocaleDateString("en-IN", { weekday: "short", day: "numeric", month: "short" })}` +
+        (when.mood ? ` · market mood ${when.mood}` : "") + ` · ${list.length} ideas`;
+    }
+
+    const b = basket(pool, goal, capital, lev, size, mix);
+    const legsEl = $("legs"), sumEl = $("summary"), warn = $("warn");
+    legsEl.innerHTML = ""; sumEl.innerHTML = "";
+    if (!DATA) { warn.hidden = true; return; }
+    if (!b.legs.length) {
+      warn.hidden = true;
+      legsEl.innerHTML = `<div class="empty">${!when ? (style === "morning" ? "No 10 AM check yet. It runs at about 10 AM on trading days." : "No report yet.")
+        : "No ideas match these settings today. Try another trade style or stock group."}</div>`;
+      return;
+    }
+    const tot = (k) => b.legs.reduce((t, l) => t + l[k], 0);
+    const used = tot("capital") / lev;
+    const stats = [
+      ["Money used", inr(used), lev > 1 ? `margin for ${inr(tot("capital"))} of trades` : `of ${inr(capital)}`, ""],
+      ["If all hit target", "+" + inr(tot("profit")), `goal ${inr(goal)}`, "profit"],
+      ["If all hit stop-loss", inr(-tot("loss")), `${(tot("loss") / Math.max(capital, 1) * 100).toFixed(1)}% of capital`, "loss"],
+      ["Stocks", String(b.legs.length), style === "long" ? "hold weeks to months" : "square off by 3:15 PM", ""],
+    ];
+    for (const [k, v, sub, cls] of stats) {
+      const d = document.createElement("div"); d.className = "stat";
+      d.innerHTML = `<span class="legend">${k}</span><b class="${cls}">${v}</b><span class="sub">${sub}</span>`;
+      sumEl.appendChild(d);
+    }
+    const short = tot("profit") < goal * 0.95;
+    warn.hidden = !short;
+    if (short) warn.textContent = `${inr(goal)} needs more than ${inr(capital)} on today's picks, so the quantities were scaled down. ` +
+      `This basket can make about ${inr(tot("profit"))}. Raise the capital, lower the goal, or try intraday.`;
+
+    for (const l of b.legs) {
+      const s = l.s, d = document.createElement("article"); d.className = "leg";
+      d.innerHTML = `
+        <div class="name"><h3>${s.symbol} <span class="chip">${s.cap || "—"}</span></h3><div class="how">${howTo(s, style)}</div></div>
+        <div class="cell"><small>Shares</small><span class="qty">${l.qty}</span></div>
+        <div class="cell"><small>Entry · Stop-loss</small><span>${s.entry} · ${s.stop}</span></div>
+        <div class="cell"><small>Target</small><span>${s.target}</span></div>
+        <div class="cell"><small>${lev > 1 ? "Trade value" : "Cost"}</small><span>${inr(l.capital)}</span></div>
+        <div class="why"><span class="profit num">+${inr(l.profit)}</span> at target · <span class="loss num">${inr(-l.loss)}</span> at stop-loss${s.reasons?.length ? " · " + s.reasons.join(", ") : ""}</div>`;
+      legsEl.appendChild(d);
+    }
+  }
+
+  function save(v) { try { localStorage.setItem("planner", JSON.stringify(v)); } catch (e) {} }
+  function load() {
+    try {
+      const v = JSON.parse(localStorage.getItem("planner") || "null");
+      if (!v) return;
+      $("capital").value = v.capital; $("goal").value = v.goal; $("size").value = v.size; $("caps").value = v.caps;
+      setStyle(v.style || "long", false);
+    } catch (e) {}
+  }
+  function setStyle(v, rerender = true) {
+    state.style = v;
+    for (const b of $("style").querySelectorAll("button")) b.setAttribute("aria-pressed", String(b.dataset.v === v));
+    if (rerender) render();
+  }
+
+  $("style").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) setStyle(b.dataset.v); });
+  for (const id of ["capital", "goal", "size", "caps"]) $(id).addEventListener("input", render);
+  $("plan").addEventListener("submit", (e) => e.preventDefault());
+  load();
+
+  fetch("ideas.json", { cache: "no-store" })
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then((d) => { DATA = d; render(); })
+    .catch(() => { $("fresh").textContent = "Couldn't load today's ideas. Refresh the page, or check that the daily report has run."; render(); });
+})();
+</script>
+</body>
+</html>

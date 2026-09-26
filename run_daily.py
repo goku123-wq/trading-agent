@@ -10,6 +10,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from agent.data import fetch_daily
+from agent.export import write_ideas
 from agent.indicators import add_indicators
 from agent.notify import send_telegram
 from agent.positions import (Position, check, load_json, load_manual, load_tracked, save_json,
@@ -110,6 +111,8 @@ def main():
     out.write_text(md)
     (ROOT / "reports" / "latest.md").write_text(md)
     print(md)
+    write_ideas(ROOT / "docs" / "ideas.json", "daily", last_bar,
+                {"long_term": buys, "intraday": intraday})
     if not args.no_send:
         send_telegram(to_telegram(last_bar, long_term, intraday, alerts))
     logging.info("report written to %s (run at %s IST)", out, f"{datetime.now(IST):%H:%M}")

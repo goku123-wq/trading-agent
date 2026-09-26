@@ -5,6 +5,12 @@ on:
     - cron: "30 4 * * 1-5"   # 10:00 AM IST, Mon-Fri (GitHub may start it a few minutes late)
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: state-writes
+
 jobs:
   morning:
     runs-on: ubuntu-latest
@@ -23,3 +29,9 @@ jobs:
           CAPITAL: ${{ vars.CAPITAL }}
           INTRADAY_LEVERAGE: ${{ vars.INTRADAY_LEVERAGE }}
         run: python run_morning.py
+      - name: Save ideas for the planner page
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/ideas.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "10 AM ideas $(date -u +%F)" && git pull --rebase && git push)

@@ -14,6 +14,7 @@ import pandas as pd
 
 from agent import morning
 from agent.data import fetch_daily
+from agent.export import write_ideas
 from agent.indicators import add_indicators
 from agent.notify import send_telegram
 from agent.signals import Suggestion
@@ -112,6 +113,7 @@ def main():
     msg = morning.to_telegram(today, market, moves.get("NIFTY 50"), moves.get("BANK NIFTY"),
                               moves.get("INDIA VIX"), adv, dec, setups, trig)
     print(msg)
+    write_ideas(ROOT / "docs" / "ideas.json", "morning", today, {"setups": setups}, {"mood": market})
     if not args.no_send:
         send_telegram(msg)
     log.info("mood %s, %d setups, %d triggered", market, len(setups), len(trig))
