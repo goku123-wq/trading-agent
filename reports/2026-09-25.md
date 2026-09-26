@@ -2,7 +2,7 @@
 
 > Rule-based signals for education only. Not financial advice. Do your own research.
 
-> Baskets are sized so all picks together make ~₹5.0k at target. Intraday needs only the broker's margin, not the full capital.
+> Baskets aim for ~₹5.0k combined at target using up to ₹50.0k. Intraday uses broker margin (MIS); square off by 3:15 PM.
 
 ## Stop-loss / target alerts
 
@@ -16,23 +16,28 @@ _No positions listed. Add them to config/positions.csv._
 
 | Stock | Action | Entry | Stop | Target | Qty | Capital | Profit at target | Loss at stop | Cap |
 |---|---|---|---|---|---|---|---|---|---|
-| MOTHERSON | BUY | 165.71 | 158.1 | 180.92 | 66 | ₹10.9k | ₹1.0k | ₹502 | Large |
-| ENRIN | BUY | 3313.0 | 3103.84 | 3731.32 | 3 | ₹9.9k | ₹1.3k | ₹627 | Large |
-| TORNTPHARM | BUY | 4988.5 | 4785.67 | 5394.17 | 3 | ₹15.0k | ₹1.2k | ₹608 | Large |
-| BHEL | BUY | 418.95 | 395.24 | 466.37 | 22 | ₹9.2k | ₹1.0k | ₹522 | Mid |
-| LICI | BUY | 409.05 | 391.13 | 444.88 | 28 | ₹11.5k | ₹1.0k | ₹502 | Mid |
-| **Total** | | | | | | **₹56.5k** | **₹5.5k** | **₹2.8k** | |
+| ENRIN | BUY | 3313.0 | 3103.84 | 3731.32 | 2 | ₹6.6k | ₹837 | ₹418 | Large |
+| MOTHERSON | BUY | 165.71 | 158.1 | 180.92 | 63 | ₹10.4k | ₹958 | ₹479 | Large |
+| TORNTPHARM | BUY | 4988.5 | 4785.67 | 5394.17 | 2 | ₹10.0k | ₹811 | ₹406 | Large |
+| MOTILALOFS | BUY | 1029.0 | 947.39 | 1192.23 | 6 | ₹6.2k | ₹979 | ₹490 | Mid |
+| BHEL | BUY | 418.95 | 395.24 | 466.37 | 21 | ₹8.8k | ₹996 | ₹498 | Mid |
+| **Total** | | | | | | **₹42.0k** | **₹4.6k** | **₹2.3k** | |
+
+Uses ₹42.0k of your ₹50.0k | +₹4.6k at targets | -₹2.3k if all stops hit
+⚠️ ₹5.0k needs more capital than ₹50.0k on these picks; sized down to fit.
 
 ## Intraday basket for next session
 
 | Stock | Action | Entry | Stop | Target | Qty | Capital | Profit at target | Loss at stop | Cap |
 |---|---|---|---|---|---|---|---|---|---|
-| ADANIENT | SELL below | 2895.27 | 2939.9 | 2828.34 | 15 | ₹43.4k | ₹1.0k | ₹669 | Large |
-| BANKBARODA | SELL below | 233.75 | 236.03 | 230.34 | 294 | ₹68.7k | ₹1.0k | ₹670 | Large |
-| GODREJCP | SELL below | 869.76 | 880.55 | 853.56 | 62 | ₹53.9k | ₹1.0k | ₹669 | Large |
 | VBL | BUY above | 437.54 | 428.3 | 451.4 | 73 | ₹31.9k | ₹1.0k | ₹675 | Large |
-| VEDL | SELL below | 263.6 | 267.25 | 258.13 | 183 | ₹48.2k | ₹1.0k | ₹668 | Large |
-| **Total** | | | | | | **₹2.5L** | **₹5.0k** | **₹3.4k** | |
+| COFORGE | SELL below | 1761.81 | 1793.6 | 1714.13 | 21 | ₹37.0k | ₹1.0k | ₹668 | Mid |
+| COCHINSHIP | SELL below | 1361.07 | 1385.0 | 1325.16 | 28 | ₹38.1k | ₹1.0k | ₹670 | Mid |
+| HEXT | SELL below | 491.0 | 499.5 | 478.24 | 79 | ₹38.8k | ₹1.0k | ₹672 | Mid |
+| ADANIENT | SELL below | 2895.27 | 2939.9 | 2828.34 | 15 | ₹43.4k | ₹1.0k | ₹669 | Large |
+| **Total** | | | | | | **₹1.9L** | **₹5.0k** | **₹3.4k** | |
+
+Uses ₹37.9k margin of your ₹50.0k (exposure ₹1.9L at ~5x) | +₹5.0k at targets | -₹3.4k if all stops hit
 
 ## All long-term buys
 
