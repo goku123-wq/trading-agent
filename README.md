@@ -39,6 +39,8 @@ The report builds **baskets** that aim for a combined profit of about ₹5,000 a
 - **Long-term basket**: the 3 best large caps + 2 best mid caps. Paid in full (delivery), so it must fit in ₹50,000.
 - **Intraday basket**: the 5 best next-session levels. Intraday (MIS) only needs margin, assumed ~5x, so ₹50,000
   of margin covers up to ₹2.5L of exposure. The 10 AM check builds its own intraday basket the same way.
+- Baskets are **buy-only**: every pick reads `BUY` or `BUY above <level> | SL | T`. Short-sell ("SELL below") ideas
+  still appear in the full intraday list of the report, but never in a basket.
 
 The goal is split equally across the picks: each stock's quantity is `(goal / picks) / (target - entry)`, rounded
 up. If that needs more than the capital allows, all quantities are scaled down to fit and the report says the goal

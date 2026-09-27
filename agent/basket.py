@@ -66,9 +66,12 @@ class Basket:
 
 
 def pick(ideas: list[Suggestion], size: int = 5, mix: Optional[dict] = None) -> list[Suggestion]:
-    """Top ideas by score; with `mix` (e.g. {"Large": 3, "Mid": 2}) take that many per cap first."""
+    """Top buy ideas by score; with `mix` (e.g. {"Large": 3, "Mid": 2}) take that many per cap first.
+
+    Baskets are buy-only (BUY / BUY above): no short-selling.
+    """
     # Best score first; among equals prefer bigger % moves so the goal needs less capital.
-    ideas = sorted((s for s in ideas if s.action != "SELL/EXIT" and s.target != s.entry),
+    ideas = sorted((s for s in ideas if s.action.startswith("BUY") and s.target != s.entry),
                    key=lambda s: (-s.score, -abs(s.target - s.entry) / s.entry))
     chosen = []
     for cap, n in (mix or {}).items():

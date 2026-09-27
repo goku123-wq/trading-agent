@@ -82,6 +82,6 @@ def test_telegram_text():
 
 def test_telegram_groups_by_cap():
     a = Suggestion("BIG", "10am", "BUY", 1, 0.9, 1.15, 80, ["r"], cap="Large")
-    b = Suggestion("MIDDY", "10am", "SELL", 1, 1.1, 0.85, 70, ["r"], cap="Mid")
+    b = Suggestion("MIDDY", "10am", "BUY", 1, 0.9, 1.15, 70, ["r"], cap="Mid")
     msg = morning.to_telegram(pd.Timestamp("2026-09-28").date(), "Mixed", None, None, None, 1, 1, [a, b], [])
     assert "Basket now: ~" in msg and "[L] BIG" in msg and "[M] MIDDY" in msg and "Qty" in msg

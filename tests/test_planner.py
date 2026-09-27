@@ -10,7 +10,8 @@ def idea(sym, cap, entry=100, stop=95, target=110, action="BUY", score=80):
 IDEAS = {"daily": {"day": "2026-09-25",
                    "long_term": [idea("L1", "Large"), idea("L2", "Large"), idea("L3", "Large"), idea("M1", "Mid"),
                                  idea("M2", "Mid")],
-                   "intraday": [idea("I1", "Large", 100, 102, 97, "SELL below", 70)]}}
+                   "intraday": [idea("I1", "Large", 100, 98, 103, "BUY above", 70),
+                                idea("I2", "Large", 100, 102, 97, "SELL below", 90)]}}
 
 
 def test_parse_request():
@@ -27,7 +28,7 @@ def test_answer_both_baskets():
     txt = answer(IDEAS, 50000, 5000)
     assert "Plan for ₹50.0k capital, ₹5.0k profit goal" in txt
     assert "Long-term" in txt and "L1" in txt and "M2" in txt
-    assert "Intraday" in txt and "I1" in txt and "pick one" in txt
+    assert "Intraday" in txt and "I1" in txt and "I2" not in txt and "pick one" in txt
 
 
 def test_answer_one_style_and_no_report():

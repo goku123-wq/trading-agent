@@ -29,9 +29,11 @@ def test_pick_mix_and_skips_exits():
     assert sorted(got) == ["L1", "L2", "L3", "L4", "M1"]
 
 
-def test_short_leg_and_empty():
-    short = Suggestion("X", "intraday", "SELL below", 100, 102, 97, 50)
-    b = make_basket([short], goal=5000, budget=10**9)
+def test_buy_only_and_empty():
+    short = Suggestion("S", "intraday", "SELL below", 100, 102, 97, 90)
+    buy = Suggestion("X", "intraday", "BUY above", 100, 98, 103, 50)
+    b = make_basket([short, buy], goal=5000, budget=10**9)
+    assert [leg.s.symbol for leg in b.legs] == ["X"]  # no short-selling
     assert b.legs[0].qty == 1667 and b.loss == 3334
     assert make_basket([], goal=5000).legs == []
 
@@ -61,12 +63,12 @@ def test_capital_cap_scales_down_and_warns():
 
 
 def test_intraday_leverage_uses_margin():
-    short = Suggestion("X", "intraday", "SELL below", 100, 102, 97, 50)  # 3% move: Rs 5k needs 1.67L exposure
-    b = make_basket([short], goal=5000, budget=50000, leverage=5)
+    buy = Suggestion("X", "intraday", "BUY above", 100, 98, 103, 50)  # 3% move: Rs 5k needs 1.67L exposure
+    b = make_basket([buy], goal=5000, budget=50000, leverage=5)
     assert b.legs[0].qty == 1667 and not b.short_of_goal
     assert round(b.margin) == 33340
     assert "margin of your ₹50.0k" in "\n".join(basket_lines("B", b))
-    assert make_basket([short], goal=5000, budget=50000, leverage=1).short_of_goal
+    assert make_basket([buy], goal=5000, budget=50000, leverage=1).short_of_goal
 
 
 def test_capital_env(monkeypatch):

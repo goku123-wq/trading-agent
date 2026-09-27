@@ -159,7 +159,7 @@
   const pct = (s) => move(s) / s.entry;
 
   function pick(ideas, size, mix) {
-    const pool = ideas.filter((s) => s.action !== "SELL/EXIT" && s.target !== s.entry)
+    const pool = ideas.filter((s) => s.action.startsWith("BUY") && s.target !== s.entry)
       .sort((a, b) => b.score - a.score || pct(b) - pct(a));
     const chosen = [];
     for (const [cap, n] of Object.entries(mix || {})) chosen.push(...pool.filter((s) => s.cap === cap).slice(0, n));
