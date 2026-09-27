@@ -1,4 +1,4 @@
-# ind_niftymidcap150list.csv from NSE, updated 2026-09-26. Regenerated weekly; edit watchlist.txt instead.
+# ind_niftymidcap150list.csv from NSE, updated 2026-09-27. Regenerated weekly; edit watchlist.txt instead.
 360ONE
 3MINDIA
 ACC
