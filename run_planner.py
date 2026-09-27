@@ -1,12 +1,13 @@
 """Morning Telegram planner.
 
-    python run_planner.py --ask    # 8:00 AM: ask for capital and profit goal
-    python run_planner.py          # every few minutes until 9:30: answer any replies
+    python run_planner.py --ask --listen 85   # 8:00 AM: ask, then answer replies live until ~9:25
+    python run_planner.py                     # answer any waiting replies once and exit
 """
 import argparse
 import json
 import logging
 import os
+import time
 from pathlib import Path
 
 from agent.notify import get_updates, send_telegram
@@ -34,27 +35,39 @@ def handle(updates: list[dict], chat_id: str, ideas: dict) -> list[str]:
     return replies
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--ask", action="store_true")
-    args = ap.parse_args()
-    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
-
-    if args.ask:
-        send_telegram(ASK)
-        return
-    state = load_json(STATE, {})
-    updates = get_updates(state.get("offset"))
+def poll_once(state: dict, chat_id: str, wait: int = 0) -> int:
+    updates = get_updates(state.get("offset"), wait)
     if not updates:
-        log.info("no new messages")
-        return
-    ideas = json.loads((ROOT / "docs" / "ideas.json").read_text()) if (ROOT / "docs" / "ideas.json").exists() else {}
-    chat_id = (os.getenv("TELEGRAM_CHAT_ID") or "").strip()
+        return 0
+    path = ROOT / "docs" / "ideas.json"
+    ideas = json.loads(path.read_text()) if path.exists() else {}
     for text in handle(updates, chat_id, ideas):
         send_telegram(text)
     state["offset"] = max(u["update_id"] for u in updates) + 1
     save_json(STATE, state)
-    log.info("%d updates handled", len(updates))
+    return len(updates)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--ask", action="store_true", help="send the morning question first")
+    ap.add_argument("--listen", type=float, default=0, help="keep answering replies for this many minutes")
+    args = ap.parse_args()
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+
+    chat_id = (os.getenv("TELEGRAM_CHAT_ID") or "").strip()
+    state = load_json(STATE, {})
+    if args.ask:
+        old = get_updates(state.get("offset"))  # skip anything sent before the question
+        if old:
+            state["offset"] = max(u["update_id"] for u in old) + 1
+            save_json(STATE, state)
+        send_telegram(ASK)
+    deadline = time.monotonic() + args.listen * 60
+    handled = poll_once(state, chat_id)
+    while time.monotonic() < deadline:
+        handled += poll_once(state, chat_id, wait=int(min(25, max(1, deadline - time.monotonic()))))
+    log.info("%d messages handled", handled)
 
 
 if __name__ == "__main__":

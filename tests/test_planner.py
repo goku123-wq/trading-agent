@@ -42,3 +42,26 @@ def test_handle_ignores_strangers_and_helps():
            {"update_id": 4, "message": {"chat": {"id": 42}, "text": "/start"}}]
     out = handle(ups, "42", IDEAS)
     assert len(out) == 3 and "Plan for" in out[0] and out[1] == HELP and out[2] == ASK
+
+
+def test_listen_loop_answers_and_skips_old(monkeypatch, tmp_path):
+    import run_planner
+    sent, calls = [], []
+    batches = [[{"update_id": 5, "message": {"chat": {"id": 42}, "text": "old 1 2"}}],  # before the question
+               [], [{"update_id": 6, "message": {"chat": {"id": 42}, "text": "50000 5000"}}], []]
+
+    def fake_updates(offset=None, wait=0):
+        calls.append(offset)
+        return batches.pop(0) if batches else []
+
+    monkeypatch.setattr(run_planner, "STATE", tmp_path / "t.json")
+    monkeypatch.setattr(run_planner, "get_updates", fake_updates)
+    monkeypatch.setattr(run_planner, "send_telegram", sent.append)
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "42")
+    monkeypatch.setattr("sys.argv", ["run_planner.py", "--ask", "--listen", "0.001"])
+    t = iter([0, 0, 0, 100])
+    monkeypatch.setattr(run_planner.time, "monotonic", lambda: next(t, 100))
+    run_planner.main()
+    assert sent[0] == ASK
+    assert any("Plan for ₹50.0k" in m or "No report yet" in m for m in sent[1:])
+    assert calls[1] == 6  # old message skipped

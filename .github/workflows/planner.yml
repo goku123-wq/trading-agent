@@ -2,14 +2,17 @@ name: Morning planner
 
 on:
   schedule:
-    - cron: "30 2 * * 1-5"      # 8:00 AM IST: ask for capital and profit goal
-    - cron: "*/5 2-3 * * 1-5"   # 7:30-9:25 AM IST: answer replies (GitHub may run these a few minutes late)
+    - cron: "30 2 * * 1-5"   # 8:00 AM IST: ask for capital and profit goal, then answer replies live until ~9:25
   workflow_dispatch:
     inputs:
       ask:
-        description: "Send the question now (otherwise: answer replies)"
+        description: "Send the question first"
         type: boolean
-        default: false
+        default: true
+      listen:
+        description: "Minutes to keep answering replies"
+        type: number
+        default: 15
 
 permissions:
   contents: write
@@ -20,6 +23,7 @@ concurrency:
 jobs:
   plan:
     runs-on: ubuntu-latest
+    timeout-minutes: 100
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,13 +31,17 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Ask or answer
+      - name: Ask and answer
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           INTRADAY_LEVERAGE: ${{ vars.INTRADAY_LEVERAGE }}
-        run: python run_planner.py ${{ (github.event.schedule == '30 2 * * 1-5' || inputs.ask) && '--ask' || '' }}
+        run: >-
+          python run_planner.py
+          ${{ (github.event_name == 'schedule' || inputs.ask) && '--ask' || '' }}
+          --listen ${{ github.event_name == 'schedule' && '85' || inputs.listen }}
       - name: Save message offset
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
