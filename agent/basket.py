@@ -24,8 +24,12 @@ def capital() -> float:
 
 
 def intraday_leverage() -> float:
-    """Exposure allowed per rupee of margin for intraday (MIS). Groww gives up to ~5x on many stocks."""
-    return _env_float("INTRADAY_LEVERAGE", 5)
+    """Exposure allowed per rupee of capital for intraday (MIS).
+
+    Default 1: the basket's total buy value stays within your amount. Groww gives up to ~5x margin on many
+    stocks; set INTRADAY_LEVERAGE to use it.
+    """
+    return _env_float("INTRADAY_LEVERAGE", 1)
 
 
 @dataclass

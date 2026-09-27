@@ -136,15 +136,15 @@
 
   <footer>
     Quantities split your profit goal equally across the picks: shares = (goal ÷ picks) ÷ (target − entry), rounded up,
-    then scaled down if they need more than your capital. Intraday assumes about 5x margin on Groww (MIS); the real
-    figure varies by stock. Ideas come from simple rules on Yahoo Finance prices and refresh after 5 PM and at 10 AM
+    then scaled down if they need more than your capital. The total buy value of every basket, intraday included,
+    stays within your capital (no margin). Ideas come from simple rules on Yahoo Finance prices and refresh after 5 PM and at 10 AM
     on trading days. This is not financial advice.
   </footer>
 </main>
 
 <script>
 (() => {
-  const LEVERAGE = 5;
+  const LEVERAGE = 1;
   const $ = (id) => document.getElementById(id);
   let DATA = null;
   const state = { style: "long" };
@@ -215,7 +215,7 @@
     const lev = style === "long" ? 1 : LEVERAGE;
     save({ capital, goal, size, caps, style });
 
-    $("capHint").textContent = style === "long" ? "Cash you can put in." : `Used as margin: up to ${inr(capital * lev)} of trades at ~${lev}x.`;
+    $("capHint").textContent = style === "long" || lev <= 1 ? "Cash you can put in: the basket's total value stays within it." : `Used as margin: up to ${inr(capital * lev)} of trades at ~${lev}x.`;
     $("goalHint").textContent = capital ? `${(goal / capital * 100).toFixed(1)}% of your capital.` : "";
 
     const { list, when } = ideasFor(style);

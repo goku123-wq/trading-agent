@@ -37,8 +37,8 @@ On market holidays there is no data for the day, so nothing is sent.
 The report builds **baskets** that aim for a combined profit of about ₹5,000 at target using at most ₹50,000:
 
 - **Long-term basket**: the 3 best large caps + 2 best mid caps. Paid in full (delivery), so it must fit in ₹50,000.
-- **Intraday basket**: the 5 best next-session levels. Intraday (MIS) only needs margin, assumed ~5x, so ₹50,000
-  of margin covers up to ₹2.5L of exposure. The 10 AM check builds its own intraday basket the same way.
+- **Intraday basket**: the 5 best next-session levels. Its total buy value also stays within your capital (no
+  margin); set `INTRADAY_LEVERAGE` to e.g. 5 to size it on Groww's MIS margin instead. The 10 AM check builds its own intraday basket the same way.
 - Baskets are **buy-only**: every pick reads `BUY` or `BUY above <level> | SL | T`. Short-sell ("SELL below") ideas
   still appear in the full intraday list of the report, but never in a basket.
 
@@ -47,7 +47,7 @@ up. If that needs more than the capital allows, all quantities are scaled down t
 is out of reach with that capital (⚠️). Ties in score go to stocks with bigger % targets, which need less capital.
 
 Change the numbers with repository variables (Settings > Secrets and variables > Actions > Variables):
-`PROFIT_GOAL` (default 5000), `CAPITAL` (default 50000), `INTRADAY_LEVERAGE` (default 5).
+`PROFIT_GOAL` (default 5000), `CAPITAL` (default 50000), `INTRADAY_LEVERAGE` (default 1).
 
 ## 8 AM Telegram planner
 

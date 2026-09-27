@@ -83,3 +83,12 @@ def test_top_up_uses_spare_capital():
     assert b.capital <= 30000
     assert 30000 - b.capital < 4988.5  # nothing affordable left over but less than one BIG share
     assert b.profit > 2500
+
+
+def test_intraday_default_keeps_total_value_within_capital(monkeypatch):
+    monkeypatch.delenv("INTRADAY_LEVERAGE", raising=False)
+    from agent.basket import intraday_leverage
+    ideas = [Suggestion(f"S{i}", "intraday", "BUY above", 400 + 50 * i, 390 + 50 * i, 415 + 50 * i, 60)
+             for i in range(5)]
+    b = make_basket(ideas, goal=5000, budget=10000, leverage=intraday_leverage())
+    assert 9000 < b.capital <= 10000 and b.short_of_goal
