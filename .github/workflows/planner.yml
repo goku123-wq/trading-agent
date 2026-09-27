@@ -3,6 +3,7 @@ name: Morning planner
 on:
   schedule:
     - cron: "30 2 * * 1-5"   # 8:00 AM IST: ask for capital and profit goal, then answer replies live until ~9:25
+    - cron: "*/15 * * * *"   # any other time: answer messages every ~15 min (GitHub can run late)
   workflow_dispatch:
     inputs:
       ask:
@@ -38,8 +39,8 @@ jobs:
           INTRADAY_LEVERAGE: ${{ vars.INTRADAY_LEVERAGE }}
         run: >-
           python run_planner.py
-          ${{ (github.event_name == 'schedule' || inputs.ask) && '--ask' || '' }}
-          --listen ${{ github.event_name == 'schedule' && '85' || inputs.listen }}
+          ${{ (github.event.schedule == '30 2 * * 1-5' || inputs.ask) && '--ask' || '' }}
+          --listen ${{ github.event.schedule == '30 2 * * 1-5' && '85' || github.event_name == 'schedule' && '1' || inputs.listen }}
       - name: Save message offset
         if: always()
         run: |

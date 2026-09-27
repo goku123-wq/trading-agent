@@ -55,6 +55,8 @@ At 8:00 AM on weekdays the bot asks how much you want to trade and what profit y
 two numbers, e.g. `50000 5000` (also `50k 5k`, `1.5L 10k long`, `50000 5000 intraday`). Until about 9:25 AM the bot
 listens live and answers within seconds with the long-term and intraday
 baskets sized for your numbers, from the previous evening's ideas. Only messages from your own chat are answered.
+At any other time (evenings, weekends) you can still send `50000 5000`: the bot checks every ~15 minutes and replies
+with the latest ideas.
 
 ## Basket Planner page
 

@@ -61,7 +61,7 @@ def answer(ideas: dict, capital: float, goal: float, style: str = "both") -> str
 
 ASK = ("☀️ Good morning! How much do you want to trade today, and what profit are you aiming for?\n\n"
        "Reply with two numbers: capital then profit, e.g. 50000 5000 (or 50k 5k).\n"
-       "Add 'long' or 'intraday' to get just one basket. I'll reply within a few minutes, before 9:15.")
+       "Add 'long' or 'intraday' to get just one basket. Until 9:25 I reply within seconds; later, within ~15 minutes.")
 
 HELP = ("I didn't catch two amounts. Reply like: 50000 5000 (capital, then profit goal). "
         "You can also write 50k 5k or 1.5L 10k long.")
