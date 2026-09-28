@@ -110,9 +110,11 @@ def basket_lines(title: str, b, why: bool = False) -> list[str]:
 
 def sizing_note() -> str:
     from agent.signals import profit_goal
-    from agent.basket import capital
+    from agent.basket import capital, intraday_leverage
+    lev = intraday_leverage()
+    mis = f"on ~{lev:g}x broker margin" if lev > 1 else "total buy value within your capital"
     return (f"Baskets aim for ~{inr(profit_goal())} combined at target using up to {inr(capital())}. "
-            "Intraday uses broker margin (MIS); square off by 3:15 PM.")
+            f"Intraday (MIS): {mis}; square off by 3:15 PM.")
 
 
 def to_telegram(day: date, long_term, intraday, alerts=(), limit: int = 8) -> str:
