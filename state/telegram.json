@@ -1,3 +1,29 @@
 {
-  "offset": 730484431
+  "done": {
+    "daily-report.yml@2026-09-28": true,
+    "stop-check.yml@2026-09-28#15": true,
+    "stop-check.yml@2026-09-28#16": true,
+    "stop-check.yml@2026-09-28#17": true,
+    "stop-check.yml@2026-09-28#18": true,
+    "stop-check.yml@2026-09-28#19": true,
+    "stop-check.yml@2026-09-28#20": true,
+    "stop-check.yml@2026-09-28#21": true,
+    "stop-check.yml@2026-09-28#22": true,
+    "stop-check.yml@2026-09-28#23": true,
+    "stop-check.yml@2026-09-28#24": true,
+    "stop-check.yml@2026-09-28#25": true,
+    "stop-check.yml@2026-09-28#26": true,
+    "stop-check.yml@2026-09-28#27": true,
+    "stop-check.yml@2026-09-28#28": true,
+    "stop-check.yml@2026-09-28#29": true,
+    "stop-check.yml@2026-09-28#30": true,
+    "stop-check.yml@2026-09-28#31": true,
+    "stop-check.yml@2026-09-28#32": true,
+    "stop-check.yml@2026-09-28#33": true,
+    "stop-check.yml@2026-09-28#34": true,
+    "stop-check.yml@2026-09-28#35": true,
+    "stop-check.yml@2026-09-28#36": true,
+    "stop-check.yml@2026-09-28#37": true
+  },
+  "offset": 730484435
 }
