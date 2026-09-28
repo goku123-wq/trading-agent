@@ -1,8 +1,7 @@
 name: 10 AM market check
 
 on:
-  schedule:
-    - cron: "30 4 * * 1-5"   # 10:00 AM IST, Mon-Fri (GitHub may start it a few minutes late)
+  # Started by the always-on Telegram bot (planner.yml) on its own IST clock; GitHub's cron ran hours late.
   workflow_dispatch:
     inputs:
       test:

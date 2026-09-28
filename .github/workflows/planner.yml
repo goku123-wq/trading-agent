@@ -1,30 +1,41 @@
-name: Morning planner
+name: Telegram bot
 
+# Always-on (approved by Gokhil 2026-09-28): each run answers Telegram live for ~5.5 hours, sends the
+# 8 AM question and starts the 10 AM check, stop-loss checks, evening report and Sunday universe refresh
+# on its own IST clock, because GitHub's cron often starts hours late. Before exiting it starts the next
+# run. The hourly cron is only a watchdog that restarts the chain if it breaks; extra runs wait their turn.
+# To switch the bot off: Actions tab > Telegram bot > "..." > Disable workflow.
 on:
   schedule:
-    - cron: "30 2 * * 1-5"   # 8:00 AM IST: ask for capital and profit goal, then answer replies live until ~9:25
-    - cron: "*/15 * * * *"   # any other time: answer messages every ~15 min (GitHub can run late)
+    - cron: "7 * * * *"
   workflow_dispatch:
     inputs:
+      serve:
+        description: "Always-on mode (off = one-off test below)"
+        type: boolean
+        default: true
       ask:
-        description: "Send the question first"
+        description: "Test: send the question first"
         type: boolean
         default: true
       listen:
-        description: "Minutes to keep answering replies"
+        description: "Test: minutes to keep answering replies"
         type: number
         default: 15
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: planner
 
 jobs:
-  plan:
+  bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 100
+    timeout-minutes: 355
+    env:
+      SERVE: ${{ github.event_name == 'schedule' || inputs.serve }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -32,19 +43,24 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Ask and answer
+      - name: Answer Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           INTRADAY_LEVERAGE: ${{ vars.INTRADAY_LEVERAGE }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: >-
           python run_planner.py
-          ${{ (github.event.schedule == '30 2 * * 1-5' || inputs.ask) && '--ask' || '' }}
-          --listen ${{ github.event.schedule == '30 2 * * 1-5' && '85' || github.event_name == 'schedule' && '1' || inputs.listen }}
-      - name: Save message offset
+          ${{ env.SERVE == 'true' && '--serve 5.5' || format('{0} --listen {1}', inputs.ask && '--ask' || '', inputs.listen) }}
+      - name: Save state
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add state/telegram.json 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "Planner replies $(date -u +%FT%H%M)" && git pull --rebase && git push)
+          git diff --cached --quiet || (git commit -m "Bot state $(date -u +%FT%H%M)" && git pull --rebase && git push)
+      - name: Start the next run
+        if: (success() || failure()) && env.SERVE == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run planner.yml --ref "${{ github.ref_name }}"

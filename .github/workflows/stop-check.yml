@@ -1,8 +1,7 @@
 name: Stop-loss check
 
 on:
-  schedule:
-    - cron: "*/10 3-10 * * 1-5"   # every 10 min, 8:30 AM-4:20 PM IST; script skips outside 9:15-3:30
+  # Started by the always-on Telegram bot (planner.yml) on its own IST clock; GitHub's cron ran hours late.
   workflow_dispatch:
     inputs:
       test:

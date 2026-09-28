@@ -1,8 +1,7 @@
 name: Update stock lists
 
 on:
-  schedule:
-    - cron: "0 3 * * 0"   # Sunday 8:30 AM IST
+  # Started by the always-on Telegram bot (planner.yml) on its own IST clock; GitHub's cron ran hours late.
   workflow_dispatch:
 
 permissions:

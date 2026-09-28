@@ -1,8 +1,7 @@
 name: Daily report
 
 on:
-  schedule:
-    - cron: "30 11 * * 1-5"   # 5:00 PM IST, Mon-Fri (after NSE close + data settle)
+  # Started by the always-on Telegram bot (planner.yml) on its own IST clock; GitHub's cron ran hours late.
   workflow_dispatch:
 
 permissions:
