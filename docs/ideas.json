@@ -1249,5 +1249,113 @@
     ]
    }
   ]
+ },
+ "morning": {
+  "day": "2026-09-28",
+  "generated": "2026-09-28T10:05+05:30",
+  "setups": [
+   {
+    "symbol": "BAJAJ-AUTO",
+    "action": "SELL",
+    "entry": 11125.0,
+    "stop": 11214.86,
+    "target": 10990.21,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "EICHERMOT",
+    "action": "SELL",
+    "entry": 7270.0,
+    "stop": 7315.66,
+    "target": 7201.5,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "gap -0.7%",
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "ICICIBANK",
+    "action": "SELL",
+    "entry": 1301.5,
+    "stop": 1314.57,
+    "target": 1281.9,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "NTPC",
+    "action": "SELL",
+    "entry": 322.5,
+    "stop": 324.97,
+    "target": 318.79,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "RECLTD",
+    "action": "SELL",
+    "entry": 306.1,
+    "stop": 309.04,
+    "target": 301.69,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "gap -0.7%",
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "SBIN",
+    "action": "SELL",
+    "entry": 966.0,
+    "stop": 973.08,
+    "target": 955.38,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "UBL",
+    "action": "SELL",
+    "entry": 1230.4,
+    "stop": 1245.13,
+    "target": 1208.31,
+    "score": 80,
+    "cap": "Mid",
+    "reasons": [
+     "gap -0.7%",
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   }
+  ],
+  "mood": "Bearish"
  }
 }
