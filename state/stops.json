@@ -43,5 +43,41 @@
     "stop": 947.39,
     "symbol": "MOTILALOFS",
     "target": 1192.23
+  },
+  {
+    "entry": 2896.4,
+    "opened": "2026-09-28",
+    "side": "LONG",
+    "source": "report",
+    "stop": 2731.3,
+    "symbol": "GLAXO",
+    "target": 3226.61
+  },
+  {
+    "entry": 4650.6,
+    "opened": "2026-09-28",
+    "side": "LONG",
+    "source": "report",
+    "stop": 4393.01,
+    "symbol": "CRISIL",
+    "target": 5165.78
+  },
+  {
+    "entry": 289.85,
+    "opened": "2026-09-28",
+    "side": "LONG",
+    "source": "report",
+    "stop": 278.29,
+    "symbol": "PETRONET",
+    "target": 312.97
+  },
+  {
+    "entry": 5390.0,
+    "opened": "2026-09-28",
+    "side": "LONG",
+    "source": "report",
+    "stop": 5175.26,
+    "symbol": "HEROMOTOCO",
+    "target": 5819.49
   }
 ]
