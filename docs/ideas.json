@@ -310,15 +310,30 @@
   ]
  },
  "morning": {
-  "day": "2026-09-28",
-  "generated": "2026-09-28T10:05+05:30",
+  "day": "2026-09-29",
+  "generated": "2026-09-29T10:01+05:30",
   "setups": [
    {
-    "symbol": "BAJAJ-AUTO",
+    "symbol": "ABB",
     "action": "SELL",
-    "entry": 11125.0,
-    "stop": 11214.86,
-    "target": 10990.21,
+    "entry": 6859.5,
+    "stop": 6935.79,
+    "target": 6745.07,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "gap -1.5%",
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "BEL",
+    "action": "SELL",
+    "entry": 382.85,
+    "stop": 385.4,
+    "target": 379.03,
     "score": 80,
     "cap": "Large",
     "reasons": [
@@ -328,26 +343,11 @@
     ]
    },
    {
-    "symbol": "EICHERMOT",
+    "symbol": "TITAN",
     "action": "SELL",
-    "entry": 7270.0,
-    "stop": 7315.66,
-    "target": 7201.5,
-    "score": 80,
-    "cap": "Large",
-    "reasons": [
-     "gap -0.7%",
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
-    ]
-   },
-   {
-    "symbol": "ICICIBANK",
-    "action": "SELL",
-    "entry": 1301.5,
-    "stop": 1314.57,
-    "target": 1281.9,
+    "entry": 4762.5,
+    "stop": 4801.24,
+    "target": 4704.39,
     "score": 80,
     "cap": "Large",
     "reasons": [
@@ -357,27 +357,13 @@
     ]
    },
    {
-    "symbol": "NTPC",
+    "symbol": "COLPAL",
     "action": "SELL",
-    "entry": 322.5,
-    "stop": 324.97,
-    "target": 318.79,
+    "entry": 1817.4,
+    "stop": 1833.02,
+    "target": 1793.98,
     "score": 80,
-    "cap": "Large",
-    "reasons": [
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
-    ]
-   },
-   {
-    "symbol": "RECLTD",
-    "action": "SELL",
-    "entry": 306.1,
-    "stop": 309.04,
-    "target": 301.69,
-    "score": 80,
-    "cap": "Large",
+    "cap": "Mid",
     "reasons": [
      "gap -0.7%",
      "broke below 9:15-10:00 low",
@@ -386,13 +372,27 @@
     ]
    },
    {
-    "symbol": "SBIN",
+    "symbol": "NMDC",
     "action": "SELL",
-    "entry": 966.0,
-    "stop": 973.08,
-    "target": 955.38,
+    "entry": 76.5,
+    "stop": 77.38,
+    "target": 75.18,
     "score": 80,
-    "cap": "Large",
+    "cap": "Mid",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "TIINDIA",
+    "action": "SELL",
+    "entry": 2406.6,
+    "stop": 2435.96,
+    "target": 2362.55,
+    "score": 80,
+    "cap": "Mid",
     "reasons": [
      "broke below 9:15-10:00 low",
      "below VWAP",
@@ -402,13 +402,27 @@
    {
     "symbol": "UBL",
     "action": "SELL",
-    "entry": 1230.4,
-    "stop": 1245.13,
-    "target": 1208.31,
+    "entry": 1185.5,
+    "stop": 1206.74,
+    "target": 1153.65,
     "score": 80,
     "cap": "Mid",
     "reasons": [
-     "gap -0.7%",
+     "gap -3.1%",
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "LT",
+    "action": "SELL",
+    "entry": 3751.0,
+    "stop": 3769.5,
+    "target": 3723.25,
+    "score": 70,
+    "cap": "Large",
+    "reasons": [
      "broke below 9:15-10:00 low",
      "below VWAP",
      "daily trend down"
