@@ -79,5 +79,41 @@
     "stop": 5175.26,
     "symbol": "HEROMOTOCO",
     "target": 5819.49
+  },
+  {
+    "entry": 2100.0,
+    "opened": "2026-09-29",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1982.23,
+    "symbol": "HYUNDAI",
+    "target": 2335.54
+  },
+  {
+    "entry": 2972.9,
+    "opened": "2026-09-29",
+    "side": "LONG",
+    "source": "report",
+    "stop": 2807.7,
+    "symbol": "ADANIENT",
+    "target": 3303.3
+  },
+  {
+    "entry": 17803.0,
+    "opened": "2026-09-29",
+    "side": "LONG",
+    "source": "report",
+    "stop": 16227.26,
+    "symbol": "APARINDS",
+    "target": 20954.48
+  },
+  {
+    "entry": 1938.1,
+    "opened": "2026-09-29",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1828.55,
+    "symbol": "IPCALAB",
+    "target": 2157.2
   }
 ]
