@@ -115,5 +115,32 @@
     "stop": 1828.55,
     "symbol": "IPCALAB",
     "target": 2157.2
+  },
+  {
+    "entry": 204.0,
+    "opened": "2026-09-30",
+    "side": "LONG",
+    "source": "report",
+    "stop": 192.22,
+    "symbol": "ADANIPOWER",
+    "target": 227.56
+  },
+  {
+    "entry": 1278.0,
+    "opened": "2026-09-30",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1204.31,
+    "symbol": "ADANIGREEN",
+    "target": 1425.39
+  },
+  {
+    "entry": 3300.4,
+    "opened": "2026-09-30",
+    "side": "LONG",
+    "source": "report",
+    "stop": 3024.73,
+    "symbol": "MCX",
+    "target": 3851.75
   }
 ]
