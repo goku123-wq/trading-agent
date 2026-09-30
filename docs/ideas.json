@@ -531,125 +531,40 @@
   ]
  },
  "morning": {
-  "day": "2026-09-29",
-  "generated": "2026-09-29T10:01+05:30",
+  "day": "2026-09-30",
+  "generated": "2026-09-30T10:00+05:30",
   "setups": [
    {
-    "symbol": "ABB",
+    "symbol": "JSWENERGY",
     "action": "SELL",
-    "entry": 6859.5,
-    "stop": 6935.79,
-    "target": 6745.07,
-    "score": 80,
-    "cap": "Large",
-    "reasons": [
-     "gap -1.5%",
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
-    ]
-   },
-   {
-    "symbol": "BEL",
-    "action": "SELL",
-    "entry": 382.85,
-    "stop": 385.4,
-    "target": 379.03,
-    "score": 80,
-    "cap": "Large",
-    "reasons": [
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
-    ]
-   },
-   {
-    "symbol": "TITAN",
-    "action": "SELL",
-    "entry": 4762.5,
-    "stop": 4801.24,
-    "target": 4704.39,
-    "score": 80,
-    "cap": "Large",
-    "reasons": [
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
-    ]
-   },
-   {
-    "symbol": "COLPAL",
-    "action": "SELL",
-    "entry": 1817.4,
-    "stop": 1833.02,
-    "target": 1793.98,
-    "score": 80,
-    "cap": "Mid",
-    "reasons": [
-     "gap -0.7%",
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
-    ]
-   },
-   {
-    "symbol": "NMDC",
-    "action": "SELL",
-    "entry": 76.5,
-    "stop": 77.38,
-    "target": 75.18,
-    "score": 80,
-    "cap": "Mid",
-    "reasons": [
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
-    ]
-   },
-   {
-    "symbol": "TIINDIA",
-    "action": "SELL",
-    "entry": 2406.6,
-    "stop": 2435.96,
-    "target": 2362.55,
-    "score": 80,
-    "cap": "Mid",
-    "reasons": [
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
-    ]
-   },
-   {
-    "symbol": "UBL",
-    "action": "SELL",
-    "entry": 1185.5,
-    "stop": 1206.74,
-    "target": 1153.65,
-    "score": 80,
-    "cap": "Mid",
-    "reasons": [
-     "gap -3.1%",
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
-    ]
-   },
-   {
-    "symbol": "LT",
-    "action": "SELL",
-    "entry": 3751.0,
-    "stop": 3769.5,
-    "target": 3723.25,
+    "entry": 493.65,
+    "stop": 500.14,
+    "target": 483.92,
     "score": 70,
-    "cap": "Large",
+    "cap": "Mid",
     "reasons": [
+     "gap -0.6%",
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "FEDERALBNK",
+    "action": "SELL",
+    "entry": 321.75,
+    "stop": 324.15,
+    "target": 318.15,
+    "score": 60,
+    "cap": "Mid",
+    "reasons": [
+     "gap +0.6%",
      "broke below 9:15-10:00 low",
      "below VWAP",
      "daily trend down"
     ]
    }
   ],
-  "mood": "Bearish"
+  "mood": "Mixed"
  }
 }
