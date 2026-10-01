@@ -1,14 +1,5 @@
 [
   {
-    "entry": 165.71,
-    "opened": "2026-09-25",
-    "side": "LONG",
-    "source": "report",
-    "stop": 158.1,
-    "symbol": "MOTHERSON",
-    "target": 180.92
-  },
-  {
     "entry": 3313.0,
     "opened": "2026-09-25",
     "side": "LONG",
@@ -16,15 +7,6 @@
     "stop": 3103.84,
     "symbol": "ENRIN",
     "target": 3731.32
-  },
-  {
-    "entry": 4988.5,
-    "opened": "2026-09-25",
-    "side": "LONG",
-    "source": "report",
-    "stop": 4785.67,
-    "symbol": "TORNTPHARM",
-    "target": 5394.17
   },
   {
     "entry": 418.95,
@@ -45,24 +27,6 @@
     "target": 1192.23
   },
   {
-    "entry": 2896.4,
-    "opened": "2026-09-28",
-    "side": "LONG",
-    "source": "report",
-    "stop": 2731.3,
-    "symbol": "GLAXO",
-    "target": 3226.61
-  },
-  {
-    "entry": 4650.6,
-    "opened": "2026-09-28",
-    "side": "LONG",
-    "source": "report",
-    "stop": 4393.01,
-    "symbol": "CRISIL",
-    "target": 5165.78
-  },
-  {
     "entry": 289.85,
     "opened": "2026-09-28",
     "side": "LONG",
@@ -72,15 +36,6 @@
     "target": 312.97
   },
   {
-    "entry": 5390.0,
-    "opened": "2026-09-28",
-    "side": "LONG",
-    "source": "report",
-    "stop": 5175.26,
-    "symbol": "HEROMOTOCO",
-    "target": 5819.49
-  },
-  {
     "entry": 2100.0,
     "opened": "2026-09-29",
     "side": "LONG",
@@ -88,15 +43,6 @@
     "stop": 1982.23,
     "symbol": "HYUNDAI",
     "target": 2335.54
-  },
-  {
-    "entry": 2972.9,
-    "opened": "2026-09-29",
-    "side": "LONG",
-    "source": "report",
-    "stop": 2807.7,
-    "symbol": "ADANIENT",
-    "target": 3303.3
   },
   {
     "entry": 17803.0,
@@ -142,5 +88,32 @@
     "stop": 3024.73,
     "symbol": "MCX",
     "target": 3851.75
+  },
+  {
+    "entry": 879.0,
+    "opened": "2026-10-01",
+    "side": "LONG",
+    "source": "report",
+    "stop": 830.69,
+    "symbol": "CGPOWER",
+    "target": 975.63
+  },
+  {
+    "entry": 3804.0,
+    "opened": "2026-10-01",
+    "side": "LONG",
+    "source": "report",
+    "stop": 3621.31,
+    "symbol": "SIEMENS",
+    "target": 4169.38
+  },
+  {
+    "entry": 4253.2,
+    "opened": "2026-10-01",
+    "side": "LONG",
+    "source": "report",
+    "stop": 3971.44,
+    "symbol": "GVT&D",
+    "target": 4816.72
   }
 ]
