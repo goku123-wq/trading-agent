@@ -561,37 +561,37 @@
   ]
  },
  "morning": {
-  "day": "2026-09-30",
-  "generated": "2026-09-30T10:00+05:30",
+  "day": "2026-10-01",
+  "generated": "2026-10-01T10:00+05:30",
   "setups": [
    {
-    "symbol": "JSWENERGY",
-    "action": "SELL",
-    "entry": 493.65,
-    "stop": 500.14,
-    "target": 483.92,
-    "score": 70,
-    "cap": "Mid",
+    "symbol": "DLF",
+    "action": "BUY",
+    "entry": 668.7,
+    "stop": 659.78,
+    "target": 682.08,
+    "score": 60,
+    "cap": "Large",
     "reasons": [
-     "gap -0.6%",
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
+     "gap -1.3%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
     ]
    },
    {
-    "symbol": "FEDERALBNK",
-    "action": "SELL",
-    "entry": 321.75,
-    "stop": 324.15,
-    "target": 318.15,
+    "symbol": "LENSKART",
+    "action": "BUY",
+    "entry": 685.6,
+    "stop": 674.55,
+    "target": 702.17,
     "score": 60,
     "cap": "Mid",
     "reasons": [
-     "gap +0.6%",
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
+     "gap -0.9%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
     ]
    }
   ],
