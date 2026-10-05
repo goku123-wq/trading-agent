@@ -36,15 +36,6 @@
     "target": 312.97
   },
   {
-    "entry": 2100.0,
-    "opened": "2026-09-29",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1982.23,
-    "symbol": "HYUNDAI",
-    "target": 2335.54
-  },
-  {
     "entry": 17803.0,
     "opened": "2026-09-29",
     "side": "LONG",
@@ -115,5 +106,41 @@
     "stop": 3971.44,
     "symbol": "GVT&D",
     "target": 4816.72
+  },
+  {
+    "entry": 320.8,
+    "opened": "2026-10-05",
+    "side": "LONG",
+    "source": "report",
+    "stop": 303.6,
+    "symbol": "ETERNAL",
+    "target": 355.2
+  },
+  {
+    "entry": 1774.0,
+    "opened": "2026-10-05",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1685.03,
+    "symbol": "ADANIPORTS",
+    "target": 1951.94
+  },
+  {
+    "entry": 1852.0,
+    "opened": "2026-10-05",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1729.57,
+    "symbol": "COFORGE",
+    "target": 2096.86
+  },
+  {
+    "entry": 187.05,
+    "opened": "2026-10-05",
+    "side": "LONG",
+    "source": "report",
+    "stop": 176.08,
+    "symbol": "GROWW",
+    "target": 208.99
   }
 ]
