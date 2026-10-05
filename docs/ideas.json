@@ -412,40 +412,9 @@
   ]
  },
  "morning": {
-  "day": "2026-10-01",
-  "generated": "2026-10-01T10:00+05:30",
-  "setups": [
-   {
-    "symbol": "DLF",
-    "action": "BUY",
-    "entry": 668.7,
-    "stop": 659.78,
-    "target": 682.08,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "gap -1.3%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "LENSKART",
-    "action": "BUY",
-    "entry": 685.6,
-    "stop": 674.55,
-    "target": 702.17,
-    "score": 60,
-    "cap": "Mid",
-    "reasons": [
-     "gap -0.9%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   }
-  ],
-  "mood": "Mixed"
+  "day": "2026-10-05",
+  "generated": "2026-10-05T10:00+05:30",
+  "setups": [],
+  "mood": "Bullish"
  }
 }
