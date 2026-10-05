@@ -6,7 +6,7 @@
 
 ## Stop-loss / target alerts
 
-- 🔴 HYUNDAI hit stop-loss 1982.23 (price 2000.0, report idea)
+_None today._
 
 ## Your positions
 
