@@ -142,5 +142,32 @@
     "stop": 176.08,
     "symbol": "GROWW",
     "target": 208.99
+  },
+  {
+    "entry": 433.8,
+    "opened": "2026-10-06",
+    "side": "LONG",
+    "source": "report",
+    "stop": 407.86,
+    "symbol": "TMCV",
+    "target": 485.68
+  },
+  {
+    "entry": 178.1,
+    "opened": "2026-10-06",
+    "side": "LONG",
+    "source": "report",
+    "stop": 166.36,
+    "symbol": "SAIL",
+    "target": 201.57
+  },
+  {
+    "entry": 1241.0,
+    "opened": "2026-10-06",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1166.52,
+    "symbol": "NAUKRI",
+    "target": 1389.95
   }
 ]
