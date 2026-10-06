@@ -966,9 +966,25 @@
   ]
  },
  "morning": {
-  "day": "2026-10-05",
-  "generated": "2026-10-05T10:00+05:30",
-  "setups": [],
+  "day": "2026-10-06",
+  "generated": "2026-10-06T10:00+05:30",
+  "setups": [
+   {
+    "symbol": "INDUSTOWER",
+    "action": "BUY",
+    "entry": 390.1,
+    "stop": 385.59,
+    "target": 396.86,
+    "score": 80,
+    "cap": "Mid",
+    "reasons": [
+     "gap +1.1%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   }
+  ],
   "mood": "Bullish"
  }
 }
