@@ -169,5 +169,23 @@
     "stop": 1166.52,
     "symbol": "NAUKRI",
     "target": 1389.95
+  },
+  {
+    "entry": 3356.0,
+    "opened": "2026-10-07",
+    "side": "LONG",
+    "source": "report",
+    "stop": 3145.46,
+    "symbol": "BSE",
+    "target": 3777.08
+  },
+  {
+    "entry": 569.0,
+    "opened": "2026-10-07",
+    "side": "LONG",
+    "source": "report",
+    "stop": 526.85,
+    "symbol": "KALYANKJIL",
+    "target": 653.31
   }
 ]
