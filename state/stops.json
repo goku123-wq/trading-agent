@@ -54,15 +54,6 @@
     "target": 2157.2
   },
   {
-    "entry": 204.0,
-    "opened": "2026-09-30",
-    "side": "LONG",
-    "source": "report",
-    "stop": 192.22,
-    "symbol": "ADANIPOWER",
-    "target": 227.56
-  },
-  {
     "entry": 1278.0,
     "opened": "2026-09-30",
     "side": "LONG",
@@ -117,15 +108,6 @@
     "target": 355.2
   },
   {
-    "entry": 1774.0,
-    "opened": "2026-10-05",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1685.03,
-    "symbol": "ADANIPORTS",
-    "target": 1951.94
-  },
-  {
     "entry": 1852.0,
     "opened": "2026-10-05",
     "side": "LONG",
@@ -153,15 +135,6 @@
     "target": 485.68
   },
   {
-    "entry": 178.1,
-    "opened": "2026-10-06",
-    "side": "LONG",
-    "source": "report",
-    "stop": 166.36,
-    "symbol": "SAIL",
-    "target": 201.57
-  },
-  {
     "entry": 1241.0,
     "opened": "2026-10-06",
     "side": "LONG",
@@ -187,5 +160,50 @@
     "stop": 526.85,
     "symbol": "KALYANKJIL",
     "target": 653.31
+  },
+  {
+    "entry": 115.29,
+    "opened": "2026-10-08",
+    "side": "LONG",
+    "source": "report",
+    "stop": 110.04,
+    "symbol": "PNB",
+    "target": 125.79
+  },
+  {
+    "entry": 2876.3,
+    "opened": "2026-10-08",
+    "side": "LONG",
+    "source": "report",
+    "stop": 2735.45,
+    "symbol": "TRENT",
+    "target": 3158.0
+  },
+  {
+    "entry": 537.0,
+    "opened": "2026-10-08",
+    "side": "LONG",
+    "source": "report",
+    "stop": 503.37,
+    "symbol": "LICHSGFIN",
+    "target": 604.26
+  },
+  {
+    "entry": 550.1,
+    "opened": "2026-10-08",
+    "side": "LONG",
+    "source": "report",
+    "stop": 516.99,
+    "symbol": "AIIL",
+    "target": 616.33
+  },
+  {
+    "entry": 435.3,
+    "opened": "2026-10-08",
+    "side": "LONG",
+    "source": "report",
+    "stop": 424.77,
+    "symbol": "EMBASSY",
+    "target": 456.36
   }
 ]
