@@ -412,9 +412,125 @@
   ]
  },
  "morning": {
-  "day": "2026-10-07",
-  "generated": "2026-10-07T10:00+05:30",
-  "setups": [],
+  "day": "2026-10-08",
+  "generated": "2026-10-08T10:01+05:30",
+  "setups": [
+   {
+    "symbol": "ADANIENSOL",
+    "action": "SELL",
+    "entry": 1284.1,
+    "stop": 1309.02,
+    "target": 1246.71,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "gap -1.8%",
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "ADANIENT",
+    "action": "SELL",
+    "entry": 2632.5,
+    "stop": 2695.52,
+    "target": 2537.97,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "ADANIPORTS",
+    "action": "SELL",
+    "entry": 1699.2,
+    "stop": 1724.41,
+    "target": 1661.38,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "ADANIPOWER",
+    "action": "SELL",
+    "entry": 190.43,
+    "stop": 193.87,
+    "target": 185.27,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "gap -0.6%",
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "MUTHOOTFIN",
+    "action": "SELL",
+    "entry": 2601.0,
+    "stop": 2641.4,
+    "target": 2540.41,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "AUBANK",
+    "action": "SELL",
+    "entry": 988.0,
+    "stop": 996.4,
+    "target": 975.4,
+    "score": 80,
+    "cap": "Mid",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "SCHAEFFLER",
+    "action": "SELL",
+    "entry": 3756.3,
+    "stop": 3789.63,
+    "target": 3706.31,
+    "score": 80,
+    "cap": "Mid",
+    "reasons": [
+     "gap -1.0%",
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "INDUSINDBK",
+    "action": "SELL",
+    "entry": 866.25,
+    "stop": 875.86,
+    "target": 851.84,
+    "score": 70,
+    "cap": "Mid",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   }
+  ],
   "mood": "Bearish"
  }
 }
