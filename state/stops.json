@@ -1,14 +1,5 @@
 [
   {
-    "entry": 3313.0,
-    "opened": "2026-09-25",
-    "side": "LONG",
-    "source": "report",
-    "stop": 3103.84,
-    "symbol": "ENRIN",
-    "target": 3731.32
-  },
-  {
     "entry": 418.95,
     "opened": "2026-09-25",
     "side": "LONG",
@@ -79,15 +70,6 @@
     "stop": 830.69,
     "symbol": "CGPOWER",
     "target": 975.63
-  },
-  {
-    "entry": 3804.0,
-    "opened": "2026-10-01",
-    "side": "LONG",
-    "source": "report",
-    "stop": 3621.31,
-    "symbol": "SIEMENS",
-    "target": 4169.38
   },
   {
     "entry": 4253.2,
@@ -205,5 +187,23 @@
     "stop": 424.77,
     "symbol": "EMBASSY",
     "target": 456.36
+  },
+  {
+    "entry": 1761.0,
+    "opened": "2026-10-09",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1664.27,
+    "symbol": "ADANIPORTS",
+    "target": 1954.47
+  },
+  {
+    "entry": 173.06,
+    "opened": "2026-10-09",
+    "side": "LONG",
+    "source": "report",
+    "stop": 163.21,
+    "symbol": "UNIONBANK",
+    "target": 192.77
   }
 ]
