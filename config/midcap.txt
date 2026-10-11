@@ -1,4 +1,4 @@
-# ind_niftymidcap150list.csv from NSE, updated 2026-10-04. Regenerated weekly; edit watchlist.txt instead.
+# ind_niftymidcap150list.csv from NSE, updated 2026-10-11. Regenerated weekly; edit watchlist.txt instead.
 360ONE
 AIAENG
 APLAPOLLO
