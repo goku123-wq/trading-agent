@@ -198,15 +198,6 @@
     "target": 192.77
   },
   {
-    "entry": 8405.0,
-    "opened": "2026-10-12",
-    "side": "LONG",
-    "source": "report",
-    "stop": 8014.25,
-    "symbol": "POLYCAB",
-    "target": 9186.51
-  },
-  {
     "entry": 1080.6,
     "opened": "2026-10-12",
     "side": "LONG",
@@ -214,5 +205,32 @@
     "stop": 1009.18,
     "symbol": "KPRMILL",
     "target": 1223.44
+  },
+  {
+    "entry": 6977.5,
+    "opened": "2026-10-13",
+    "side": "LONG",
+    "source": "report",
+    "stop": 6586.56,
+    "symbol": "ABB",
+    "target": 7759.37
+  },
+  {
+    "entry": 1543.5,
+    "opened": "2026-10-13",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1461.79,
+    "symbol": "TECHM",
+    "target": 1706.91
+  },
+  {
+    "entry": 1715.0,
+    "opened": "2026-10-13",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1568.87,
+    "symbol": "PAYTM",
+    "target": 2007.26
   }
 ]
