@@ -876,39 +876,25 @@
   ]
  },
  "morning": {
-  "day": "2026-10-12",
-  "generated": "2026-10-12T10:00+05:30",
+  "day": "2026-10-13",
+  "generated": "2026-10-13T10:01+05:30",
   "setups": [
    {
-    "symbol": "ASTRAL",
+    "symbol": "SRF",
     "action": "BUY",
-    "entry": 1438.4,
-    "stop": 1417.45,
-    "target": 1469.82,
+    "entry": 2492.1,
+    "stop": 2465.99,
+    "target": 2531.26,
     "score": 70,
     "cap": "Mid",
     "reasons": [
-     "gap +0.7%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "LICHSGFIN",
-    "action": "BUY",
-    "entry": 556.35,
-    "stop": 548.85,
-    "target": 567.6,
-    "score": 60,
-    "cap": "Mid",
-    "reasons": [
+     "gap -2.0%",
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
     ]
    }
   ],
-  "mood": "Mixed"
+  "mood": "Bullish"
  }
 }
