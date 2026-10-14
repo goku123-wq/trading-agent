@@ -1059,16 +1059,45 @@
   ]
  },
  "morning": {
-  "day": "2026-10-13",
-  "generated": "2026-10-13T10:01+05:30",
+  "day": "2026-10-14",
+  "generated": "2026-10-14T10:01+05:30",
   "setups": [
    {
-    "symbol": "SRF",
-    "action": "BUY",
-    "entry": 2492.1,
-    "stop": 2465.99,
-    "target": 2531.26,
+    "symbol": "MEDANTA",
+    "action": "SELL",
+    "entry": 1259.0,
+    "stop": 1276.78,
+    "target": 1232.34,
     "score": 70,
+    "cap": "Mid",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "ADANIGREEN",
+    "action": "BUY",
+    "entry": 1304.8,
+    "stop": 1279.97,
+    "target": 1342.04,
+    "score": 60,
+    "cap": "Large",
+    "reasons": [
+     "gap -0.6%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "AIIL",
+    "action": "BUY",
+    "entry": 548.1,
+    "stop": 538.28,
+    "target": 562.82,
+    "score": 60,
     "cap": "Mid",
     "reasons": [
      "gap -2.0%",
@@ -1076,8 +1105,37 @@
      "above VWAP",
      "daily trend up"
     ]
+   },
+   {
+    "symbol": "BHARTIHEXA",
+    "action": "BUY",
+    "entry": 1556.1,
+    "stop": 1537.85,
+    "target": 1583.48,
+    "score": 60,
+    "cap": "Mid",
+    "reasons": [
+     "gap -0.6%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "EXIDEIND",
+    "action": "SELL",
+    "entry": 391.15,
+    "stop": 395.48,
+    "target": 384.66,
+    "score": 60,
+    "cap": "Mid",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
    }
   ],
-  "mood": "Bullish"
+  "mood": "Mixed"
  }
 }
