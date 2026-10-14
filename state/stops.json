@@ -232,5 +232,41 @@
     "stop": 1568.87,
     "symbol": "PAYTM",
     "target": 2007.26
+  },
+  {
+    "entry": 1364.0,
+    "opened": "2026-10-14",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1264.87,
+    "symbol": "ADANIENSOL",
+    "target": 1562.26
+  },
+  {
+    "entry": 195.15,
+    "opened": "2026-10-14",
+    "side": "LONG",
+    "source": "report",
+    "stop": 181.48,
+    "symbol": "ADANIPOWER",
+    "target": 222.48
+  },
+  {
+    "entry": 4632.1,
+    "opened": "2026-10-14",
+    "side": "LONG",
+    "source": "report",
+    "stop": 4352.47,
+    "symbol": "FLUOROCHEM",
+    "target": 5191.35
+  },
+  {
+    "entry": 1381.6,
+    "opened": "2026-10-14",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1314.76,
+    "symbol": "UNITDSPR",
+    "target": 1515.27
   }
 ]
