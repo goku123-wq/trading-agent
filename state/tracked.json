@@ -63,24 +63,6 @@
     "target": 3851.75
   },
   {
-    "entry": 879.0,
-    "opened": "2026-10-01",
-    "side": "LONG",
-    "source": "report",
-    "stop": 830.69,
-    "symbol": "CGPOWER",
-    "target": 975.63
-  },
-  {
-    "entry": 4253.2,
-    "opened": "2026-10-01",
-    "side": "LONG",
-    "source": "report",
-    "stop": 3971.44,
-    "symbol": "GVT&D",
-    "target": 4816.72
-  },
-  {
     "entry": 320.8,
     "opened": "2026-10-05",
     "side": "LONG",
@@ -268,5 +250,23 @@
     "stop": 1314.76,
     "symbol": "UNITDSPR",
     "target": 1515.27
+  },
+  {
+    "entry": 1389.4,
+    "opened": "2026-10-15",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1339.2,
+    "symbol": "ICICIBANK",
+    "target": 1489.8
+  },
+  {
+    "entry": 1763.7,
+    "opened": "2026-10-15",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1641.84,
+    "symbol": "TATACOMM",
+    "target": 2007.41
   }
 ]
