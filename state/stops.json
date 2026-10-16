@@ -27,24 +27,6 @@
     "target": 312.97
   },
   {
-    "entry": 17803.0,
-    "opened": "2026-09-29",
-    "side": "LONG",
-    "source": "report",
-    "stop": 16227.26,
-    "symbol": "APARINDS",
-    "target": 20954.48
-  },
-  {
-    "entry": 1938.1,
-    "opened": "2026-09-29",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1828.55,
-    "symbol": "IPCALAB",
-    "target": 2157.2
-  },
-  {
     "entry": 1278.0,
     "opened": "2026-09-30",
     "side": "LONG",
@@ -198,15 +180,6 @@
     "target": 7759.37
   },
   {
-    "entry": 1543.5,
-    "opened": "2026-10-13",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1461.79,
-    "symbol": "TECHM",
-    "target": 1706.91
-  },
-  {
     "entry": 1715.0,
     "opened": "2026-10-13",
     "side": "LONG",
@@ -268,5 +241,32 @@
     "stop": 1641.84,
     "symbol": "TATACOMM",
     "target": 2007.41
+  },
+  {
+    "entry": 9144.5,
+    "opened": "2026-10-16",
+    "side": "LONG",
+    "source": "report",
+    "stop": 8698.99,
+    "symbol": "DIVISLAB",
+    "target": 10035.52
+  },
+  {
+    "entry": 1851.7,
+    "opened": "2026-10-16",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1747.62,
+    "symbol": "LLOYDSME",
+    "target": 2059.87
+  },
+  {
+    "entry": 854.1,
+    "opened": "2026-10-16",
+    "side": "LONG",
+    "source": "report",
+    "stop": 808.22,
+    "symbol": "INDIANB",
+    "target": 945.86
   }
 ]
