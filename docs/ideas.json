@@ -701,46 +701,32 @@
   ]
  },
  "morning": {
-  "day": "2026-10-15",
-  "generated": "2026-10-15T10:01+05:30",
+  "day": "2026-10-16",
+  "generated": "2026-10-16T10:00+05:30",
   "setups": [
+   {
+    "symbol": "LAURUSLABS",
+    "action": "BUY",
+    "entry": 2044.0,
+    "stop": 2029.3,
+    "target": 2066.05,
+    "score": 70,
+    "cap": "Mid",
+    "reasons": [
+     "gap +0.6%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
    {
     "symbol": "DLF",
     "action": "BUY",
-    "entry": 668.15,
-    "stop": 661.9,
-    "target": 677.53,
-    "score": 80,
+    "entry": 675.6,
+    "stop": 668.2,
+    "target": 686.7,
+    "score": 60,
     "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "LTM",
-    "action": "BUY",
-    "entry": 4354.6,
-    "stop": 4282.29,
-    "target": 4463.06,
-    "score": 80,
-    "cap": "Large",
-    "reasons": [
-     "gap +1.8%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "BLUESTARCO",
-    "action": "BUY",
-    "entry": 1610.9,
-    "stop": 1595.1,
-    "target": 1634.6,
-    "score": 80,
-    "cap": "Mid",
     "reasons": [
      "broke above 9:15-10:00 high",
      "above VWAP",
@@ -748,6 +734,6 @@
     ]
    }
   ],
-  "mood": "Bullish"
+  "mood": "Mixed"
  }
 }
