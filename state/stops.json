@@ -207,15 +207,6 @@
     "target": 222.48
   },
   {
-    "entry": 4632.1,
-    "opened": "2026-10-14",
-    "side": "LONG",
-    "source": "report",
-    "stop": 4352.47,
-    "symbol": "FLUOROCHEM",
-    "target": 5191.35
-  },
-  {
     "entry": 1381.6,
     "opened": "2026-10-14",
     "side": "LONG",
@@ -268,5 +259,32 @@
     "stop": 808.22,
     "symbol": "INDIANB",
     "target": 945.86
+  },
+  {
+    "entry": 855.0,
+    "opened": "2026-10-19",
+    "side": "LONG",
+    "source": "report",
+    "stop": 799.09,
+    "symbol": "CGPOWER",
+    "target": 966.82
+  },
+  {
+    "entry": 4454.1,
+    "opened": "2026-10-19",
+    "side": "LONG",
+    "source": "report",
+    "stop": 4164.41,
+    "symbol": "FLUOROCHEM",
+    "target": 5033.47
+  },
+  {
+    "entry": 80.96,
+    "opened": "2026-10-19",
+    "side": "LONG",
+    "source": "report",
+    "stop": 76.13,
+    "symbol": "MAHABANK",
+    "target": 90.62
   }
 ]
