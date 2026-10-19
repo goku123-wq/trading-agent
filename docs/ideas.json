@@ -1053,39 +1053,38 @@
   ]
  },
  "morning": {
-  "day": "2026-10-16",
-  "generated": "2026-10-16T10:00+05:30",
+  "day": "2026-10-19",
+  "generated": "2026-10-19T10:01+05:30",
   "setups": [
    {
-    "symbol": "LAURUSLABS",
-    "action": "BUY",
-    "entry": 2044.0,
-    "stop": 2029.3,
-    "target": 2066.05,
-    "score": 70,
+    "symbol": "ICICIAMC",
+    "action": "SELL",
+    "entry": 2759.3,
+    "stop": 2801.82,
+    "target": 2695.52,
+    "score": 80,
     "cap": "Mid",
     "reasons": [
-     "gap +0.6%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
     ]
    },
    {
-    "symbol": "DLF",
-    "action": "BUY",
-    "entry": 675.6,
-    "stop": 668.2,
-    "target": 686.7,
-    "score": 60,
-    "cap": "Large",
+    "symbol": "SCHAEFFLER",
+    "action": "SELL",
+    "entry": 3639.8,
+    "stop": 3672.3,
+    "target": 3591.05,
+    "score": 70,
+    "cap": "Mid",
     "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
     ]
    }
   ],
-  "mood": "Mixed"
+  "mood": "Bearish"
  }
 }
