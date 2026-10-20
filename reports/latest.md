@@ -53,7 +53,7 @@ Uses ₹49.9k of your ₹50.0k | +₹1.9k at targets | -₹1.3k if all stops hit
 | FLUOROCHEM | BUY | 4454.1 | 4164.41 | 5033.47 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 47 and turning up; up day on above-average volume |
 | ADANIPORTS | BUY | 1766.0 | 1677.75 | 1942.49 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 52 and turning up |
 | BAJAJHLDNG | BUY | 11265.0 | 10736.12 | 12322.76 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 59 and turning up |
-| EMBASSY | BUY | 435.4 | 424.88 | 456.43 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 50 and turning up |
+| EMBASSY | BUY | 435.93 | 425.45 | 456.88 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 51 and turning up |
 | INDIANB | BUY | 856.85 | 811.31 | 947.93 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 57 and turning up |
 | MEESHO | BUY | 229.59 | 209.57 | 269.63 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 54 and turning up |
 | MCX | BUY | 3184.5 | 2973.93 | 3605.64 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 46 and turning up |

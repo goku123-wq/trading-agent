@@ -1,7 +1,7 @@
 {
  "daily": {
   "day": "2026-10-19",
-  "generated": "2026-10-19T17:00+05:30",
+  "generated": "2026-10-20T17:00+05:30",
   "long_term": [
    {
     "symbol": "ABB",
@@ -154,15 +154,15 @@
    {
     "symbol": "EMBASSY",
     "action": "BUY",
-    "entry": 435.4,
-    "stop": 424.88,
-    "target": 456.43,
+    "entry": 435.93,
+    "stop": 425.45,
+    "target": 456.88,
     "score": 80,
     "cap": "Mid",
     "reasons": [
      "uptrend: price and 50-day above 200-day average",
      "pulled back near 20-day/50-day average",
-     "RSI 50 and turning up"
+     "RSI 51 and turning up"
     ]
    },
    {
