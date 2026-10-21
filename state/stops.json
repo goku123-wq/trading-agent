@@ -117,15 +117,6 @@
     "target": 3158.0
   },
   {
-    "entry": 537.0,
-    "opened": "2026-10-08",
-    "side": "LONG",
-    "source": "report",
-    "stop": 503.37,
-    "symbol": "LICHSGFIN",
-    "target": 604.26
-  },
-  {
     "entry": 550.1,
     "opened": "2026-10-08",
     "side": "LONG",
@@ -171,15 +162,6 @@
     "target": 1223.44
   },
   {
-    "entry": 6977.5,
-    "opened": "2026-10-13",
-    "side": "LONG",
-    "source": "report",
-    "stop": 6586.56,
-    "symbol": "ABB",
-    "target": 7759.37
-  },
-  {
     "entry": 1715.0,
     "opened": "2026-10-13",
     "side": "LONG",
@@ -205,15 +187,6 @@
     "stop": 181.48,
     "symbol": "ADANIPOWER",
     "target": 222.48
-  },
-  {
-    "entry": 1381.6,
-    "opened": "2026-10-14",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1314.76,
-    "symbol": "UNITDSPR",
-    "target": 1515.27
   },
   {
     "entry": 1389.4,
@@ -286,5 +259,23 @@
     "stop": 76.13,
     "symbol": "MAHABANK",
     "target": 90.62
+  },
+  {
+    "entry": 2019.0,
+    "opened": "2026-10-21",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1865.21,
+    "symbol": "PIRAMALFIN",
+    "target": 2326.58
+  },
+  {
+    "entry": 1918.9,
+    "opened": "2026-10-21",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1788.91,
+    "symbol": "IPCALAB",
+    "target": 2178.88
   }
 ]
