@@ -36,15 +36,6 @@
     "target": 1425.39
   },
   {
-    "entry": 3300.4,
-    "opened": "2026-09-30",
-    "side": "LONG",
-    "source": "report",
-    "stop": 3024.73,
-    "symbol": "MCX",
-    "target": 3851.75
-  },
-  {
     "entry": 320.8,
     "opened": "2026-10-05",
     "side": "LONG",
@@ -117,24 +108,6 @@
     "target": 3158.0
   },
   {
-    "entry": 550.1,
-    "opened": "2026-10-08",
-    "side": "LONG",
-    "source": "report",
-    "stop": 516.99,
-    "symbol": "AIIL",
-    "target": 616.33
-  },
-  {
-    "entry": 435.3,
-    "opened": "2026-10-08",
-    "side": "LONG",
-    "source": "report",
-    "stop": 424.77,
-    "symbol": "EMBASSY",
-    "target": 456.36
-  },
-  {
     "entry": 1761.0,
     "opened": "2026-10-09",
     "side": "LONG",
@@ -151,15 +124,6 @@
     "stop": 163.21,
     "symbol": "UNIONBANK",
     "target": 192.77
-  },
-  {
-    "entry": 1080.6,
-    "opened": "2026-10-12",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1009.18,
-    "symbol": "KPRMILL",
-    "target": 1223.44
   },
   {
     "entry": 1715.0,
@@ -277,5 +241,23 @@
     "stop": 1788.91,
     "symbol": "IPCALAB",
     "target": 2178.88
+  },
+  {
+    "entry": 4875.0,
+    "opened": "2026-10-22",
+    "side": "LONG",
+    "source": "report",
+    "stop": 4647.89,
+    "symbol": "HAL",
+    "target": 5329.22
+  },
+  {
+    "entry": 219.25,
+    "opened": "2026-10-22",
+    "side": "LONG",
+    "source": "report",
+    "stop": 198.65,
+    "symbol": "MEESHO",
+    "target": 260.44
   }
 ]
