@@ -1,4 +1,4 @@
-# ind_nifty100list.csv from NSE, updated 2026-10-18. Regenerated weekly; edit watchlist.txt instead.
+# ind_nifty100list.csv from NSE, updated 2026-10-25. Regenerated weekly; edit watchlist.txt instead.
 ABB
 ADANIENSOL
 ADANIENT

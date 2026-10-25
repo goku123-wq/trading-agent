@@ -1,4 +1,4 @@
-# ind_niftymidcap150list.csv from NSE, updated 2026-10-18. Regenerated weekly; edit watchlist.txt instead.
+# ind_niftymidcap150list.csv from NSE, updated 2026-10-25. Regenerated weekly; edit watchlist.txt instead.
 360ONE
 AIAENG
 APLAPOLLO
@@ -61,9 +61,9 @@ HEXT
 HINDCOPPER
 HINDPETRO
 HUDCO
+ICICILIFE
 ICICIGI
 ICICIAMC
-ICICIPRULI
 IDFCFIRSTB
 ITCHOTELS
 INDIANB
