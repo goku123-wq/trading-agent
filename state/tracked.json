@@ -117,15 +117,6 @@
     "target": 2178.88
   },
   {
-    "entry": 4875.0,
-    "opened": "2026-10-22",
-    "side": "LONG",
-    "source": "report",
-    "stop": 4647.89,
-    "symbol": "HAL",
-    "target": 5329.22
-  },
-  {
     "entry": 219.25,
     "opened": "2026-10-22",
     "side": "LONG",
@@ -151,5 +142,41 @@
     "stop": 3762.32,
     "symbol": "TVSMOTOR",
     "target": 4415.96
+  },
+  {
+    "entry": 1160.4,
+    "opened": "2026-10-26",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1094.72,
+    "symbol": "ZYDUSLIFE",
+    "target": 1291.76
+  },
+  {
+    "entry": 1260.0,
+    "opened": "2026-10-26",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1191.47,
+    "symbol": "JSWSTEEL",
+    "target": 1397.06
+  },
+  {
+    "entry": 169.8,
+    "opened": "2026-10-26",
+    "side": "LONG",
+    "source": "report",
+    "stop": 157.46,
+    "symbol": "SAIL",
+    "target": 194.47
+  },
+  {
+    "entry": 2058.9,
+    "opened": "2026-10-26",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1918.49,
+    "symbol": "LAURUSLABS",
+    "target": 2339.71
   }
 ]
