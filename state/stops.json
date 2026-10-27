@@ -178,5 +178,14 @@
     "stop": 1918.49,
     "symbol": "LAURUSLABS",
     "target": 2339.71
+  },
+  {
+    "entry": 80.0,
+    "opened": "2026-10-27",
+    "side": "LONG",
+    "source": "report",
+    "stop": 74.46,
+    "symbol": "MAHABANK",
+    "target": 91.07
   }
 ]
