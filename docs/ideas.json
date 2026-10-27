@@ -722,15 +722,30 @@
   ]
  },
  "morning": {
-  "day": "2026-10-26",
-  "generated": "2026-10-26T10:01+05:30",
+  "day": "2026-10-27",
+  "generated": "2026-10-27T10:01+05:30",
   "setups": [
    {
-    "symbol": "INDUSTOWER",
+    "symbol": "FEDERALBNK",
     "action": "BUY",
-    "entry": 382.35,
-    "stop": 377.42,
-    "target": 389.75,
+    "entry": 347.65,
+    "stop": 343.22,
+    "target": 354.3,
+    "score": 80,
+    "cap": "Mid",
+    "reasons": [
+     "gap +0.9%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "IPCALAB",
+    "action": "BUY",
+    "entry": 1963.0,
+    "stop": 1939.9,
+    "target": 1997.65,
     "score": 80,
     "cap": "Mid",
     "reasons": [
@@ -740,15 +755,74 @@
     ]
    },
    {
-    "symbol": "MPHASIS",
+    "symbol": "LTTS",
     "action": "BUY",
-    "entry": 2506.2,
-    "stop": 2447.71,
-    "target": 2593.93,
-    "score": 70,
+    "entry": 4114.5,
+    "stop": 4033.04,
+    "target": 4236.69,
+    "score": 80,
     "cap": "Mid",
     "reasons": [
-     "gap -1.3%",
+     "gap +3.2%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "LAURUSLABS",
+    "action": "BUY",
+    "entry": 2108.9,
+    "stop": 2076.93,
+    "target": 2156.85,
+    "score": 80,
+    "cap": "Mid",
+    "reasons": [
+     "gap +0.8%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "ADANIPORTS",
+    "action": "BUY",
+    "entry": 1758.4,
+    "stop": 1741.0,
+    "target": 1784.5,
+    "score": 70,
+    "cap": "Large",
+    "reasons": [
+     "gap -0.7%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "IOC",
+    "action": "BUY",
+    "entry": 130.84,
+    "stop": 129.69,
+    "target": 132.56,
+    "score": 70,
+    "cap": "Large",
+    "reasons": [
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "JSWSTEEL",
+    "action": "BUY",
+    "entry": 1252.4,
+    "stop": 1238.4,
+    "target": 1273.41,
+    "score": 70,
+    "cap": "Large",
+    "reasons": [
+     "gap -1.9%",
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
