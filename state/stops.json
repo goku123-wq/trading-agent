@@ -27,15 +27,6 @@
     "target": 208.99
   },
   {
-    "entry": 1241.0,
-    "opened": "2026-10-06",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1166.52,
-    "symbol": "NAUKRI",
-    "target": 1389.95
-  },
-  {
     "entry": 3356.0,
     "opened": "2026-10-07",
     "side": "LONG",
@@ -187,5 +178,32 @@
     "stop": 74.46,
     "symbol": "MAHABANK",
     "target": 91.07
+  },
+  {
+    "entry": 8137.0,
+    "opened": "2026-10-28",
+    "side": "LONG",
+    "source": "report",
+    "stop": 7688.0,
+    "symbol": "APOLLOHOSP",
+    "target": 9035.01
+  },
+  {
+    "entry": 1091.5,
+    "opened": "2026-10-28",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1009.54,
+    "symbol": "KPRMILL",
+    "target": 1255.43
+  },
+  {
+    "entry": 572.25,
+    "opened": "2026-10-28",
+    "side": "LONG",
+    "source": "report",
+    "stop": 517.67,
+    "symbol": "HEXT",
+    "target": 681.41
   }
 ]
