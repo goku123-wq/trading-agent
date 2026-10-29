@@ -205,5 +205,41 @@
     "stop": 517.67,
     "symbol": "HEXT",
     "target": 681.41
+  },
+  {
+    "entry": 1365.0,
+    "opened": "2026-10-29",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1260.98,
+    "symbol": "ADANIENSOL",
+    "target": 1573.05
+  },
+  {
+    "entry": 1307.0,
+    "opened": "2026-10-29",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1216.03,
+    "symbol": "ADANIGREEN",
+    "target": 1488.95
+  },
+  {
+    "entry": 986.1,
+    "opened": "2026-10-29",
+    "side": "LONG",
+    "source": "report",
+    "stop": 907.54,
+    "symbol": "MOTILALOFS",
+    "target": 1143.21
+  },
+  {
+    "entry": 1045.8,
+    "opened": "2026-10-29",
+    "side": "LONG",
+    "source": "report",
+    "stop": 973.12,
+    "symbol": "LODHA",
+    "target": 1191.17
   }
 ]
