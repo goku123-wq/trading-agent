@@ -1112,40 +1112,25 @@
   ]
  },
  "morning": {
-  "day": "2026-10-28",
-  "generated": "2026-10-28T10:01+05:30",
+  "day": "2026-10-29",
+  "generated": "2026-10-29T10:01+05:30",
   "setups": [
    {
-    "symbol": "BAJAJFINSV",
-    "action": "SELL",
-    "entry": 1642.4,
-    "stop": 1658.23,
-    "target": 1618.65,
-    "score": 80,
+    "symbol": "ADANIPORTS",
+    "action": "BUY",
+    "entry": 1810.0,
+    "stop": 1787.84,
+    "target": 1843.25,
+    "score": 70,
     "cap": "Large",
     "reasons": [
-     "gap -0.9%",
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
-    ]
-   },
-   {
-    "symbol": "POLICYBZR",
-    "action": "SELL",
-    "entry": 984.5,
-    "stop": 1001.8,
-    "target": 958.55,
-    "score": 80,
-    "cap": "Mid",
-    "reasons": [
-     "gap -0.9%",
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
+     "gap +1.4%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
     ]
    }
   ],
-  "mood": "Bearish"
+  "mood": "Mixed"
  }
 }
