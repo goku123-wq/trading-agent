@@ -162,15 +162,6 @@
     "target": 194.47
   },
   {
-    "entry": 2058.9,
-    "opened": "2026-10-26",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1918.49,
-    "symbol": "LAURUSLABS",
-    "target": 2339.71
-  },
-  {
     "entry": 80.0,
     "opened": "2026-10-27",
     "side": "LONG",
@@ -196,15 +187,6 @@
     "stop": 1009.54,
     "symbol": "KPRMILL",
     "target": 1255.43
-  },
-  {
-    "entry": 572.25,
-    "opened": "2026-10-28",
-    "side": "LONG",
-    "source": "report",
-    "stop": 517.67,
-    "symbol": "HEXT",
-    "target": 681.41
   },
   {
     "entry": 1365.0,
@@ -241,5 +223,41 @@
     "stop": 973.12,
     "symbol": "LODHA",
     "target": 1191.17
+  },
+  {
+    "entry": 4877.6,
+    "opened": "2026-10-30",
+    "side": "LONG",
+    "source": "report",
+    "stop": 4630.03,
+    "symbol": "INDIGO",
+    "target": 5372.75
+  },
+  {
+    "entry": 167.91,
+    "opened": "2026-10-30",
+    "side": "LONG",
+    "source": "report",
+    "stop": 160.12,
+    "symbol": "GAIL",
+    "target": 183.5
+  },
+  {
+    "entry": 2981.4,
+    "opened": "2026-10-30",
+    "side": "LONG",
+    "source": "report",
+    "stop": 2854.1,
+    "symbol": "GRASIM",
+    "target": 3236.01
+  },
+  {
+    "entry": 3508.8,
+    "opened": "2026-10-30",
+    "side": "LONG",
+    "source": "report",
+    "stop": 3276.14,
+    "symbol": "AJANTPHARM",
+    "target": 3974.12
   }
 ]
