@@ -9,15 +9,6 @@
     "target": 312.97
   },
   {
-    "entry": 1852.0,
-    "opened": "2026-10-05",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1729.57,
-    "symbol": "COFORGE",
-    "target": 2096.86
-  },
-  {
     "entry": 187.05,
     "opened": "2026-10-05",
     "side": "LONG",
@@ -259,5 +250,32 @@
     "stop": 3276.14,
     "symbol": "AJANTPHARM",
     "target": 3974.12
+  },
+  {
+    "entry": 159.0,
+    "opened": "2026-11-02",
+    "side": "LONG",
+    "source": "report",
+    "stop": 150.08,
+    "symbol": "MOTHERSON",
+    "target": 176.84
+  },
+  {
+    "entry": 1387.0,
+    "opened": "2026-11-02",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1330.01,
+    "symbol": "CIPLA",
+    "target": 1500.99
+  },
+  {
+    "entry": 516.65,
+    "opened": "2026-11-02",
+    "side": "LONG",
+    "source": "report",
+    "stop": 477.14,
+    "symbol": "AIIL",
+    "target": 595.68
   }
 ]
