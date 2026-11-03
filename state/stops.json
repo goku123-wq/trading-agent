@@ -72,15 +72,6 @@
     "target": 1489.8
   },
   {
-    "entry": 9144.5,
-    "opened": "2026-10-16",
-    "side": "LONG",
-    "source": "report",
-    "stop": 8698.99,
-    "symbol": "DIVISLAB",
-    "target": 10035.52
-  },
-  {
     "entry": 854.1,
     "opened": "2026-10-16",
     "side": "LONG",
@@ -277,5 +268,14 @@
     "stop": 477.14,
     "symbol": "AIIL",
     "target": 595.68
+  },
+  {
+    "entry": 1510.9,
+    "opened": "2026-11-03",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1432.17,
+    "symbol": "PIDILITIND",
+    "target": 1668.37
   }
 ]
