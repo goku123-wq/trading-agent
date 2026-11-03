@@ -983,45 +983,44 @@
   ]
  },
  "morning": {
-  "day": "2026-11-02",
-  "generated": "2026-11-02T10:01+05:30",
+  "day": "2026-11-03",
+  "generated": "2026-11-03T10:01+05:30",
   "setups": [
    {
-    "symbol": "BIOCON",
+    "symbol": "SOLARINDS",
     "action": "BUY",
-    "entry": 355.65,
-    "stop": 351.61,
-    "target": 361.71,
+    "entry": 19952.0,
+    "stop": 19614.38,
+    "target": 20458.43,
     "score": 80,
-    "cap": "Mid",
+    "cap": "Large",
     "reasons": [
-     "gap +0.8%",
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
     ]
    },
    {
-    "symbol": "IPCALAB",
+    "symbol": "VEDL",
     "action": "BUY",
-    "entry": 1966.3,
-    "stop": 1935.47,
-    "target": 2012.54,
+    "entry": 248.04,
+    "stop": 244.59,
+    "target": 253.21,
     "score": 80,
-    "cap": "Mid",
+    "cap": "Large",
     "reasons": [
-     "gap +1.0%",
+     "gap +0.6%",
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
     ]
    },
    {
-    "symbol": "SHREECEM",
+    "symbol": "BANKINDIA",
     "action": "BUY",
-    "entry": 23320.0,
-    "stop": 23003.33,
-    "target": 23795.01,
+    "entry": 135.36,
+    "stop": 134.1,
+    "target": 137.25,
     "score": 80,
     "cap": "Mid",
     "reasons": [
