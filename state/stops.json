@@ -9,15 +9,6 @@
     "target": 312.97
   },
   {
-    "entry": 187.05,
-    "opened": "2026-10-05",
-    "side": "LONG",
-    "source": "report",
-    "stop": 176.08,
-    "symbol": "GROWW",
-    "target": 208.99
-  },
-  {
     "entry": 3356.0,
     "opened": "2026-10-07",
     "side": "LONG",
@@ -216,15 +207,6 @@
     "target": 5372.75
   },
   {
-    "entry": 167.91,
-    "opened": "2026-10-30",
-    "side": "LONG",
-    "source": "report",
-    "stop": 160.12,
-    "symbol": "GAIL",
-    "target": 183.5
-  },
-  {
     "entry": 2981.4,
     "opened": "2026-10-30",
     "side": "LONG",
@@ -232,15 +214,6 @@
     "stop": 2854.1,
     "symbol": "GRASIM",
     "target": 3236.01
-  },
-  {
-    "entry": 3508.8,
-    "opened": "2026-10-30",
-    "side": "LONG",
-    "source": "report",
-    "stop": 3276.14,
-    "symbol": "AJANTPHARM",
-    "target": 3974.12
   },
   {
     "entry": 159.0,
@@ -277,5 +250,41 @@
     "stop": 1432.17,
     "symbol": "PIDILITIND",
     "target": 1668.37
+  },
+  {
+    "entry": 2709.2,
+    "opened": "2026-11-04",
+    "side": "LONG",
+    "source": "report",
+    "stop": 2545.96,
+    "symbol": "ADANIENT",
+    "target": 3035.68
+  },
+  {
+    "entry": 2063.0,
+    "opened": "2026-11-04",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1942.71,
+    "symbol": "HYUNDAI",
+    "target": 2303.57
+  },
+  {
+    "entry": 994.0,
+    "opened": "2026-11-04",
+    "side": "LONG",
+    "source": "report",
+    "stop": 941.18,
+    "symbol": "BAJFINANCE",
+    "target": 1099.64
+  },
+  {
+    "entry": 15998.0,
+    "opened": "2026-11-04",
+    "side": "LONG",
+    "source": "report",
+    "stop": 14455.41,
+    "symbol": "APARINDS",
+    "target": 19083.18
   }
 ]

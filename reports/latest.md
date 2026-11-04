@@ -1,4 +1,4 @@
-# Daily trade report, 03 Nov 2026
+# Daily trade report, 04 Nov 2026
 
 > Rule-based signals for education only. Not financial advice. Do your own research.
 
@@ -6,7 +6,7 @@
 
 ## Stop-loss / target alerts
 
-- 🟢 DIVISLAB hit target 10035.52 (price 10064.0, report idea)
+_None today._
 
 ## Your positions
 
@@ -16,81 +16,93 @@ _No positions listed. Add them to config/positions.csv._
 
 | Stock | Action | Entry | Stop | Target | Qty | Capital | Profit at target | Loss at stop | Cap |
 |---|---|---|---|---|---|---|---|---|---|
-| MOTHERSON | BUY | 160.0 | 150.64 | 178.71 | 51 | ₹8.2k | ₹954 | ₹477 | Large |
-| PIDILITIND | BUY | 1510.9 | 1432.17 | 1668.37 | 6 | ₹9.1k | ₹945 | ₹472 | Large |
-| MOTILALOFS | BUY | 1010.0 | 924.63 | 1180.74 | 13 | ₹13.1k | ₹2.2k | ₹1.1k | Mid |
-| LODHA | BUY | 1060.8 | 983.21 | 1215.99 | 6 | ₹6.4k | ₹931 | ₹466 | Mid |
-| **Total** | | | | | | **₹36.7k** | **₹5.0k** | **₹2.5k** | |
+| ADANIENT | BUY | 2709.2 | 2545.96 | 3035.68 | 3 | ₹8.1k | ₹979 | ₹490 | Large |
+| HYUNDAI | BUY | 2063.0 | 1942.71 | 2303.57 | 4 | ₹8.3k | ₹962 | ₹481 | Large |
+| BAJFINANCE | BUY | 994.0 | 941.18 | 1099.64 | 9 | ₹8.9k | ₹951 | ₹475 | Large |
+| APARINDS | BUY | 15998.0 | 14455.41 | 19083.18 | 1 | ₹16.0k | ₹3.1k | ₹1.5k | Mid |
+| MOTILALOFS | BUY | 1013.0 | 929.05 | 1180.9 | 5 | ₹5.1k | ₹840 | ₹420 | Mid |
+| **Total** | | | | | | **₹46.4k** | **₹6.8k** | **₹3.4k** | |
 
-Uses ₹36.7k of your ₹50.0k | +₹5.0k at targets | -₹2.5k if all stops hit
+Uses ₹46.4k of your ₹50.0k | +₹6.8k at targets | -₹3.4k if all stops hit
 
 ## Intraday basket for next session
 
 | Stock | Action | Entry | Stop | Target | Qty | Capital | Profit at target | Loss at stop | Cap |
 |---|---|---|---|---|---|---|---|---|---|
-| NYKAA | BUY above | 356.01 | 348.3 | 367.56 | 38 | ₹13.5k | ₹439 | ₹293 | Mid |
-| HCLTECH | BUY above | 1455.67 | 1428.0 | 1497.17 | 6 | ₹8.7k | ₹249 | ₹166 | Large |
-| APOLLOHOSP | BUY above | 8471.27 | 8312.0 | 8710.17 | 1 | ₹8.5k | ₹239 | ₹159 | Large |
-| MANKIND | BUY above | 2507.35 | 2461.1 | 2576.72 | 3 | ₹7.5k | ₹208 | ₹139 | Mid |
-| WIPRO | BUY above | 199.01 | 196.01 | 203.51 | 59 | ₹11.7k | ₹266 | ₹177 | Large |
-| **Total** | | | | | | **₹50.0k** | **₹1.4k** | **₹934** | |
+| LAURUSLABS | BUY above | 2351.32 | 2285.6 | 2449.91 | 3 | ₹7.1k | ₹296 | ₹197 | Mid |
+| NTPC | BUY above | 322.68 | 316.75 | 331.57 | 30 | ₹9.7k | ₹267 | ₹178 | Large |
+| TATACOMM | BUY above | 1779.85 | 1745.9 | 1830.78 | 6 | ₹10.7k | ₹306 | ₹204 | Mid |
+| TRENT | BUY above | 3068.15 | 3010.5 | 3154.63 | 3 | ₹9.2k | ₹259 | ₹173 | Large |
+| TVSMOTOR | BUY above | 4361.44 | 4298.4 | 4455.99 | 3 | ₹13.1k | ₹284 | ₹189 | Large |
+| **Total** | | | | | | **₹49.7k** | **₹1.4k** | **₹941** | |
 
-Uses ₹50.0k of your ₹50.0k | +₹1.4k at targets | -₹934 if all stops hit
+Uses ₹49.7k of your ₹50.0k | +₹1.4k at targets | -₹941 if all stops hit
 ⚠️ ₹5.0k needs more capital than ₹50.0k on these picks; sized down to fit.
 
 ## All long-term buys
 
 | Stock | Action | Entry | Stop | Target | R:R | Score | Cap | Why |
 |---|---|---|---|---|---|---|---|---|
-| BAJAJ-AUTO | BUY | 10540.0 | 9996.07 | 11627.86 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 52 and turning up; up day on above-average volume |
-| CIPLA | BUY | 1396.9 | 1340.21 | 1510.29 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 64 and turning up; up day on above-average volume |
-| EICHERMOT | BUY | 7440.0 | 7106.04 | 8107.93 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up; up day on above-average volume |
-| GRASIM | BUY | 3090.0 | 2958.12 | 3353.76 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 61 and turning up; up day on above-average volume |
-| HAL | BUY | 4958.6 | 4724.87 | 5426.06 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up; up day on above-average volume |
-| INDIGO | BUY | 5025.0 | 4768.47 | 5538.06 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 62 and turning up; up day on above-average volume |
-| PIDILITIND | BUY | 1510.9 | 1432.17 | 1668.37 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 53 and turning up; up day on above-average volume |
-| MOTHERSON | BUY | 160.0 | 150.64 | 178.71 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 52 and turning up; up day on above-average volume |
-| SOLARINDS | BUY | 19654.0 | 18347.05 | 22267.9 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 51 and turning up; up day on above-average volume |
-| AUROPHARMA | BUY | 1694.5 | 1611.67 | 1860.15 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 57 and turning up; up day on above-average volume |
-| GLAXO | BUY | 2575.1 | 2430.22 | 2864.86 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 49 and turning up; up day on above-average volume |
-| GLENMARK | BUY | 2408.0 | 2275.01 | 2673.98 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 61 and turning up; up day on above-average volume |
-| MEDANTA | BUY | 1325.8 | 1232.36 | 1512.68 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 53 and turning up; up day on above-average volume |
-| FLUOROCHEM | BUY | 4463.9 | 4158.14 | 5075.42 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 54 and turning up; up day on above-average volume |
-| HEROMOTOCO | BUY | 5300.0 | 4992.93 | 5914.15 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 55 and turning up; up day on above-average volume |
-| LGEINDIA | BUY | 1690.3 | 1603.69 | 1863.52 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 50 and turning up; up day on above-average volume |
-| LODHA | BUY | 1060.8 | 983.21 | 1215.99 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 50 and turning up; up day on above-average volume |
-| MOTILALOFS | BUY | 1010.0 | 924.63 | 1180.74 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 52 and turning up; up day on above-average volume |
-| PRESTIGE | BUY | 1537.0 | 1443.26 | 1724.49 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 61 and turning up; up day on above-average volume |
-| RADICO | BUY | 4250.0 | 3965.24 | 4819.52 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 47 and turning up; up day on above-average volume |
-| ADANIPOWER | BUY | 195.5 | 182.56 | 221.38 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 52 and turning up |
-| BAJFINANCE | BUY | 970.0 | 918.0 | 1074.01 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 52 and turning up |
-| HYUNDAI | BUY | 2030.0 | 1907.6 | 2274.8 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 57 and turning up |
-| TITAN | BUY | 4562.0 | 4375.0 | 4936.0 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 54 and turning up |
-| TORNTPHARM | BUY | 4650.0 | 4428.09 | 5093.83 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 48 and turning up |
-| ABCAPITAL | BUY | 381.0 | 357.65 | 427.7 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 55 and turning up |
-| ANTHEM | BUY | 854.45 | 803.71 | 955.93 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 52 and turning up |
-| AIIL | BUY | 527.55 | 488.27 | 606.12 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 51 and turning up |
-| MAHABANK | BUY | 80.6 | 75.47 | 90.85 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 50 and turning up |
-| IPCALAB | BUY | 1950.1 | 1823.12 | 2204.05 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 54 and turning up |
-| JSWINFRA | BUY | 326.3 | 302.77 | 373.37 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 47 and turning up |
-| LENSKART | BUY | 671.05 | 626.36 | 760.43 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 53 and turning up |
-| MEESHO | BUY | 222.9 | 204.24 | 260.23 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 50 and turning up |
-| PAYTM | BUY | 1720.0 | 1593.45 | 1973.1 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 55 and turning up |
-| TATACOMM | BUY | 1759.2 | 1637.5 | 2002.6 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up |
-| UNITDSPR | BUY | 1380.9 | 1302.54 | 1537.62 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 56 and turning up |
-| ICICIBANK | BUY | 1424.5 | 1364.72 | 1544.06 | 2.0 | 70 | Large | uptrend: price and 50-day above 200-day average; RSI 62 and turning up; up day on above-average volume |
-| JSWSTEEL | BUY | 1320.0 | 1246.72 | 1466.56 | 2.0 | 70 | Large | uptrend: price and 50-day above 200-day average; RSI 63 and turning up; up day on above-average volume |
-| MCX | BUY | 3490.1 | 3201.22 | 4067.85 | 2.0 | 70 | Mid | uptrend: price and 50-day above 200-day average; RSI 64 and turning up; up day on above-average volume |
+| ADANIENT | BUY | 2709.2 | 2545.96 | 3035.68 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 52 and turning up; up day on above-average volume |
+| BAJFINANCE | BUY | 994.0 | 941.18 | 1099.64 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up; up day on above-average volume |
+| GRASIM | BUY | 3138.0 | 3006.07 | 3401.86 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 64 and turning up; up day on above-average volume |
+| HYUNDAI | BUY | 2063.0 | 1942.71 | 2303.57 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 60 and turning up; up day on above-average volume |
+| TITAN | BUY | 4754.4 | 4540.34 | 5182.51 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 65 and turning up; up day on above-average volume |
+| TORNTPHARM | BUY | 4738.5 | 4515.51 | 5184.48 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 55 and turning up; up day on above-average volume |
+| ANTHEM | BUY | 888.3 | 834.1 | 996.71 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 61 and turning up; up day on above-average volume |
+| APARINDS | BUY | 15998.0 | 14455.41 | 19083.18 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 47 and turning up; up day on above-average volume |
+| ASTERDM | BUY | 719.55 | 673.2 | 812.24 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 59 and turning up; up day on above-average volume |
+| AUROPHARMA | BUY | 1705.0 | 1623.29 | 1868.42 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up; up day on above-average volume |
+| BHEL | BUY | 423.85 | 393.47 | 484.61 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 54 and turning up; up day on above-average volume |
+| GVT&D | BUY | 4265.0 | 3920.06 | 4954.87 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 57 and turning up; up day on above-average volume |
+| MEDANTA | BUY | 1402.0 | 1301.26 | 1603.47 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 63 and turning up; up day on above-average volume |
+| FLUOROCHEM | BUY | 4613.3 | 4291.38 | 5257.14 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 61 and turning up; up day on above-average volume |
+| HEROMOTOCO | BUY | 5399.5 | 5098.15 | 6002.21 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 60 and turning up; up day on above-average volume |
+| IPCALAB | BUY | 1972.0 | 1847.68 | 2220.64 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 57 and turning up; up day on above-average volume |
+| KALYANKJIL | BUY | 529.05 | 490.48 | 606.18 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 47 and turning up; up day on above-average volume |
+| LGEINDIA | BUY | 1692.1 | 1605.15 | 1866.01 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 51 and turning up; up day on above-average volume |
+| LLOYDSME | BUY | 1799.6 | 1695.57 | 2007.67 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 48 and turning up; up day on above-average volume |
+| LODHA | BUY | 1122.0 | 1037.68 | 1290.65 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up; up day on above-average volume |
+| MOTILALOFS | BUY | 1013.0 | 929.05 | 1180.9 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 53 and turning up; up day on above-average volume |
+| OBEROIRLTY | BUY | 1710.9 | 1618.38 | 1895.93 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 53 and turning up; up day on above-average volume |
+| RADICO | BUY | 4396.5 | 4107.58 | 4974.34 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 53 and turning up; up day on above-average volume |
+| SAIL | BUY | 170.49 | 158.72 | 194.04 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 50 and turning up; up day on above-average volume |
+| UNOMINDA | BUY | 1196.9 | 1125.25 | 1340.2 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 64 and turning up; up day on above-average volume |
+| ABB | BUY | 6750.0 | 6299.57 | 7650.85 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 50 and turning up |
+| ADANIENSOL | BUY | 1414.0 | 1315.87 | 1610.25 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up |
+| ADANIPOWER | BUY | 201.71 | 188.57 | 227.99 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up |
+| APOLLOHOSP | BUY | 8599.5 | 8180.24 | 9438.01 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 63 and turning up |
+| BAJAJ-AUTO | BUY | 10608.0 | 10085.35 | 11653.3 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 54 and turning up |
+| CGPOWER | BUY | 841.45 | 783.22 | 957.92 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 49 and turning up |
+| PNB | BUY | 122.42 | 115.6 | 136.05 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up |
+| TATACAP | BUY | 337.75 | 318.02 | 377.2 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 59 and turning up |
+| UNIONBANK | BUY | 183.89 | 174.41 | 202.85 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 57 and turning up |
+| IDEA | BUY | 12.55 | 11.66 | 14.33 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 50 and turning up |
+| APLAPOLLO | BUY | 2199.8 | 2072.98 | 2453.43 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 56 and turning up |
+| DIXON | BUY | 12290.0 | 11394.96 | 14080.08 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 50 and turning up |
+| FEDERALBNK | BUY | 335.2 | 317.46 | 370.68 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 48 and turning up |
+| JSWINFRA | BUY | 345.25 | 320.11 | 395.53 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up |
+| LENSKART | BUY | 689.7 | 644.79 | 779.51 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up |
+| MEESHO | BUY | 224.55 | 206.06 | 261.54 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 52 and turning up |
+| PAYTM | BUY | 1732.4 | 1608.22 | 1980.76 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 57 and turning up |
+| OFSS | BUY | 10194.0 | 9514.62 | 11552.76 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 47 and turning up |
+| UNITDSPR | BUY | 1419.3 | 1340.01 | 1577.89 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 60 and turning up |
+| ADANIGREEN | BUY | 1388.0 | 1266.98 | 1630.03 | 2.0 | 70 | Large | uptrend: price and 50-day above 200-day average; RSI 62 and turning up; up day on above-average volume |
+| CIPLA | BUY | 1402.0 | 1347.07 | 1511.86 | 2.0 | 70 | Large | uptrend: price and 50-day above 200-day average; RSI 65 and turning up; up day on above-average volume |
+| HAL | BUY | 5079.1 | 4764.98 | 5707.35 | 2.0 | 70 | Large | uptrend: price and 50-day above 200-day average; RSI 64 and turning up; up day on above-average volume |
+| MOTHERSON | BUY | 159.49 | 150.4 | 177.67 | 2.0 | 70 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; up day on above-average volume |
+| AIIL | BUY | 515.95 | 475.38 | 597.09 | 2.0 | 70 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; up day on above-average volume |
+| NYKAA | BUY | 355.5 | 331.75 | 403.01 | 2.0 | 70 | Mid | uptrend: price and 50-day above 200-day average; RSI 62 and turning up; up day on above-average volume |
+| KPRMILL | BUY | 1174.8 | 1087.73 | 1348.94 | 2.0 | 70 | Mid | uptrend: price and 50-day above 200-day average; RSI 65 and turning up; up day on above-average volume |
+| PRESTIGE | BUY | 1580.0 | 1469.64 | 1800.71 | 2.0 | 70 | Mid | uptrend: price and 50-day above 200-day average; RSI 65 and turning up; up day on above-average volume |
 
 ## Long-term exits / avoid
 
 | Stock | Action | Entry | Stop | Target | R:R | Score | Cap | Why |
 |---|---|---|---|---|---|---|---|---|
-| ADANIENT | SELL/EXIT | 2593.3 | 2748.65 | 2282.6 | 2.0 | 80 | Large | closed below 200-day average |
-| CGPOWER | SELL/EXIT | 810.0 | 864.61 | 700.77 | 2.0 | 80 | Large | closed below 200-day average |
-| GVT&D | SELL/EXIT | 4050.0 | 4365.78 | 3418.45 | 2.0 | 80 | Mid | closed below 200-day average |
-| GODREJIND | SELL/EXIT | 952.55 | 1030.67 | 796.32 | 2.0 | 80 | Mid | 50-day average crossed below 200-day |
-| INDIANB | SELL/EXIT | 849.65 | 892.95 | 763.04 | 2.0 | 80 | Mid | closed below 200-day average |
+| ENRIN | SELL/EXIT | 2963.0 | 3199.64 | 2489.72 | 2.0 | 80 | Large | 50-day average crossed below 200-day |
+| INDUSINDBK | SELL/EXIT | 865.15 | 911.06 | 773.34 | 2.0 | 80 | Mid | 50-day average crossed below 200-day |
+| M&MFIN | SELL/EXIT | 270.1 | 293.3 | 223.69 | 2.0 | 80 | Mid | 50-day average crossed below 200-day |
 
 ## Intraday watchlist for next session
 
@@ -99,29 +111,18 @@ Trigger only if price crosses the entry level after 9:30 AM. Square off by 3:15 
 
 | Stock | Action | Entry | Stop | Target | R:R | Score | Cap | Why |
 |---|---|---|---|---|---|---|---|---|
-| APOLLOHOSP | BUY above | 8471.27 | 8312.0 | 8710.17 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| BAJAJHLDNG | SELL below | 10231.94 | 10480.0 | 9859.85 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| HCLTECH | BUY above | 1455.67 | 1428.0 | 1497.17 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| IDEA | SELL below | 12.18 | 12.43 | 11.79 | 1.56 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| WIPRO | BUY above | 199.01 | 196.01 | 203.51 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| NYKAA | BUY above | 356.01 | 348.3 | 367.56 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| HEXT | SELL below | 492.13 | 505.75 | 471.69 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| ICICILIFE | SELL below | 404.34 | 412.0 | 392.85 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| MANKIND | BUY above | 2507.35 | 2461.1 | 2576.72 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| WAAREEENER | SELL below | 2297.35 | 2347.4 | 2222.29 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| JINDALSTEL | BUY above | 1114.77 | 1098.8 | 1138.73 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| LT | BUY above | 3972.05 | 3911.4 | 4063.03 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| SIEMENS | SELL below | 3364.29 | 3438.5 | 3252.98 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
-| TVSMOTOR | BUY above | 4315.23 | 4205.0 | 4480.57 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| TRENT | BUY above | 3071.7 | 3013.4 | 3159.15 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| ITCHOTELS | BUY above | 172.54 | 169.76 | 176.71 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| INDHOTEL | BUY above | 838.03 | 824.05 | 858.99 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| KALYANKJIL | SELL below | 504.04 | 516.6 | 485.21 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
-| LTTS | BUY above | 4330.2 | 4190.1 | 4540.34 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| LICHSGFIN | SELL below | 496.95 | 508.3 | 479.91 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
-| PERSISTENT | BUY above | 6152.97 | 6055.0 | 6299.94 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| PIRAMALFIN | SELL below | 1882.88 | 1939.0 | 1798.7 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
-| SCHAEFFLER | SELL below | 3483.19 | 3558.0 | 3370.98 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
-| SAIL | SELL below | 163.92 | 168.3 | 157.35 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
-| TATACOMM | BUY above | 1779.78 | 1739.5 | 1840.21 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| TIINDIA | SELL below | 2157.53 | 2205.9 | 2084.97 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| AJANTPHARM | SELL below | 3260.29 | 3336.3 | 3146.27 | 1.5 | 75 | Mid | narrowest range of last 7 days (NR7); volume 2.1x the 20-day average; trend down (below 20 and 50-day averages) |
+| NTPC | BUY above | 322.68 | 316.75 | 331.57 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| TMCV | SELL below | 399.27 | 410.0 | 383.18 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
+| MAHABANK | SELL below | 79.1 | 80.18 | 77.49 | 1.49 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
+| DALBHARAT | SELL below | 1378.04 | 1414.5 | 1323.35 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
+| HEXT | SELL below | 492.72 | 505.1 | 474.16 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
+| LAURUSLABS | BUY above | 2351.32 | 2285.6 | 2449.91 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| CANBK | SELL below | 116.71 | 119.0 | 113.28 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| CIPLA | BUY above | 1404.75 | 1386.0 | 1432.87 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| DIVISLAB | BUY above | 10090.22 | 9946.0 | 10306.56 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| TVSMOTOR | BUY above | 4361.44 | 4298.4 | 4455.99 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| TRENT | BUY above | 3068.15 | 3010.5 | 3154.63 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| ESCORTS | SELL below | 2411.63 | 2475.0 | 2316.58 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| NAUKRI | SELL below | 1154.56 | 1182.0 | 1113.4 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| TATACOMM | BUY above | 1779.85 | 1745.9 | 1830.78 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
