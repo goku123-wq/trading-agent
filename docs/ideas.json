@@ -922,16 +922,16 @@
   ]
  },
  "morning": {
-  "day": "2026-11-03",
-  "generated": "2026-11-03T10:01+05:30",
+  "day": "2026-11-04",
+  "generated": "2026-11-04T10:00+05:30",
   "setups": [
    {
-    "symbol": "SOLARINDS",
+    "symbol": "LT",
     "action": "BUY",
-    "entry": 19952.0,
-    "stop": 19614.38,
-    "target": 20458.43,
-    "score": 80,
+    "entry": 3985.0,
+    "stop": 3942.12,
+    "target": 4049.33,
+    "score": 70,
     "cap": "Large",
     "reasons": [
      "broke above 9:15-10:00 high",
@@ -940,29 +940,58 @@
     ]
    },
    {
-    "symbol": "VEDL",
+    "symbol": "GMRAIRPORT",
     "action": "BUY",
-    "entry": 248.04,
-    "stop": 244.59,
-    "target": 253.21,
-    "score": 80,
-    "cap": "Large",
-    "reasons": [
-     "gap +0.6%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "BANKINDIA",
-    "action": "BUY",
-    "entry": 135.36,
-    "stop": 134.1,
-    "target": 137.25,
-    "score": 80,
+    "entry": 93.16,
+    "stop": 91.87,
+    "target": 95.1,
+    "score": 70,
     "cap": "Mid",
     "reasons": [
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "INDHOTEL",
+    "action": "BUY",
+    "entry": 841.55,
+    "stop": 832.37,
+    "target": 855.32,
+    "score": 70,
+    "cap": "Mid",
+    "reasons": [
+     "gap -1.3%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "LTTS",
+    "action": "BUY",
+    "entry": 4284.7,
+    "stop": 4214.89,
+    "target": 4389.41,
+    "score": 70,
+    "cap": "Mid",
+    "reasons": [
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "PAGEIND",
+    "action": "BUY",
+    "entry": 35940.0,
+    "stop": 35300.54,
+    "target": 36899.19,
+    "score": 70,
+    "cap": "Mid",
+    "reasons": [
+     "gap -0.8%",
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
