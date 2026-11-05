@@ -1,32 +1,5 @@
 [
   {
-    "entry": 289.85,
-    "opened": "2026-09-28",
-    "side": "LONG",
-    "source": "report",
-    "stop": 278.29,
-    "symbol": "PETRONET",
-    "target": 312.97
-  },
-  {
-    "entry": 3356.0,
-    "opened": "2026-10-07",
-    "side": "LONG",
-    "source": "report",
-    "stop": 3145.46,
-    "symbol": "BSE",
-    "target": 3777.08
-  },
-  {
-    "entry": 115.29,
-    "opened": "2026-10-08",
-    "side": "LONG",
-    "source": "report",
-    "stop": 110.04,
-    "symbol": "PNB",
-    "target": 125.79
-  },
-  {
     "entry": 1761.0,
     "opened": "2026-10-09",
     "side": "LONG",
@@ -54,15 +27,6 @@
     "target": 2007.26
   },
   {
-    "entry": 1389.4,
-    "opened": "2026-10-15",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1339.2,
-    "symbol": "ICICIBANK",
-    "target": 1489.8
-  },
-  {
     "entry": 854.1,
     "opened": "2026-10-16",
     "side": "LONG",
@@ -88,24 +52,6 @@
     "stop": 198.65,
     "symbol": "MEESHO",
     "target": 260.44
-  },
-  {
-    "entry": 317.4,
-    "opened": "2026-10-23",
-    "side": "LONG",
-    "source": "report",
-    "stop": 297.05,
-    "symbol": "ETERNAL",
-    "target": 358.1
-  },
-  {
-    "entry": 3980.2,
-    "opened": "2026-10-23",
-    "side": "LONG",
-    "source": "report",
-    "stop": 3762.32,
-    "symbol": "TVSMOTOR",
-    "target": 4415.96
   },
   {
     "entry": 1160.4,
@@ -198,15 +144,6 @@
     "target": 1191.17
   },
   {
-    "entry": 4877.6,
-    "opened": "2026-10-30",
-    "side": "LONG",
-    "source": "report",
-    "stop": 4630.03,
-    "symbol": "INDIGO",
-    "target": 5372.75
-  },
-  {
     "entry": 2981.4,
     "opened": "2026-10-30",
     "side": "LONG",
@@ -286,5 +223,41 @@
     "stop": 14455.41,
     "symbol": "APARINDS",
     "target": 19083.18
+  },
+  {
+    "entry": 429.05,
+    "opened": "2026-11-05",
+    "side": "LONG",
+    "source": "report",
+    "stop": 398.17,
+    "symbol": "TMCV",
+    "target": 490.82
+  },
+  {
+    "entry": 347.85,
+    "opened": "2026-11-05",
+    "side": "LONG",
+    "source": "report",
+    "stop": 327.23,
+    "symbol": "TATACAP",
+    "target": 389.1
+  },
+  {
+    "entry": 2119.6,
+    "opened": "2026-11-05",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1951.26,
+    "symbol": "PIRAMALFIN",
+    "target": 2456.27
+  },
+  {
+    "entry": 1069.2,
+    "opened": "2026-11-05",
+    "side": "LONG",
+    "source": "report",
+    "stop": 987.37,
+    "symbol": "NAM-INDIA",
+    "target": 1232.85
   }
 ]
