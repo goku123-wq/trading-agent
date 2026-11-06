@@ -216,15 +216,6 @@
     "target": 1099.64
   },
   {
-    "entry": 15998.0,
-    "opened": "2026-11-04",
-    "side": "LONG",
-    "source": "report",
-    "stop": 14455.41,
-    "symbol": "APARINDS",
-    "target": 19083.18
-  },
-  {
     "entry": 429.05,
     "opened": "2026-11-05",
     "side": "LONG",
@@ -259,5 +250,41 @@
     "stop": 987.37,
     "symbol": "NAM-INDIA",
     "target": 1232.85
+  },
+  {
+    "entry": 3560.0,
+    "opened": "2026-11-06",
+    "side": "LONG",
+    "source": "report",
+    "stop": 3315.73,
+    "symbol": "SIEMENS",
+    "target": 4048.54
+  },
+  {
+    "entry": 6774.0,
+    "opened": "2026-11-06",
+    "side": "LONG",
+    "source": "report",
+    "stop": 6312.58,
+    "symbol": "ABB",
+    "target": 7696.84
+  },
+  {
+    "entry": 418.8,
+    "opened": "2026-11-06",
+    "side": "LONG",
+    "source": "report",
+    "stop": 388.1,
+    "symbol": "BHEL",
+    "target": 480.2
+  },
+  {
+    "entry": 536.0,
+    "opened": "2026-11-06",
+    "side": "LONG",
+    "source": "report",
+    "stop": 503.15,
+    "symbol": "LICHSGFIN",
+    "target": 601.71
   }
 ]
