@@ -765,39 +765,114 @@
   ]
  },
  "morning": {
-  "day": "2026-11-05",
-  "generated": "2026-11-05T10:00+05:30",
+  "day": "2026-11-06",
+  "generated": "2026-11-06T10:01+05:30",
   "setups": [
    {
-    "symbol": "UNIONBANK",
+    "symbol": "ICICIBANK",
     "action": "BUY",
-    "entry": 186.05,
-    "stop": 184.3,
-    "target": 188.68,
-    "score": 80,
+    "entry": 1523.1,
+    "stop": 1505.0,
+    "target": 1550.25,
+    "score": 70,
     "cap": "Large",
     "reasons": [
-     "gap +0.9%",
+     "gap +1.1%",
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
     ]
    },
    {
-    "symbol": "DIVISLAB",
-    "action": "BUY",
-    "entry": 10040.5,
-    "stop": 9933.04,
-    "target": 10201.69,
+    "symbol": "EXIDEIND",
+    "action": "SELL",
+    "entry": 353.3,
+    "stop": 360.66,
+    "target": 342.26,
     "score": 70,
+    "cap": "Mid",
+    "reasons": [
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
+    ]
+   },
+   {
+    "symbol": "CANBK",
+    "action": "BUY",
+    "entry": 122.91,
+    "stop": 121.2,
+    "target": 125.48,
+    "score": 60,
     "cap": "Large",
     "reasons": [
+     "gap -1.0%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "IOC",
+    "action": "BUY",
+    "entry": 144.14,
+    "stop": 142.4,
+    "target": 146.75,
+    "score": 60,
+    "cap": "Large",
+    "reasons": [
+     "gap -1.0%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "TATACAP",
+    "action": "BUY",
+    "entry": 352.95,
+    "stop": 345.99,
+    "target": 363.39,
+    "score": 60,
+    "cap": "Large",
+    "reasons": [
+     "gap -2.0%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "UNIONBANK",
+    "action": "BUY",
+    "entry": 186.85,
+    "stop": 184.58,
+    "target": 190.26,
+    "score": 60,
+    "cap": "Large",
+    "reasons": [
+     "gap -1.4%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "BANKINDIA",
+    "action": "BUY",
+    "entry": 138.33,
+    "stop": 136.44,
+    "target": 141.16,
+    "score": 60,
+    "cap": "Mid",
+    "reasons": [
+     "gap -1.1%",
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
     ]
    }
   ],
-  "mood": "Bullish"
+  "mood": "Mixed"
  }
 }
