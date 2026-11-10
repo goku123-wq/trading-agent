@@ -6,8 +6,7 @@
 
 ## Stop-loss / target alerts
 
-- 🟢 ADANIPORTS hit target 1954.47 (price 1942.7, report idea)
-- 🟢 LODHA hit target 1191.17 (price 1195.0, report idea)
+_None today._
 
 ## Your positions
 
@@ -61,6 +60,7 @@ Uses ₹49.9k of your ₹50.0k | +₹1.7k at targets | -₹1.2k if all stops hit
 | AJANTPHARM | BUY | 3344.0 | 3114.31 | 3803.38 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 46 and turning up |
 | ASTERDM | BUY | 733.5 | 685.26 | 829.97 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 62 and turning up |
 | BHEL | BUY | 422.95 | 392.75 | 483.35 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 53 and turning up |
+| EMBASSY | BUY | 419.93 | 407.89 | 444.02 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 52 and turning up |
 | FEDERALBNK | BUY | 344.1 | 326.43 | 379.44 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 56 and turning up |
 | IDFCFIRSTB | BUY | 77.87 | 73.87 | 85.86 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 53 and turning up |
 | NAUKRI | BUY | 1200.2 | 1114.76 | 1371.08 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 48 and turning up |
