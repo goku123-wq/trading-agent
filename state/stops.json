@@ -9,15 +9,6 @@
     "target": 2007.26
   },
   {
-    "entry": 854.1,
-    "opened": "2026-10-16",
-    "side": "LONG",
-    "source": "report",
-    "stop": 808.22,
-    "symbol": "INDIANB",
-    "target": 945.86
-  },
-  {
     "entry": 1918.9,
     "opened": "2026-10-21",
     "side": "LONG",
@@ -63,15 +54,6 @@
     "target": 194.47
   },
   {
-    "entry": 80.0,
-    "opened": "2026-10-27",
-    "side": "LONG",
-    "source": "report",
-    "stop": 74.46,
-    "symbol": "MAHABANK",
-    "target": 91.07
-  },
-  {
     "entry": 8137.0,
     "opened": "2026-10-28",
     "side": "LONG",
@@ -106,15 +88,6 @@
     "stop": 1216.03,
     "symbol": "ADANIGREEN",
     "target": 1488.95
-  },
-  {
-    "entry": 2981.4,
-    "opened": "2026-10-30",
-    "side": "LONG",
-    "source": "report",
-    "stop": 2854.1,
-    "symbol": "GRASIM",
-    "target": 3236.01
   },
   {
     "entry": 159.0,
@@ -250,5 +223,32 @@
     "stop": 355.48,
     "symbol": "EXIDEIND",
     "target": 444.19
+  },
+  {
+    "entry": 12.88,
+    "opened": "2026-11-11",
+    "side": "LONG",
+    "source": "report",
+    "stop": 12.02,
+    "symbol": "IDEA",
+    "target": 14.61
+  },
+  {
+    "entry": 11040.0,
+    "opened": "2026-11-11",
+    "side": "LONG",
+    "source": "report",
+    "stop": 10534.16,
+    "symbol": "BAJAJ-AUTO",
+    "target": 12051.68
+  },
+  {
+    "entry": 822.6,
+    "opened": "2026-11-11",
+    "side": "LONG",
+    "source": "report",
+    "stop": 757.9,
+    "symbol": "CGPOWER",
+    "target": 952.0
   }
 ]
