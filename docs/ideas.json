@@ -780,9 +780,143 @@
   ]
  },
  "morning": {
-  "day": "2026-11-09",
-  "generated": "2026-11-09T10:00+05:30",
-  "setups": [],
-  "mood": "Bearish"
+  "day": "2026-11-11",
+  "generated": "2026-11-11T10:00+05:30",
+  "setups": [
+   {
+    "symbol": "HDFCLIFE",
+    "action": "BUY",
+    "entry": 576.65,
+    "stop": 569.91,
+    "target": 586.76,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "gap +0.8%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "TATASTEEL",
+    "action": "BUY",
+    "entry": 187.85,
+    "stop": 186.05,
+    "target": 190.55,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "gap +0.8%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "VAML",
+    "action": "BUY",
+    "entry": 388.0,
+    "stop": 385.15,
+    "target": 392.28,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "FEDERALBNK",
+    "action": "BUY",
+    "entry": 350.45,
+    "stop": 345.53,
+    "target": 357.83,
+    "score": 80,
+    "cap": "Mid",
+    "reasons": [
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "GMRAIRPORT",
+    "action": "BUY",
+    "entry": 100.43,
+    "stop": 98.9,
+    "target": 102.72,
+    "score": 80,
+    "cap": "Mid",
+    "reasons": [
+     "gap +0.5%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "IDFCFIRSTB",
+    "action": "BUY",
+    "entry": 79.98,
+    "stop": 78.81,
+    "target": 81.74,
+    "score": 80,
+    "cap": "Mid",
+    "reasons": [
+     "gap +0.8%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "JKCEMENT",
+    "action": "BUY",
+    "entry": 5167.0,
+    "stop": 5083.22,
+    "target": 5292.67,
+    "score": 80,
+    "cap": "Mid",
+    "reasons": [
+     "gap +0.6%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "NAM-INDIA",
+    "action": "BUY",
+    "entry": 1113.55,
+    "stop": 1094.09,
+    "target": 1142.74,
+    "score": 80,
+    "cap": "Mid",
+    "reasons": [
+     "gap +1.1%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "NATIONALUM",
+    "action": "BUY",
+    "entry": 327.35,
+    "stop": 323.29,
+    "target": 333.45,
+    "score": 70,
+    "cap": "Mid",
+    "reasons": [
+     "gap -0.8%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   }
+  ],
+  "mood": "Bullish"
  }
 }
