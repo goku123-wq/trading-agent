@@ -135,15 +135,6 @@
     "target": 2303.57
   },
   {
-    "entry": 994.0,
-    "opened": "2026-11-04",
-    "side": "LONG",
-    "source": "report",
-    "stop": 941.18,
-    "symbol": "BAJFINANCE",
-    "target": 1099.64
-  },
-  {
     "entry": 429.05,
     "opened": "2026-11-05",
     "side": "LONG",
@@ -250,5 +241,14 @@
     "stop": 757.9,
     "symbol": "CGPOWER",
     "target": 952.0
+  },
+  {
+    "entry": 80.93,
+    "opened": "2026-11-12",
+    "side": "LONG",
+    "source": "report",
+    "stop": 76.68,
+    "symbol": "IDFCFIRSTB",
+    "target": 89.43
   }
 ]
