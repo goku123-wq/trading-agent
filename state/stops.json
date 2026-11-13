@@ -250,5 +250,23 @@
     "stop": 76.68,
     "symbol": "IDFCFIRSTB",
     "target": 89.43
+  },
+  {
+    "entry": 1665.5,
+    "opened": "2026-11-13",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1529.58,
+    "symbol": "BHARTIHEXA",
+    "target": 1937.34
+  },
+  {
+    "entry": 1745.4,
+    "opened": "2026-11-13",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1638.65,
+    "symbol": "LGEINDIA",
+    "target": 1958.9
   }
 ]
