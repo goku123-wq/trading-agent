@@ -1020,31 +1020,31 @@
   ]
  },
  "morning": {
-  "day": "2026-11-12",
-  "generated": "2026-11-12T10:01+05:30",
+  "day": "2026-11-13",
+  "generated": "2026-11-13T10:01+05:30",
   "setups": [
    {
-    "symbol": "ASIANPAINT",
+    "symbol": "INDIANB",
     "action": "BUY",
-    "entry": 2567.0,
-    "stop": 2540.27,
-    "target": 2607.09,
-    "score": 80,
-    "cap": "Large",
+    "entry": 939.0,
+    "stop": 929.15,
+    "target": 953.77,
+    "score": 60,
+    "cap": "Mid",
     "reasons": [
-     "gap +1.4%",
+     "gap -0.9%",
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
     ]
    },
    {
-    "symbol": "BDL",
+    "symbol": "INDHOTEL",
     "action": "BUY",
-    "entry": 1124.0,
-    "stop": 1103.44,
-    "target": 1154.84,
-    "score": 80,
+    "entry": 897.4,
+    "stop": 883.01,
+    "target": 918.98,
+    "score": 60,
     "cap": "Mid",
     "reasons": [
      "broke above 9:15-10:00 high",
@@ -1053,186 +1053,12 @@
     ]
    },
    {
-    "symbol": "KALYANKJIL",
+    "symbol": "MCX",
     "action": "BUY",
-    "entry": 704.2,
-    "stop": 687.57,
-    "target": 729.14,
-    "score": 80,
-    "cap": "Mid",
-    "reasons": [
-     "gap +1.6%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "PHOENIXLTD",
-    "action": "BUY",
-    "entry": 2224.0,
-    "stop": 2186.18,
-    "target": 2280.73,
-    "score": 80,
-    "cap": "Mid",
-    "reasons": [
-     "gap +0.8%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "UNOMINDA",
-    "action": "BUY",
-    "entry": 1389.3,
-    "stop": 1370.0,
-    "target": 1418.25,
-    "score": 80,
-    "cap": "Mid",
-    "reasons": [
-     "gap +1.2%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "BHARTIARTL",
-    "action": "BUY",
-    "entry": 2103.0,
-    "stop": 2080.32,
-    "target": 2137.02,
-    "score": 70,
-    "cap": "Large",
-    "reasons": [
-     "gap -0.8%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "DLF",
-    "action": "BUY",
-    "entry": 758.55,
-    "stop": 748.2,
-    "target": 774.07,
-    "score": 70,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "HDFCBANK",
-    "action": "BUY",
-    "entry": 812.05,
-    "stop": 804.86,
-    "target": 822.84,
-    "score": 70,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "LT",
-    "action": "BUY",
-    "entry": 4213.4,
-    "stop": 4177.9,
-    "target": 4266.65,
-    "score": 70,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "MAXHEALTH",
-    "action": "BUY",
-    "entry": 931.9,
-    "stop": 919.2,
-    "target": 950.95,
-    "score": 70,
-    "cap": "Large",
-    "reasons": [
-     "gap -0.5%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "SBILIFE",
-    "action": "BUY",
-    "entry": 1811.3,
-    "stop": 1787.16,
-    "target": 1847.51,
-    "score": 70,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "SBIN",
-    "action": "BUY",
-    "entry": 1078.05,
-    "stop": 1066.31,
-    "target": 1095.66,
-    "score": 70,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "NYKAA",
-    "action": "BUY",
-    "entry": 357.1,
-    "stop": 353.15,
-    "target": 363.03,
-    "score": 70,
-    "cap": "Mid",
-    "reasons": [
-     "gap -0.7%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "LODHA",
-    "action": "BUY",
-    "entry": 1203.3,
-    "stop": 1178.82,
-    "target": 1240.02,
-    "score": 70,
-    "cap": "Mid",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "LUPIN",
-    "action": "BUY",
-    "entry": 2029.0,
-    "stop": 2013.6,
-    "target": 2052.1,
-    "score": 70,
+    "entry": 3761.5,
+    "stop": 3665.19,
+    "target": 3905.96,
+    "score": 60,
     "cap": "Mid",
     "reasons": [
      "broke above 9:15-10:00 high",
@@ -1241,6 +1067,6 @@
     ]
    }
   ],
-  "mood": "Bullish"
+  "mood": "Mixed"
  }
 }
