@@ -18,15 +18,6 @@
     "target": 2178.88
   },
   {
-    "entry": 219.25,
-    "opened": "2026-10-22",
-    "side": "LONG",
-    "source": "report",
-    "stop": 198.65,
-    "symbol": "MEESHO",
-    "target": 260.44
-  },
-  {
     "entry": 1160.4,
     "opened": "2026-10-26",
     "side": "LONG",
@@ -198,15 +189,6 @@
     "target": 480.2
   },
   {
-    "entry": 536.0,
-    "opened": "2026-11-06",
-    "side": "LONG",
-    "source": "report",
-    "stop": 503.15,
-    "symbol": "LICHSGFIN",
-    "target": 601.71
-  },
-  {
     "entry": 385.05,
     "opened": "2026-11-09",
     "side": "LONG",
@@ -268,5 +250,41 @@
     "stop": 1638.65,
     "symbol": "LGEINDIA",
     "target": 1958.9
+  },
+  {
+    "entry": 3084.4,
+    "opened": "2026-11-16",
+    "side": "LONG",
+    "source": "report",
+    "stop": 2938.71,
+    "symbol": "GRASIM",
+    "target": 3375.78
+  },
+  {
+    "entry": 1776.4,
+    "opened": "2026-11-16",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1613.85,
+    "symbol": "TECHM",
+    "target": 2101.5
+  },
+  {
+    "entry": 423.61,
+    "opened": "2026-11-16",
+    "side": "LONG",
+    "source": "report",
+    "stop": 411.79,
+    "symbol": "EMBASSY",
+    "target": 447.24
+  },
+  {
+    "entry": 3360.6,
+    "opened": "2026-11-16",
+    "side": "LONG",
+    "source": "report",
+    "stop": 3140.98,
+    "symbol": "AJANTPHARM",
+    "target": 3799.84
   }
 ]
