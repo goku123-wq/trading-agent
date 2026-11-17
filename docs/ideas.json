@@ -697,43 +697,15 @@
   ]
  },
  "morning": {
-  "day": "2026-11-16",
-  "generated": "2026-11-16T10:00+05:30",
+  "day": "2026-11-17",
+  "generated": "2026-11-17T10:00+05:30",
   "setups": [
    {
-    "symbol": "CANBK",
+    "symbol": "AUROPHARMA",
     "action": "BUY",
-    "entry": 133.19,
-    "stop": 131.48,
-    "target": 135.76,
-    "score": 80,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "KOTAKBANK",
-    "action": "BUY",
-    "entry": 497.9,
-    "stop": 491.77,
-    "target": 507.09,
-    "score": 80,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "FEDERALBNK",
-    "action": "BUY",
-    "entry": 368.25,
-    "stop": 361.7,
-    "target": 378.07,
+    "entry": 1810.2,
+    "stop": 1797.0,
+    "target": 1830.0,
     "score": 80,
     "cap": "Mid",
     "reasons": [
@@ -743,14 +715,29 @@
     ]
    },
    {
-    "symbol": "MOTHERSON",
+    "symbol": "PAYTM",
     "action": "BUY",
-    "entry": 166.37,
-    "stop": 163.54,
-    "target": 170.61,
+    "entry": 1903.0,
+    "stop": 1877.5,
+    "target": 1941.25,
     "score": 70,
-    "cap": "Large",
+    "cap": "Mid",
     "reasons": [
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "SBICARD",
+    "action": "BUY",
+    "entry": 576.5,
+    "stop": 570.65,
+    "target": 585.27,
+    "score": 70,
+    "cap": "Mid",
+    "reasons": [
+     "gap -1.2%",
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
