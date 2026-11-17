@@ -286,5 +286,14 @@
     "stop": 3140.98,
     "symbol": "AJANTPHARM",
     "target": 3799.84
+  },
+  {
+    "entry": 2338.0,
+    "opened": "2026-11-17",
+    "side": "LONG",
+    "source": "report",
+    "stop": 2046.08,
+    "symbol": "LAURUSLABS",
+    "target": 2921.84
   }
 ]

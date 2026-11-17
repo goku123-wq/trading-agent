@@ -1,29 +1,14 @@
 {
  "daily": {
-  "day": "2026-11-16",
-  "generated": "2026-11-16T17:00+05:30",
+  "day": "2026-11-17",
+  "generated": "2026-11-17T17:00+05:30",
   "long_term": [
    {
-    "symbol": "GRASIM",
+    "symbol": "ADANIENT",
     "action": "BUY",
-    "entry": 3084.4,
-    "stop": 2938.71,
-    "target": 3375.78,
-    "score": 90,
-    "cap": "Large",
-    "reasons": [
-     "uptrend: price and 50-day above 200-day average",
-     "pulled back near 20-day/50-day average",
-     "RSI 53 and turning up",
-     "up day on above-average volume"
-    ]
-   },
-   {
-    "symbol": "PIDILITIND",
-    "action": "BUY",
-    "entry": 1545.8,
-    "stop": 1467.16,
-    "target": 1703.07,
+    "entry": 2745.1,
+    "stop": 2592.68,
+    "target": 3049.93,
     "score": 90,
     "cap": "Large",
     "reasons": [
@@ -34,26 +19,111 @@
     ]
    },
    {
-    "symbol": "EMBASSY",
+    "symbol": "EXIDEIND",
     "action": "BUY",
-    "entry": 423.61,
-    "stop": 411.79,
-    "target": 447.24,
+    "entry": 380.15,
+    "stop": 351.19,
+    "target": 438.08,
     "score": 90,
     "cap": "Mid",
     "reasons": [
      "uptrend: price and 50-day above 200-day average",
      "pulled back near 20-day/50-day average",
-     "RSI 57 and turning up",
+     "RSI 53 and turning up",
      "up day on above-average volume"
     ]
    },
    {
-    "symbol": "CIPLA",
+    "symbol": "LAURUSLABS",
     "action": "BUY",
-    "entry": 1394.5,
-    "stop": 1344.38,
-    "target": 1494.75,
+    "entry": 2338.0,
+    "stop": 2046.08,
+    "target": 2921.84,
+    "score": 90,
+    "cap": "Mid",
+    "reasons": [
+     "uptrend: price and 50-day above 200-day average",
+     "pulled back near 20-day/50-day average",
+     "RSI 58 and turning up",
+     "up day on above-average volume"
+    ]
+   },
+   {
+    "symbol": "ABB",
+    "action": "BUY",
+    "entry": 6923.0,
+    "stop": 6456.64,
+    "target": 7855.72,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "uptrend: price and 50-day above 200-day average",
+     "pulled back near 20-day/50-day average",
+     "RSI 54 and turning up"
+    ]
+   },
+   {
+    "symbol": "BAJAJ-AUTO",
+    "action": "BUY",
+    "entry": 10770.0,
+    "stop": 10296.89,
+    "target": 11716.23,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "uptrend: price and 50-day above 200-day average",
+     "pulled back near 20-day/50-day average",
+     "RSI 54 and turning up"
+    ]
+   },
+   {
+    "symbol": "BOSCHLTD",
+    "action": "BUY",
+    "entry": 49085.0,
+    "stop": 46490.23,
+    "target": 54274.54,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "uptrend: price and 50-day above 200-day average",
+     "pulled back near 20-day/50-day average",
+     "RSI 55 and turning up"
+    ]
+   },
+   {
+    "symbol": "MOTHERSON",
+    "action": "BUY",
+    "entry": 164.39,
+    "stop": 153.37,
+    "target": 186.42,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "uptrend: price and 50-day above 200-day average",
+     "pulled back near 20-day/50-day average",
+     "RSI 54 and turning up"
+    ]
+   },
+   {
+    "symbol": "SUNPHARMA",
+    "action": "BUY",
+    "entry": 1870.0,
+    "stop": 1784.38,
+    "target": 2041.25,
+    "score": 80,
+    "cap": "Large",
+    "reasons": [
+     "uptrend: price and 50-day above 200-day average",
+     "pulled back near 20-day/50-day average",
+     "RSI 62 and turning up"
+    ]
+   },
+   {
+    "symbol": "ZYDUSLIFE",
+    "action": "BUY",
+    "entry": 1204.2,
+    "stop": 1140.48,
+    "target": 1331.64,
     "score": 80,
     "cap": "Large",
     "reasons": [
@@ -63,41 +133,41 @@
     ]
    },
    {
-    "symbol": "HCLTECH",
+    "symbol": "AIIL",
     "action": "BUY",
-    "entry": 1384.6,
-    "stop": 1291.04,
-    "target": 1571.72,
+    "entry": 568.5,
+    "stop": 527.5,
+    "target": 650.49,
     "score": 80,
-    "cap": "Large",
+    "cap": "Mid",
     "reasons": [
      "uptrend: price and 50-day above 200-day average",
      "pulled back near 20-day/50-day average",
-     "RSI 53 and turning up"
+     "RSI 57 and turning up"
     ]
    },
    {
-    "symbol": "HYUNDAI",
+    "symbol": "BHEL",
     "action": "BUY",
-    "entry": 2084.0,
-    "stop": 1967.29,
-    "target": 2317.42,
+    "entry": 430.65,
+    "stop": 402.18,
+    "target": 487.6,
     "score": 80,
-    "cap": "Large",
+    "cap": "Mid",
     "reasons": [
      "uptrend: price and 50-day above 200-day average",
      "pulled back near 20-day/50-day average",
-     "RSI 56 and turning up"
+     "RSI 55 and turning up"
     ]
    },
    {
-    "symbol": "TECHM",
+    "symbol": "COFORGE",
     "action": "BUY",
-    "entry": 1776.4,
-    "stop": 1613.85,
-    "target": 2101.5,
+    "entry": 2041.0,
+    "stop": 1877.36,
+    "target": 2368.27,
     "score": 80,
-    "cap": "Large",
+    "cap": "Mid",
     "reasons": [
      "uptrend: price and 50-day above 200-day average",
      "pulled back near 20-day/50-day average",
@@ -105,27 +175,41 @@
     ]
    },
    {
-    "symbol": "TORNTPHARM",
+    "symbol": "DIXON",
     "action": "BUY",
-    "entry": 4691.2,
-    "stop": 4489.87,
-    "target": 5093.86,
+    "entry": 13081.0,
+    "stop": 12284.98,
+    "target": 14673.04,
     "score": 80,
-    "cap": "Large",
+    "cap": "Mid",
     "reasons": [
      "uptrend: price and 50-day above 200-day average",
      "pulled back near 20-day/50-day average",
-     "RSI 50 and turning up"
+     "RSI 60 and turning up"
     ]
    },
    {
-    "symbol": "ZYDUSLIFE",
+    "symbol": "GLAXO",
     "action": "BUY",
-    "entry": 1192.0,
-    "stop": 1126.61,
-    "target": 1322.78,
+    "entry": 2687.6,
+    "stop": 2523.72,
+    "target": 3015.36,
     "score": 80,
-    "cap": "Large",
+    "cap": "Mid",
+    "reasons": [
+     "uptrend: price and 50-day above 200-day average",
+     "pulled back near 20-day/50-day average",
+     "RSI 57 and turning up"
+    ]
+   },
+   {
+    "symbol": "JSWINFRA",
+    "action": "BUY",
+    "entry": 339.1,
+    "stop": 316.6,
+    "target": 384.09,
+    "score": 80,
+    "cap": "Mid",
     "reasons": [
      "uptrend: price and 50-day above 200-day average",
      "pulled back near 20-day/50-day average",
@@ -133,11 +217,11 @@
     ]
    },
    {
-    "symbol": "AJANTPHARM",
+    "symbol": "MPHASIS",
     "action": "BUY",
-    "entry": 3360.6,
-    "stop": 3140.98,
-    "target": 3799.84,
+    "entry": 2445.0,
+    "stop": 2269.39,
+    "target": 2796.22,
     "score": 80,
     "cap": "Mid",
     "reasons": [
@@ -147,11 +231,11 @@
     ]
    },
    {
-    "symbol": "DIXON",
+    "symbol": "NAM-INDIA",
     "action": "BUY",
-    "entry": 12890.0,
-    "stop": 12097.36,
-    "target": 14475.27,
+    "entry": 1085.5,
+    "stop": 1002.34,
+    "target": 1251.82,
     "score": 80,
     "cap": "Mid",
     "reasons": [
@@ -161,55 +245,41 @@
     ]
    },
    {
-    "symbol": "IDFCFIRSTB",
+    "symbol": "SAIL",
     "action": "BUY",
-    "entry": 81.3,
-    "stop": 77.17,
-    "target": 89.56,
+    "entry": 171.31,
+    "stop": 159.54,
+    "target": 194.84,
     "score": 80,
     "cap": "Mid",
     "reasons": [
      "uptrend: price and 50-day above 200-day average",
      "pulled back near 20-day/50-day average",
-     "RSI 61 and turning up"
+     "RSI 50 and turning up"
+    ]
+   },
+   {
+    "symbol": "ADANIENSOL",
+    "action": "BUY",
+    "entry": 1493.7,
+    "stop": 1338.47,
+    "target": 1804.16,
+    "score": 70,
+    "cap": "Large",
+    "reasons": [
+     "uptrend: price and 50-day above 200-day average",
+     "RSI 65 and turning up",
+     "up day on above-average volume"
     ]
    },
    {
     "symbol": "ADANIGREEN",
     "action": "BUY",
-    "entry": 1406.6,
-    "stop": 1284.87,
-    "target": 1650.06,
+    "entry": 1429.9,
+    "stop": 1288.0,
+    "target": 1713.7,
     "score": 70,
     "cap": "Large",
-    "reasons": [
-     "uptrend: price and 50-day above 200-day average",
-     "RSI 59 and turning up",
-     "up day on above-average volume"
-    ]
-   },
-   {
-    "symbol": "APOLLOHOSP",
-    "action": "BUY",
-    "entry": 8771.0,
-    "stop": 8277.14,
-    "target": 9758.72,
-    "score": 70,
-    "cap": "Large",
-    "reasons": [
-     "uptrend: price and 50-day above 200-day average",
-     "RSI 64 and turning up",
-     "up day on above-average volume"
-    ]
-   },
-   {
-    "symbol": "BHARTIHEXA",
-    "action": "BUY",
-    "entry": 1709.9,
-    "stop": 1532.57,
-    "target": 2064.57,
-    "score": 70,
-    "cap": "Mid",
     "reasons": [
      "uptrend: price and 50-day above 200-day average",
      "RSI 62 and turning up",
@@ -217,27 +287,55 @@
     ]
    },
    {
-    "symbol": "FLUOROCHEM",
+    "symbol": "HYUNDAI",
     "action": "BUY",
-    "entry": 4824.1,
-    "stop": 4434.75,
-    "target": 5602.81,
+    "entry": 2121.3,
+    "stop": 2003.27,
+    "target": 2357.36,
+    "score": 70,
+    "cap": "Large",
+    "reasons": [
+     "uptrend: price and 50-day above 200-day average",
+     "RSI 60 and turning up",
+     "up day on above-average volume"
+    ]
+   },
+   {
+    "symbol": "TVSMOTOR",
+    "action": "BUY",
+    "entry": 4466.2,
+    "stop": 4095.07,
+    "target": 5208.46,
+    "score": 70,
+    "cap": "Large",
+    "reasons": [
+     "uptrend: price and 50-day above 200-day average",
+     "RSI 65 and turning up",
+     "up day on above-average volume"
+    ]
+   },
+   {
+    "symbol": "OBEROIRLTY",
+    "action": "BUY",
+    "entry": 1819.7,
+    "stop": 1713.47,
+    "target": 2032.15,
     "score": 70,
     "cap": "Mid",
     "reasons": [
      "uptrend: price and 50-day above 200-day average",
-     "RSI 63 and turning up",
+     "RSI 62 and turning up",
      "up day on above-average volume"
     ]
    }
   ],
   "intraday": [
    {
-    "symbol": "BEL",
+    "symbol": "BHARTIARTL",
     "action": "BUY above",
-    "entry": 404.6,
-    "stop": 399.4,
-    "target": 412.41,
+    "entry": 2170.89,
+    "stop": 2135.8,
+    "target": 2223.53,
     "score": 70,
     "cap": "Large",
     "reasons": [
@@ -247,11 +345,11 @@
     ]
    },
    {
-    "symbol": "SHRIRAMFIN",
+    "symbol": "BOSCHLTD",
     "action": "BUY above",
-    "entry": 983.21,
-    "stop": 965.65,
-    "target": 1009.56,
+    "entry": 49529.74,
+    "stop": 48700.0,
+    "target": 50774.35,
     "score": 70,
     "cap": "Large",
     "reasons": [
@@ -261,11 +359,11 @@
     ]
    },
    {
-    "symbol": "TITAN",
+    "symbol": "DIVISLAB",
     "action": "BUY above",
-    "entry": 4931.04,
-    "stop": 4850.0,
-    "target": 5052.59,
+    "entry": 11241.65,
+    "stop": 11030.0,
+    "target": 11559.12,
     "score": 70,
     "cap": "Large",
     "reasons": [
@@ -275,11 +373,39 @@
     ]
    },
    {
-    "symbol": "MAHABANK",
+    "symbol": "MUTHOOTFIN",
     "action": "BUY above",
-    "entry": 92.66,
-    "stop": 91.27,
-    "target": 94.75,
+    "entry": 2809.16,
+    "stop": 2749.0,
+    "target": 2899.41,
+    "score": 70,
+    "cap": "Large",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "inside day",
+     "trend up (above 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "MOTHERSON",
+    "action": "BUY above",
+    "entry": 166.04,
+    "stop": 162.38,
+    "target": 171.53,
+    "score": 70,
+    "cap": "Large",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "inside day",
+     "trend up (above 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "AUROPHARMA",
+    "action": "BUY above",
+    "entry": 1815.42,
+    "stop": 1785.9,
+    "target": 1859.71,
     "score": 70,
     "cap": "Mid",
     "reasons": [
@@ -289,11 +415,39 @@
     ]
    },
    {
-    "symbol": "BDL",
+    "symbol": "AIIL",
+    "action": "BUY above",
+    "entry": 577.05,
+    "stop": 563.15,
+    "target": 597.9,
+    "score": 70,
+    "cap": "Mid",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "inside day",
+     "trend up (above 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "ICICIGI",
+    "action": "BUY above",
+    "entry": 1710.98,
+    "stop": 1685.1,
+    "target": 1749.8,
+    "score": 70,
+    "cap": "Mid",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "inside day",
+     "trend up (above 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "NLCINDIA",
     "action": "SELL below",
-    "entry": 1020.65,
-    "stop": 1040.7,
-    "target": 990.59,
+    "entry": 231.13,
+    "stop": 236.8,
+    "target": 222.63,
     "score": 70,
     "cap": "Mid",
     "reasons": [
@@ -303,11 +457,11 @@
     ]
    },
    {
-    "symbol": "INDHOTEL",
+    "symbol": "PATANJALI",
     "action": "BUY above",
-    "entry": 898.14,
-    "stop": 882.05,
-    "target": 922.27,
+    "entry": 407.39,
+    "stop": 399.0,
+    "target": 419.98,
     "score": 70,
     "cap": "Mid",
     "reasons": [
@@ -317,25 +471,52 @@
     ]
    },
    {
-    "symbol": "THERMAX",
+    "symbol": "SUNDARMFIN",
+    "action": "BUY above",
+    "entry": 4396.91,
+    "stop": 4293.5,
+    "target": 4552.03,
+    "score": 70,
+    "cap": "Mid",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "inside day",
+     "trend up (above 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "SWIGGY",
     "action": "SELL below",
-    "entry": 2717.2,
-    "stop": 2780.1,
-    "target": 2622.85,
+    "entry": 186.61,
+    "stop": 192.3,
+    "target": 178.08,
     "score": 70,
     "cap": "Mid",
     "reasons": [
      "narrowest range of last 7 days (NR7)",
      "inside day",
      "trend down (below 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "ADANIPORTS",
+    "action": "BUY above",
+    "entry": 1929.88,
+    "stop": 1900.0,
+    "target": 1974.7,
+    "score": 50,
+    "cap": "Large",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "trend up (above 20 and 50-day averages)"
     ]
    },
    {
     "symbol": "BAJFINANCE",
     "action": "BUY above",
-    "entry": 1125.08,
-    "stop": 1098.7,
-    "target": 1164.64,
+    "entry": 1129.9,
+    "stop": 1107.55,
+    "target": 1163.41,
     "score": 50,
     "cap": "Large",
     "reasons": [
@@ -346,9 +527,9 @@
    {
     "symbol": "BAJAJFINSV",
     "action": "BUY above",
-    "entry": 1878.82,
-    "stop": 1841.0,
-    "target": 1935.54,
+    "entry": 1885.43,
+    "stop": 1848.2,
+    "target": 1941.27,
     "score": 50,
     "cap": "Large",
     "reasons": [
@@ -357,11 +538,11 @@
     ]
    },
    {
-    "symbol": "BAJAJHLDNG",
+    "symbol": "GAIL",
     "action": "BUY above",
-    "entry": 11368.81,
-    "stop": 11169.0,
-    "target": 11668.52,
+    "entry": 188.79,
+    "stop": 186.51,
+    "target": 192.2,
     "score": 50,
     "cap": "Large",
     "reasons": [
@@ -370,11 +551,11 @@
     ]
    },
    {
-    "symbol": "BPCL",
+    "symbol": "HDFCBANK",
     "action": "BUY above",
-    "entry": 306.77,
-    "stop": 301.15,
-    "target": 315.21,
+    "entry": 822.66,
+    "stop": 810.85,
+    "target": 840.38,
     "score": 50,
     "cap": "Large",
     "reasons": [
@@ -383,89 +564,11 @@
     ]
    },
    {
-    "symbol": "DLF",
+    "symbol": "INDIGO",
     "action": "BUY above",
-    "entry": 764.65,
-    "stop": 748.95,
-    "target": 788.21,
-    "score": 50,
-    "cap": "Large",
-    "reasons": [
-     "narrowest range of last 7 days (NR7)",
-     "trend up (above 20 and 50-day averages)"
-    ]
-   },
-   {
-    "symbol": "HDFCAMC",
-    "action": "BUY above",
-    "entry": 2680.16,
-    "stop": 2624.6,
-    "target": 2763.49,
-    "score": 50,
-    "cap": "Large",
-    "reasons": [
-     "narrowest range of last 7 days (NR7)",
-     "trend up (above 20 and 50-day averages)"
-    ]
-   },
-   {
-    "symbol": "HAL",
-    "action": "SELL below",
-    "entry": 4743.18,
-    "stop": 4830.5,
-    "target": 4612.2,
-    "score": 50,
-    "cap": "Large",
-    "reasons": [
-     "narrowest range of last 7 days (NR7)",
-     "trend down (below 20 and 50-day averages)"
-    ]
-   },
-   {
-    "symbol": "HINDUNILVR",
-    "action": "BUY above",
-    "entry": 2004.35,
-    "stop": 1979.3,
-    "target": 2041.92,
-    "score": 50,
-    "cap": "Large",
-    "reasons": [
-     "narrowest range of last 7 days (NR7)",
-     "trend up (above 20 and 50-day averages)"
-    ]
-   },
-   {
-    "symbol": "ICICIBANK",
-    "action": "BUY above",
-    "entry": 1599.72,
-    "stop": 1577.0,
-    "target": 1633.8,
-    "score": 50,
-    "cap": "Large",
-    "reasons": [
-     "narrowest range of last 7 days (NR7)",
-     "trend up (above 20 and 50-day averages)"
-    ]
-   },
-   {
-    "symbol": "LT",
-    "action": "BUY above",
-    "entry": 4173.89,
-    "stop": 4115.0,
-    "target": 4262.21,
-    "score": 50,
-    "cap": "Large",
-    "reasons": [
-     "narrowest range of last 7 days (NR7)",
-     "trend up (above 20 and 50-day averages)"
-    ]
-   },
-   {
-    "symbol": "M&M",
-    "action": "BUY above",
-    "entry": 3370.52,
-    "stop": 3313.0,
-    "target": 3456.79,
+    "entry": 5679.6,
+    "stop": 5595.0,
+    "target": 5806.49,
     "score": 50,
     "cap": "Large",
     "reasons": [
@@ -476,9 +579,22 @@
    {
     "symbol": "NTPC",
     "action": "BUY above",
-    "entry": 322.03,
-    "stop": 316.85,
-    "target": 329.8,
+    "entry": 322.8,
+    "stop": 318.8,
+    "target": 328.8,
+    "score": 50,
+    "cap": "Large",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "trend up (above 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "SBILIFE",
+    "action": "BUY above",
+    "entry": 1839.02,
+    "stop": 1801.0,
+    "target": 1896.04,
     "score": 50,
     "cap": "Large",
     "reasons": [
@@ -489,9 +605,9 @@
    {
     "symbol": "TATAPOWER",
     "action": "SELL below",
-    "entry": 342.17,
-    "stop": 349.65,
-    "target": 330.96,
+    "entry": 342.11,
+    "stop": 347.85,
+    "target": 333.49,
     "score": 50,
     "cap": "Large",
     "reasons": [
@@ -500,24 +616,50 @@
     ]
    },
    {
-    "symbol": "TRENT",
+    "symbol": "TECHM",
     "action": "BUY above",
-    "entry": 3221.54,
-    "stop": 3168.1,
-    "target": 3301.71,
+    "entry": 1775.79,
+    "stop": 1746.4,
+    "target": 1819.88,
     "score": 50,
     "cap": "Large",
     "reasons": [
      "narrowest range of last 7 days (NR7)",
      "trend up (above 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "TITAN",
+    "action": "BUY above",
+    "entry": 4950.1,
+    "stop": 4885.1,
+    "target": 5047.59,
+    "score": 50,
+    "cap": "Large",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "trend up (above 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "TORNTPHARM",
+    "action": "SELL below",
+    "entry": 4616.69,
+    "stop": 4686.5,
+    "target": 4511.98,
+    "score": 50,
+    "cap": "Large",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "trend down (below 20 and 50-day averages)"
     ]
    },
    {
     "symbol": "ANTHEM",
     "action": "BUY above",
-    "entry": 951.4,
-    "stop": 930.0,
-    "target": 983.49,
+    "entry": 939.8,
+    "stop": 921.1,
+    "target": 967.86,
     "score": 50,
     "cap": "Mid",
     "reasons": [
@@ -526,37 +668,11 @@
     ]
    },
    {
-    "symbol": "APARINDS",
-    "action": "SELL below",
-    "entry": 14334.27,
-    "stop": 14888.0,
-    "target": 13503.66,
-    "score": 50,
-    "cap": "Mid",
-    "reasons": [
-     "narrowest range of last 7 days (NR7)",
-     "trend down (below 20 and 50-day averages)"
-    ]
-   },
-   {
-    "symbol": "ASTRAL",
-    "action": "SELL below",
-    "entry": 1244.05,
-    "stop": 1261.1,
-    "target": 1218.46,
-    "score": 50,
-    "cap": "Mid",
-    "reasons": [
-     "narrowest range of last 7 days (NR7)",
-     "trend down (below 20 and 50-day averages)"
-    ]
-   },
-   {
-    "symbol": "DABUR",
+    "symbol": "COROMANDEL",
     "action": "BUY above",
-    "entry": 382.87,
-    "stop": 378.2,
-    "target": 389.89,
+    "entry": 1986.67,
+    "stop": 1954.5,
+    "target": 2034.92,
     "score": 50,
     "cap": "Mid",
     "reasons": [
@@ -565,50 +681,37 @@
     ]
    },
    {
-    "symbol": "HINDCOPPER",
-    "action": "SELL below",
-    "entry": 425.91,
-    "stop": 435.0,
-    "target": 412.28,
+    "symbol": "NYKAA",
+    "action": "BUY above",
+    "entry": 363.39,
+    "stop": 356.4,
+    "target": 373.88,
     "score": 50,
     "cap": "Mid",
     "reasons": [
      "narrowest range of last 7 days (NR7)",
-     "trend down (below 20 and 50-day averages)"
+     "trend up (above 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "ICICILIFE",
+    "action": "BUY above",
+    "entry": 463.6,
+    "stop": 452.8,
+    "target": 479.8,
+    "score": 50,
+    "cap": "Mid",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "trend up (above 20 and 50-day averages)"
     ]
    },
    {
     "symbol": "IRCTC",
     "action": "SELL below",
-    "entry": 447.78,
-    "stop": 457.0,
-    "target": 433.95,
-    "score": 50,
-    "cap": "Mid",
-    "reasons": [
-     "narrowest range of last 7 days (NR7)",
-     "trend down (below 20 and 50-day averages)"
-    ]
-   },
-   {
-    "symbol": "INDUSINDBK",
-    "action": "BUY above",
-    "entry": 926.24,
-    "stop": 907.7,
-    "target": 954.06,
-    "score": 50,
-    "cap": "Mid",
-    "reasons": [
-     "narrowest range of last 7 days (NR7)",
-     "trend up (above 20 and 50-day averages)"
-    ]
-   },
-   {
-    "symbol": "IPCALAB",
-    "action": "SELL below",
-    "entry": 1849.91,
-    "stop": 1896.3,
-    "target": 1780.33,
+    "entry": 447.37,
+    "stop": 455.65,
+    "target": 434.95,
     "score": 50,
     "cap": "Mid",
     "reasons": [
@@ -619,9 +722,9 @@
    {
     "symbol": "LTTS",
     "action": "BUY above",
-    "entry": 4299.12,
-    "stop": 4202.6,
-    "target": 4443.91,
+    "entry": 4262.2,
+    "stop": 4175.0,
+    "target": 4393.01,
     "score": 50,
     "cap": "Mid",
     "reasons": [
@@ -630,11 +733,24 @@
     ]
    },
    {
-    "symbol": "LICI",
+    "symbol": "LGEINDIA",
     "action": "BUY above",
-    "entry": 404.38,
-    "stop": 398.1,
-    "target": 413.8,
+    "entry": 1741.09,
+    "stop": 1710.9,
+    "target": 1786.38,
+    "score": 50,
+    "cap": "Mid",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "trend up (above 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "MANKIND",
+    "action": "BUY above",
+    "entry": 2646.99,
+    "stop": 2610.0,
+    "target": 2702.47,
     "score": 50,
     "cap": "Mid",
     "reasons": [
@@ -645,9 +761,9 @@
    {
     "symbol": "NHPC",
     "action": "SELL below",
-    "entry": 74.21,
-    "stop": 75.83,
-    "target": 71.79,
+    "entry": 74.18,
+    "stop": 75.2,
+    "target": 72.65,
     "score": 50,
     "cap": "Mid",
     "reasons": [
@@ -656,11 +772,11 @@
     ]
    },
    {
-    "symbol": "PAGEIND",
+    "symbol": "PIIND",
     "action": "SELL below",
-    "entry": 31110.82,
-    "stop": 31705.0,
-    "target": 30219.54,
+    "entry": 1660.44,
+    "stop": 1696.0,
+    "target": 1607.11,
     "score": 50,
     "cap": "Mid",
     "reasons": [
@@ -671,9 +787,9 @@
    {
     "symbol": "PETRONET",
     "action": "BUY above",
-    "entry": 329.0,
-    "stop": 322.45,
-    "target": 338.81,
+    "entry": 331.67,
+    "stop": 327.3,
+    "target": 338.23,
     "score": 50,
     "cap": "Mid",
     "reasons": [
@@ -682,11 +798,50 @@
     ]
    },
    {
-    "symbol": "PIRAMALFIN",
+    "symbol": "SRF",
     "action": "BUY above",
-    "entry": 2135.25,
-    "stop": 2077.7,
-    "target": 2221.57,
+    "entry": 2497.13,
+    "stop": 2461.5,
+    "target": 2550.58,
+    "score": 50,
+    "cap": "Mid",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "trend up (above 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "THERMAX",
+    "action": "SELL below",
+    "entry": 2709.72,
+    "stop": 2764.0,
+    "target": 2628.3,
+    "score": 50,
+    "cap": "Mid",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "trend down (below 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "TIINDIA",
+    "action": "SELL below",
+    "entry": 2205.39,
+    "stop": 2264.0,
+    "target": 2117.47,
+    "score": 50,
+    "cap": "Mid",
+    "reasons": [
+     "narrowest range of last 7 days (NR7)",
+     "trend down (below 20 and 50-day averages)"
+    ]
+   },
+   {
+    "symbol": "UNITDSPR",
+    "action": "BUY above",
+    "entry": 1454.8,
+    "stop": 1436.0,
+    "target": 1483.0,
     "score": 50,
     "cap": "Mid",
     "reasons": [
