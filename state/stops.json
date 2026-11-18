@@ -295,5 +295,14 @@
     "stop": 2046.08,
     "symbol": "LAURUSLABS",
     "target": 2921.84
+  },
+  {
+    "entry": 1871.5,
+    "opened": "2026-11-18",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1787.93,
+    "symbol": "SUNPHARMA",
+    "target": 2038.63
   }
 ]
