@@ -852,53 +852,9 @@
   ]
  },
  "morning": {
-  "day": "2026-11-17",
-  "generated": "2026-11-17T10:00+05:30",
-  "setups": [
-   {
-    "symbol": "AUROPHARMA",
-    "action": "BUY",
-    "entry": 1810.2,
-    "stop": 1797.0,
-    "target": 1830.0,
-    "score": 80,
-    "cap": "Mid",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "PAYTM",
-    "action": "BUY",
-    "entry": 1903.0,
-    "stop": 1877.5,
-    "target": 1941.25,
-    "score": 70,
-    "cap": "Mid",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "SBICARD",
-    "action": "BUY",
-    "entry": 576.5,
-    "stop": 570.65,
-    "target": 585.27,
-    "score": 70,
-    "cap": "Mid",
-    "reasons": [
-     "gap -1.2%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   }
-  ],
-  "mood": "Bullish"
+  "day": "2026-11-18",
+  "generated": "2026-11-18T10:00+05:30",
+  "setups": [],
+  "mood": "Bearish"
  }
 }
