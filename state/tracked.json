@@ -198,24 +198,6 @@
     "target": 444.19
   },
   {
-    "entry": 12.88,
-    "opened": "2026-11-11",
-    "side": "LONG",
-    "source": "report",
-    "stop": 12.02,
-    "symbol": "IDEA",
-    "target": 14.61
-  },
-  {
-    "entry": 11040.0,
-    "opened": "2026-11-11",
-    "side": "LONG",
-    "source": "report",
-    "stop": 10534.16,
-    "symbol": "BAJAJ-AUTO",
-    "target": 12051.68
-  },
-  {
     "entry": 822.6,
     "opened": "2026-11-11",
     "side": "LONG",
@@ -304,5 +286,32 @@
     "stop": 1787.93,
     "symbol": "SUNPHARMA",
     "target": 2038.63
+  },
+  {
+    "entry": 4700.0,
+    "opened": "2026-11-19",
+    "side": "LONG",
+    "source": "report",
+    "stop": 4451.61,
+    "symbol": "TITAN",
+    "target": 5196.78
+  },
+  {
+    "entry": 10817.0,
+    "opened": "2026-11-19",
+    "side": "LONG",
+    "source": "report",
+    "stop": 10320.68,
+    "symbol": "BAJAJ-AUTO",
+    "target": 11809.63
+  },
+  {
+    "entry": 2713.4,
+    "opened": "2026-11-19",
+    "side": "LONG",
+    "source": "report",
+    "stop": 2543.93,
+    "symbol": "GLAXO",
+    "target": 3052.34
   }
 ]
