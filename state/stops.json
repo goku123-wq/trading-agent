@@ -45,15 +45,6 @@
     "target": 194.47
   },
   {
-    "entry": 8137.0,
-    "opened": "2026-10-28",
-    "side": "LONG",
-    "source": "report",
-    "stop": 7688.0,
-    "symbol": "APOLLOHOSP",
-    "target": 9035.01
-  },
-  {
     "entry": 1091.5,
     "opened": "2026-10-28",
     "side": "LONG",
@@ -313,5 +304,23 @@
     "stop": 2543.93,
     "symbol": "GLAXO",
     "target": 3052.34
+  },
+  {
+    "entry": 1344.4,
+    "opened": "2026-11-20",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1269.51,
+    "symbol": "HCLTECH",
+    "target": 1494.18
+  },
+  {
+    "entry": 2086.7,
+    "opened": "2026-11-20",
+    "side": "LONG",
+    "source": "report",
+    "stop": 1881.94,
+    "symbol": "COFORGE",
+    "target": 2496.23
   }
 ]
