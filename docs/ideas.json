@@ -735,306 +735,19 @@
   ]
  },
  "morning": {
-  "day": "2026-11-19",
-  "generated": "2026-11-19T10:01+05:30",
+  "day": "2026-11-20",
+  "generated": "2026-11-20T10:00+05:30",
   "setups": [
    {
-    "symbol": "BHARTIARTL",
+    "symbol": "COROMANDEL",
     "action": "BUY",
-    "entry": 2152.8,
-    "stop": 2136.5,
-    "target": 2177.25,
-    "score": 70,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "GAIL",
-    "action": "BUY",
-    "entry": 192.09,
-    "stop": 190.1,
-    "target": 195.07,
-    "score": 70,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "HDFCLIFE",
-    "action": "BUY",
-    "entry": 579.75,
-    "stop": 573.1,
-    "target": 589.73,
-    "score": 70,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "ADANIPOWER",
-    "action": "BUY",
-    "entry": 206.37,
-    "stop": 204.14,
-    "target": 209.71,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "BAJAJFINSV",
-    "action": "BUY",
-    "entry": 1876.0,
-    "stop": 1854.15,
-    "target": 1908.77,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "gap -0.6%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "BANKBARODA",
-    "action": "BUY",
-    "entry": 281.71,
-    "stop": 277.2,
-    "target": 288.47,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "CHOLAFIN",
-    "action": "BUY",
-    "entry": 1871.8,
-    "stop": 1841.18,
-    "target": 1917.73,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "gap -1.1%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "IRFC",
-    "action": "BUY",
-    "entry": 82.96,
-    "stop": 81.33,
-    "target": 85.41,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "JSWSTEEL",
-    "action": "BUY",
-    "entry": 1323.3,
-    "stop": 1304.69,
-    "target": 1351.21,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "JINDALSTEL",
-    "action": "BUY",
-    "entry": 1118.9,
-    "stop": 1099.34,
-    "target": 1148.24,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "gap -3.6%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "NTPC",
-    "action": "BUY",
-    "entry": 321.4,
-    "stop": 317.95,
-    "target": 326.57,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "POWERGRID",
-    "action": "BUY",
-    "entry": 259.35,
-    "stop": 257.15,
-    "target": 262.65,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "SBILIFE",
-    "action": "BUY",
-    "entry": 1796.3,
-    "stop": 1779.8,
-    "target": 1821.05,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "gap -1.6%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "SIEMENS",
-    "action": "BUY",
-    "entry": 3548.8,
-    "stop": 3493.9,
-    "target": 3631.16,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "gap -1.6%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "TRENT",
-    "action": "BUY",
-    "entry": 3220.2,
-    "stop": 3173.86,
-    "target": 3289.72,
-    "score": 60,
-    "cap": "Large",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "ATGL",
-    "action": "BUY",
-    "entry": 567.4,
-    "stop": 561.0,
-    "target": 577.0,
+    "entry": 2000.6,
+    "stop": 1969.55,
+    "target": 2047.17,
     "score": 60,
     "cap": "Mid",
     "reasons": [
-     "gap -2.5%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "MAHABANK",
-    "action": "BUY",
-    "entry": 97.76,
-    "stop": 96.33,
-    "target": 99.9,
-    "score": 60,
-    "cap": "Mid",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "CONCOR",
-    "action": "BUY",
-    "entry": 439.05,
-    "stop": 433.1,
-    "target": 447.97,
-    "score": 60,
-    "cap": "Mid",
-    "reasons": [
-     "gap -0.5%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "HDBFS",
-    "action": "BUY",
-    "entry": 561.8,
-    "stop": 557.75,
-    "target": 567.87,
-    "score": 60,
-    "cap": "Mid",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "INDUSTOWER",
-    "action": "BUY",
-    "entry": 389.8,
-    "stop": 387.3,
-    "target": 393.55,
-    "score": 60,
-    "cap": "Mid",
-    "reasons": [
-     "gap -0.6%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "JSWENERGY",
-    "action": "BUY",
-    "entry": 514.35,
-    "stop": 507.72,
-    "target": 524.3,
-    "score": 60,
-    "cap": "Mid",
-    "reasons": [
+     "gap -1.2%",
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
@@ -1043,12 +756,27 @@
    {
     "symbol": "LICI",
     "action": "BUY",
-    "entry": 404.2,
-    "stop": 398.66,
-    "target": 412.51,
+    "entry": 407.9,
+    "stop": 403.53,
+    "target": 414.46,
     "score": 60,
     "cap": "Mid",
     "reasons": [
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "LODHA",
+    "action": "BUY",
+    "entry": 1197.5,
+    "stop": 1178.5,
+    "target": 1226.0,
+    "score": 60,
+    "cap": "Mid",
+    "reasons": [
+     "gap -1.5%",
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
