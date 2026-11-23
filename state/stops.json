@@ -322,5 +322,23 @@
     "stop": 1881.94,
     "symbol": "COFORGE",
     "target": 2496.23
+  },
+  {
+    "entry": 4763.7,
+    "opened": "2026-11-23",
+    "side": "LONG",
+    "source": "report",
+    "stop": 4562.4,
+    "symbol": "TORNTPHARM",
+    "target": 5166.31
+  },
+  {
+    "entry": 2468.4,
+    "opened": "2026-11-23",
+    "side": "LONG",
+    "source": "report",
+    "stop": 2295.81,
+    "symbol": "MPHASIS",
+    "target": 2813.58
   }
 ]
