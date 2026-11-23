@@ -924,54 +924,24 @@
   ]
  },
  "morning": {
-  "day": "2026-11-20",
-  "generated": "2026-11-20T10:00+05:30",
+  "day": "2026-11-23",
+  "generated": "2026-11-23T10:00+05:30",
   "setups": [
    {
-    "symbol": "COROMANDEL",
-    "action": "BUY",
-    "entry": 2000.6,
-    "stop": 1969.55,
-    "target": 2047.17,
-    "score": 60,
+    "symbol": "PREMIERENE",
+    "action": "SELL",
+    "entry": 826.15,
+    "stop": 838.16,
+    "target": 808.14,
+    "score": 70,
     "cap": "Mid",
     "reasons": [
-     "gap -1.2%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "LICI",
-    "action": "BUY",
-    "entry": 407.9,
-    "stop": 403.53,
-    "target": 414.46,
-    "score": 60,
-    "cap": "Mid",
-    "reasons": [
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
-    ]
-   },
-   {
-    "symbol": "LODHA",
-    "action": "BUY",
-    "entry": 1197.5,
-    "stop": 1178.5,
-    "target": 1226.0,
-    "score": 60,
-    "cap": "Mid",
-    "reasons": [
-     "gap -1.5%",
-     "broke above 9:15-10:00 high",
-     "above VWAP",
-     "daily trend up"
+     "broke below 9:15-10:00 low",
+     "below VWAP",
+     "daily trend down"
     ]
    }
   ],
-  "mood": "Mixed"
+  "mood": "Bearish"
  }
 }
