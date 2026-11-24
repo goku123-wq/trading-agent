@@ -1,7 +1,7 @@
 {
  "daily": {
   "day": "2026-11-23",
-  "generated": "2026-11-23T17:00+05:30",
+  "generated": "2026-11-24T17:00+05:30",
   "long_term": [
    {
     "symbol": "HCLTECH",
@@ -104,20 +104,6 @@
      "uptrend: price and 50-day above 200-day average",
      "pulled back near 20-day/50-day average",
      "RSI 49 and turning up"
-    ]
-   },
-   {
-    "symbol": "EMBASSY",
-    "action": "BUY",
-    "entry": 422.01,
-    "stop": 410.6,
-    "target": 444.82,
-    "score": 80,
-    "cap": "Mid",
-    "reasons": [
-     "uptrend: price and 50-day above 200-day average",
-     "pulled back near 20-day/50-day average",
-     "RSI 54 and turning up"
     ]
    },
    {

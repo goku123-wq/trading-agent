@@ -50,7 +50,6 @@ Uses ₹49.9k of your ₹50.0k | +₹1.7k at targets | -₹1.1k if all stops hit
 | MPHASIS | BUY | 2468.4 | 2295.81 | 2813.58 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 52 and turning up; up day on above-average volume |
 | ADANIPORTS | BUY | 1919.0 | 1786.89 | 2183.21 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 60 and turning up |
 | TITAN | BUY | 4680.0 | 4432.28 | 5175.44 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 49 and turning up |
-| EMBASSY | BUY | 422.01 | 410.6 | 444.82 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 54 and turning up |
 | NAUKRI | BUY | 1187.5 | 1113.32 | 1335.87 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 49 and turning up |
 | MCX | BUY | 3581.6 | 3271.08 | 4202.63 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 57 and turning up |
 | DIXON | BUY | 13390.0 | 12483.2 | 15203.61 | 2.0 | 70 | Mid | uptrend: price and 50-day above 200-day average; RSI 62 and turning up; up day on above-average volume |
@@ -71,6 +70,7 @@ Uses ₹49.9k of your ₹50.0k | +₹1.7k at targets | -₹1.1k if all stops hit
 | APLAPOLLO | SELL/EXIT | 1670.0 | 1851.27 | 1307.46 | 2.0 | 80 | Mid | closed below 200-day average |
 | ABBOTINDIA | SELL/EXIT | 26125.0 | 27438.04 | 23498.92 | 2.0 | 80 | Mid | closed below 200-day average |
 | COROMANDEL | SELL/EXIT | 1971.7 | 2094.06 | 1726.99 | 2.0 | 80 | Mid | closed below 200-day average |
+| EMBASSY | SELL/EXIT | 419.97 | 431.3 | 397.32 | 2.0 | 80 | Mid | closed below 200-day average |
 | JSL | SELL/EXIT | 724.85 | 763.57 | 647.42 | 2.0 | 80 | Mid | closed below 200-day average |
 | MRF | SELL/EXIT | 129605.0 | 133948.18 | 120918.64 | 2.0 | 80 | Mid | closed below 200-day average |
 | NAM-INDIA | SELL/EXIT | 1035.5 | 1116.84 | 872.81 | 2.0 | 80 | Mid | closed below 200-day average |
