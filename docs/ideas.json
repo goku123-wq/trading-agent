@@ -407,24 +407,25 @@
   ]
  },
  "morning": {
-  "day": "2026-11-23",
-  "generated": "2026-11-23T10:00+05:30",
+  "day": "2026-11-25",
+  "generated": "2026-11-25T10:01+05:30",
   "setups": [
    {
-    "symbol": "PREMIERENE",
-    "action": "SELL",
-    "entry": 826.15,
-    "stop": 838.16,
-    "target": 808.14,
-    "score": 70,
-    "cap": "Mid",
+    "symbol": "DIVISLAB",
+    "action": "BUY",
+    "entry": 11355.0,
+    "stop": 11202.45,
+    "target": 11583.82,
+    "score": 80,
+    "cap": "Large",
     "reasons": [
-     "broke below 9:15-10:00 low",
-     "below VWAP",
-     "daily trend down"
+     "gap +0.7%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
     ]
    }
   ],
-  "mood": "Bearish"
+  "mood": "Bullish"
  }
 }
