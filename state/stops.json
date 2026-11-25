@@ -340,5 +340,32 @@
     "stop": 2295.81,
     "symbol": "MPHASIS",
     "target": 2813.58
+  },
+  {
+    "entry": 187.5,
+    "opened": "2026-11-25",
+    "side": "LONG",
+    "source": "report",
+    "stop": 173.17,
+    "symbol": "GAIL",
+    "target": 216.17
+  },
+  {
+    "entry": 4936.0,
+    "opened": "2026-11-25",
+    "side": "LONG",
+    "source": "report",
+    "stop": 4690.09,
+    "symbol": "HAL",
+    "target": 5427.81
+  },
+  {
+    "entry": 217.48,
+    "opened": "2026-11-25",
+    "side": "LONG",
+    "source": "report",
+    "stop": 195.53,
+    "symbol": "GROWW",
+    "target": 261.38
   }
 ]
