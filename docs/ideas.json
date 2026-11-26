@@ -605,25 +605,38 @@
   ]
  },
  "morning": {
-  "day": "2026-11-25",
-  "generated": "2026-11-25T10:01+05:30",
+  "day": "2026-11-26",
+  "generated": "2026-11-26T10:00+05:30",
   "setups": [
    {
-    "symbol": "DIVISLAB",
+    "symbol": "CIPLA",
     "action": "BUY",
-    "entry": 11355.0,
-    "stop": 11202.45,
-    "target": 11583.82,
-    "score": 80,
+    "entry": 1441.6,
+    "stop": 1428.1,
+    "target": 1461.85,
+    "score": 70,
     "cap": "Large",
     "reasons": [
-     "gap +0.7%",
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "BEL",
+    "action": "BUY",
+    "entry": 408.9,
+    "stop": 403.72,
+    "target": 416.66,
+    "score": 60,
+    "cap": "Large",
+    "reasons": [
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
     ]
    }
   ],
-  "mood": "Bullish"
+  "mood": "Mixed"
  }
 }
