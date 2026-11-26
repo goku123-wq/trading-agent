@@ -207,15 +207,6 @@
     "target": 89.43
   },
   {
-    "entry": 1665.5,
-    "opened": "2026-11-13",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1529.58,
-    "symbol": "BHARTIHEXA",
-    "target": 1937.34
-  },
-  {
     "entry": 1745.4,
     "opened": "2026-11-13",
     "side": "LONG",
@@ -367,5 +358,14 @@
     "stop": 195.53,
     "symbol": "GROWW",
     "target": 261.38
+  },
+  {
+    "entry": 208.3,
+    "opened": "2026-11-26",
+    "side": "LONG",
+    "source": "report",
+    "stop": 196.36,
+    "symbol": "ADANIPOWER",
+    "target": 232.17
   }
 ]
