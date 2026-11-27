@@ -816,17 +816,17 @@
   ]
  },
  "morning": {
-  "day": "2026-11-26",
-  "generated": "2026-11-26T10:00+05:30",
+  "day": "2026-11-27",
+  "generated": "2026-11-27T10:00+05:30",
   "setups": [
    {
-    "symbol": "CIPLA",
+    "symbol": "FORTIS",
     "action": "BUY",
-    "entry": 1441.6,
-    "stop": 1428.1,
-    "target": 1461.85,
+    "entry": 832.5,
+    "stop": 824.85,
+    "target": 843.98,
     "score": 70,
-    "cap": "Large",
+    "cap": "Mid",
     "reasons": [
      "broke above 9:15-10:00 high",
      "above VWAP",
@@ -836,12 +836,27 @@
    {
     "symbol": "BEL",
     "action": "BUY",
-    "entry": 408.9,
-    "stop": 403.72,
-    "target": 416.66,
+    "entry": 410.95,
+    "stop": 406.93,
+    "target": 416.98,
     "score": 60,
     "cap": "Large",
     "reasons": [
+     "broke above 9:15-10:00 high",
+     "above VWAP",
+     "daily trend up"
+    ]
+   },
+   {
+    "symbol": "ICICIAMC",
+    "action": "BUY",
+    "entry": 2987.2,
+    "stop": 2950.3,
+    "target": 3042.55,
+    "score": 60,
+    "cap": "Mid",
+    "reasons": [
+     "gap -0.7%",
      "broke above 9:15-10:00 high",
      "above VWAP",
      "daily trend up"
