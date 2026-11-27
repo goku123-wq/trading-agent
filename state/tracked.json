@@ -9,15 +9,6 @@
     "target": 2007.26
   },
   {
-    "entry": 1918.9,
-    "opened": "2026-10-21",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1788.91,
-    "symbol": "IPCALAB",
-    "target": 2178.88
-  },
-  {
     "entry": 1160.4,
     "opened": "2026-10-26",
     "side": "LONG",
@@ -133,15 +124,6 @@
     "stop": 327.23,
     "symbol": "TATACAP",
     "target": 389.1
-  },
-  {
-    "entry": 2119.6,
-    "opened": "2026-11-05",
-    "side": "LONG",
-    "source": "report",
-    "stop": 1951.26,
-    "symbol": "PIRAMALFIN",
-    "target": 2456.27
   },
   {
     "entry": 1069.2,

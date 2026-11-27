@@ -1,4 +1,4 @@
-# Daily trade report, 26 Nov 2026
+# Daily trade report, 27 Nov 2026
 
 > Rule-based signals for education only. Not financial advice. Do your own research.
 
@@ -6,7 +6,7 @@
 
 ## Stop-loss / target alerts
 
-- 🟠 EMBASSY is near stop-loss 411.79 (price 415.65, report idea)
+_None today._
 
 ## Your positions
 
@@ -16,57 +16,59 @@ _No positions listed. Add them to config/positions.csv._
 
 | Stock | Action | Entry | Stop | Target | Qty | Capital | Profit at target | Loss at stop | Cap |
 |---|---|---|---|---|---|---|---|---|---|
-| GAIL | BUY | 188.0 | 173.47 | 217.05 | 35 | ₹6.6k | ₹1.0k | ₹509 | Large |
-| ADANIPOWER | BUY | 208.3 | 196.36 | 232.17 | 42 | ₹8.7k | ₹1.0k | ₹501 | Large |
-| JSWSTEEL | BUY | 1303.0 | 1241.73 | 1425.54 | 9 | ₹11.7k | ₹1.1k | ₹551 | Large |
-| KPRMILL | BUY | 1190.5 | 1098.0 | 1375.5 | 6 | ₹7.1k | ₹1.1k | ₹555 | Mid |
-| BHEL | BUY | 418.95 | 390.69 | 475.46 | 18 | ₹7.5k | ₹1.0k | ₹509 | Mid |
-| **Total** | | | | | | **₹41.7k** | **₹5.2k** | **₹2.6k** | |
+| TITAN | BUY | 4675.3 | 4429.93 | 5166.03 | 2 | ₹9.4k | ₹981 | ₹491 | Large |
+| SIEMENS | BUY | 3595.0 | 3368.75 | 4047.51 | 2 | ₹7.2k | ₹905 | ₹452 | Large |
+| COFORGE | BUY | 2071.0 | 1891.66 | 2429.67 | 9 | ₹18.6k | ₹3.2k | ₹1.6k | Mid |
+| **Total** | | | | | | **₹35.2k** | **₹5.1k** | **₹2.6k** | |
 
-Uses ₹41.7k of your ₹50.0k | +₹5.2k at targets | -₹2.6k if all stops hit
+Uses ₹35.2k of your ₹50.0k | +₹5.1k at targets | -₹2.6k if all stops hit
 
 ## Intraday basket for next session
 
 | Stock | Action | Entry | Stop | Target | Qty | Capital | Profit at target | Loss at stop | Cap |
 |---|---|---|---|---|---|---|---|---|---|
-| KALYANKJIL | BUY above | 653.07 | 633.6 | 682.26 | 19 | ₹12.4k | ₹555 | ₹370 | Mid |
-| FLUOROCHEM | BUY above | 4846.89 | 4708.4 | 5054.63 | 1 | ₹4.8k | ₹208 | ₹138 | Mid |
-| PNB | BUY above | 150.88 | 147.1 | 156.54 | 66 | ₹10.0k | ₹374 | ₹249 | Large |
-| KPRMILL | BUY above | 1199.98 | 1172.6 | 1241.04 | 9 | ₹10.8k | ₹370 | ₹246 | Mid |
-| ICICILIFE | BUY above | 477.9 | 468.15 | 492.53 | 25 | ₹11.9k | ₹366 | ₹244 | Mid |
-| **Total** | | | | | | **₹50.0k** | **₹1.9k** | **₹1.2k** | |
+| BHEL | BUY above | 426.77 | 416.6 | 442.04 | 25 | ₹10.7k | ₹382 | ₹254 | Mid |
+| LINDEINDIA | BUY above | 7100.17 | 6932.0 | 7352.42 | 1 | ₹7.1k | ₹252 | ₹168 | Mid |
+| LTTS | BUY above | 4301.68 | 4203.0 | 4449.69 | 2 | ₹8.6k | ₹296 | ₹197 | Mid |
+| INDIGO | BUY above | 5714.34 | 5610.2 | 5870.54 | 2 | ₹11.4k | ₹312 | ₹208 | Large |
+| VMM | BUY above | 97.4 | 95.8 | 99.8 | 125 | ₹12.2k | ₹300 | ₹200 | Mid |
+| **Total** | | | | | | **₹50.0k** | **₹1.5k** | **₹1.0k** | |
 
-Uses ₹50.0k of your ₹50.0k | +₹1.9k at targets | -₹1.2k if all stops hit
+Uses ₹50.0k of your ₹50.0k | +₹1.5k at targets | -₹1.0k if all stops hit
 ⚠️ ₹5.0k needs more capital than ₹50.0k on these picks; sized down to fit.
 
 ## All long-term buys
 
 | Stock | Action | Entry | Stop | Target | R:R | Score | Cap | Why |
 |---|---|---|---|---|---|---|---|---|
-| BHEL | BUY | 418.95 | 390.69 | 475.46 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 49 and turning up; up day on above-average volume |
-| FEDERALBNK | BUY | 356.85 | 335.61 | 399.33 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 54 and turning up; up day on above-average volume |
-| KPRMILL | BUY | 1190.5 | 1098.0 | 1375.5 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 59 and turning up; up day on above-average volume |
-| ADANIPOWER | BUY | 208.3 | 196.36 | 232.17 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up |
-| GAIL | BUY | 188.0 | 173.47 | 217.05 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 61 and turning up |
-| JSWSTEEL | BUY | 1303.0 | 1241.73 | 1425.54 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 50 and turning up |
-| GROWW | BUY | 220.01 | 196.08 | 267.87 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 59 and turning up |
-| FLUOROCHEM | BUY | 4781.2 | 4433.36 | 5476.87 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 55 and turning up |
-| INDIANB | BUY | 933.0 | 851.48 | 1096.04 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 63 and turning up |
-| NAUKRI | BUY | 1229.0 | 1155.36 | 1376.29 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 58 and turning up |
-| KALYANKJIL | BUY | 639.8 | 564.36 | 790.68 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 56 and turning up |
-| NAM-INDIA | BUY | 1050.0 | 971.09 | 1207.83 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 51 and turning up |
-| PAYTM | BUY | 1768.9 | 1630.24 | 2046.22 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 51 and turning up |
-| ABBOTINDIA | BUY | 27300.0 | 25897.3 | 30105.39 | 2.0 | 70 | Mid | uptrend: price and 50-day above 200-day average; RSI 60 and turning up; up day on above-average volume |
+| SOLARINDS | BUY | 19450.0 | 18267.85 | 21814.3 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 55 and turning up; up day on above-average volume |
+| TITAN | BUY | 4675.3 | 4429.93 | 5166.03 | 2.0 | 90 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 49 and turning up; up day on above-average volume |
+| COFORGE | BUY | 2071.0 | 1891.66 | 2429.67 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 56 and turning up; up day on above-average volume |
+| DIXON | BUY | 13138.0 | 12232.07 | 14949.85 | 2.0 | 90 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 56 and turning up; up day on above-average volume |
+| ABB | BUY | 7060.0 | 6660.01 | 7859.98 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 57 and turning up |
+| BOSCHLTD | BUY | 49170.0 | 46762.16 | 53985.69 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 54 and turning up |
+| JSWSTEEL | BUY | 1321.2 | 1255.43 | 1452.73 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 55 and turning up |
+| SIEMENS | BUY | 3595.0 | 3368.75 | 4047.51 | 2.0 | 80 | Large | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 52 and turning up |
+| AIIL | BUY | 552.8 | 517.55 | 623.29 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 51 and turning up |
+| BHEL | BUY | 421.95 | 394.45 | 476.94 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 50 and turning up |
+| GROWW | BUY | 222.41 | 196.61 | 274.01 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 61 and turning up |
+| EMBASSY | BUY | 422.54 | 410.66 | 446.29 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 54 and turning up |
+| EXIDEIND | BUY | 399.1 | 369.96 | 457.37 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 57 and turning up |
+| FEDERALBNK | BUY | 360.0 | 336.01 | 407.98 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 57 and turning up |
+| FLUOROCHEM | BUY | 4824.5 | 4460.41 | 5552.69 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 57 and turning up |
+| LGEINDIA | BUY | 1770.9 | 1661.09 | 1990.51 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 55 and turning up |
+| LENSKART | BUY | 718.35 | 673.29 | 808.46 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 55 and turning up |
+| TATACOMM | BUY | 1707.3 | 1602.21 | 1917.47 | 2.0 | 80 | Mid | uptrend: price and 50-day above 200-day average; pulled back near 20-day/50-day average; RSI 46 and turning up |
+| HAL | BUY | 5074.0 | 4759.52 | 5702.97 | 2.0 | 70 | Large | uptrend: price and 50-day above 200-day average; RSI 62 and turning up; up day on above-average volume |
 
 ## Long-term exits / avoid
 
 | Stock | Action | Entry | Stop | Target | R:R | Score | Cap | Why |
 |---|---|---|---|---|---|---|---|---|
-| NESTLEIND | SELL/EXIT | 1320.3 | 1389.12 | 1182.66 | 2.0 | 80 | Large | closed below 200-day average |
-| AUBANK | SELL/EXIT | 982.0 | 1041.08 | 863.84 | 2.0 | 80 | Mid | closed below 200-day average |
-| BHARTIHEXA | SELL/EXIT | 1536.0 | 1648.68 | 1310.65 | 2.0 | 80 | Mid | closed below 200-day average |
-| DABUR | SELL/EXIT | 418.5 | 440.64 | 374.22 | 2.0 | 80 | Mid | closed below 200-day average |
-| PIRAMALFIN | SELL/EXIT | 1971.2 | 2122.69 | 1668.21 | 2.0 | 80 | Mid | closed below 200-day average |
+| ADANIENSOL | SELL/EXIT | 1337.0 | 1440.42 | 1130.17 | 2.0 | 80 | Large | closed below 200-day average |
+| ADANIENT | SELL/EXIT | 2640.4 | 2790.67 | 2339.87 | 2.0 | 80 | Large | closed below 200-day average |
+| TMCV | SELL/EXIT | 424.95 | 456.94 | 360.97 | 2.0 | 80 | Large | closed below 200-day average |
+| SAIL | SELL/EXIT | 163.95 | 175.19 | 141.47 | 2.0 | 80 | Mid | 50-day average crossed below 200-day |
 
 ## Intraday watchlist for next session
 
@@ -75,48 +77,46 @@ Trigger only if price crosses the entry level after 9:30 AM. Square off by 3:15 
 
 | Stock | Action | Entry | Stop | Target | R:R | Score | Cap | Why |
 |---|---|---|---|---|---|---|---|---|
-| APOLLOHOSP | BUY above | 9308.67 | 9211.0 | 9455.18 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| KOTAKBANK | BUY above | 512.1 | 504.5 | 523.49 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| M&M | BUY above | 3513.4 | 3457.0 | 3597.99 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| PIDILITIND | BUY above | 1625.02 | 1595.6 | 1669.15 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| PNB | BUY above | 150.88 | 147.1 | 156.54 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| SOLARINDS | SELL below | 18034.12 | 18320.0 | 17605.29 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| TMPV | SELL below | 258.65 | 262.7 | 252.58 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| TATAPOWER | SELL below | 320.12 | 325.0 | 312.8 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| TRENT | BUY above | 3328.08 | 3261.2 | 3428.4 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| BAJAJHFL | SELL below | 79.84 | 80.82 | 78.37 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| BIOCON | BUY above | 367.58 | 362.15 | 375.72 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| FLUOROCHEM | BUY above | 4846.89 | 4708.4 | 5054.63 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| HAVELLS | BUY above | 1195.71 | 1180.0 | 1219.27 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| ICICILIFE | BUY above | 477.9 | 468.15 | 492.53 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| IOB | SELL below | 30.73 | 31.47 | 29.61 | 1.51 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| KPRMILL | BUY above | 1199.98 | 1172.6 | 1241.04 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| KALYANKJIL | BUY above | 653.07 | 633.6 | 682.26 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| NLCINDIA | SELL below | 224.69 | 229.88 | 216.9 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| NMDC | SELL below | 66.63 | 67.6 | 65.19 | 1.48 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| PAGEIND | SELL below | 30448.13 | 30945.0 | 29702.83 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| RVNL | SELL below | 184.38 | 189.19 | 177.15 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| SBICARD | BUY above | 590.58 | 582.05 | 603.37 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| UBL | BUY above | 1292.38 | 1266.9 | 1330.61 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
-| WAAREEENER | SELL below | 2370.05 | 2420.9 | 2293.77 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
-| ADANIPOWER | BUY above | 210.36 | 205.3 | 217.94 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| AMBUJACEM | BUY above | 393.87 | 387.0 | 404.18 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| BPCL | BUY above | 309.76 | 305.1 | 316.76 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| HAL | BUY above | 4976.9 | 4898.0 | 5095.24 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| HINDZINC | SELL below | 524.85 | 538.1 | 504.98 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
-| IOC | BUY above | 146.47 | 144.18 | 149.9 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| LT | BUY above | 4168.21 | 4105.0 | 4263.04 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| SBIN | BUY above | 1152.62 | 1131.2 | 1184.76 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| ULTRACEMCO | BUY above | 12854.37 | 12628.0 | 13193.94 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| EXIDEIND | BUY above | 396.65 | 384.5 | 414.87 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| GICRE | BUY above | 337.14 | 331.85 | 345.08 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| GODFRYPHLP | SELL below | 1743.17 | 1778.8 | 1689.74 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
-| HINDCOPPER | SELL below | 404.66 | 414.35 | 390.12 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
-| HINDPETRO | BUY above | 388.97 | 382.85 | 398.16 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| IDFCFIRSTB | BUY above | 87.73 | 86.1 | 90.17 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| IREDA | BUY above | 128.01 | 123.16 | 135.28 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| INDUSINDBK | BUY above | 975.89 | 958.4 | 1002.13 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| JSWENERGY | SELL below | 479.72 | 489.8 | 464.61 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
-| NATIONALUM | SELL below | 289.52 | 299.4 | 274.71 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
-| SHREECEM | BUY above | 25454.39 | 25035.0 | 26083.47 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
-| SAIL | SELL below | 160.39 | 164.69 | 153.94 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| ABB | BUY above | 7097.0 | 6989.5 | 7258.25 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| CGPOWER | SELL below | 780.23 | 795.0 | 758.07 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
+| CIPLA | BUY above | 1455.8 | 1434.9 | 1487.15 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| HDFCBANK | BUY above | 868.29 | 855.3 | 887.78 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| INDIGO | BUY above | 5714.34 | 5610.2 | 5870.54 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| LT | BUY above | 4161.68 | 4105.0 | 4246.69 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| POLYCAB | SELL below | 7400.77 | 7574.0 | 7140.93 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
+| TRENT | BUY above | 3308.14 | 3262.6 | 3376.45 | 1.5 | 70 | Large | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| BAJAJHFL | SELL below | 79.85 | 80.74 | 78.51 | 1.51 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
+| BHEL | BUY above | 426.77 | 416.6 | 442.04 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| COROMANDEL | BUY above | 1974.49 | 1945.0 | 2018.73 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| HUDCO | SELL below | 153.55 | 156.7 | 148.83 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
+| LTTS | BUY above | 4301.68 | 4203.0 | 4449.69 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| LINDEINDIA | BUY above | 7100.17 | 6932.0 | 7352.42 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| OFSS | SELL below | 9220.57 | 9373.5 | 8991.18 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend down (below 20 and 50-day averages) |
+| VMM | BUY above | 97.4 | 95.8 | 99.8 | 1.5 | 70 | Mid | narrowest range of last 7 days (NR7); inside day; trend up (above 20 and 50-day averages) |
+| ITC | BUY above | 308.72 | 303.65 | 316.33 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| IOC | BUY above | 145.23 | 143.2 | 148.28 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| IRFC | BUY above | 83.19 | 81.8 | 85.28 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| NESTLEIND | BUY above | 1331.23 | 1309.0 | 1364.58 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| SUNPHARMA | BUY above | 1921.36 | 1890.5 | 1967.66 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| TATACONSUM | BUY above | 1165.92 | 1147.6 | 1193.39 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| TATASTEEL | SELL below | 163.04 | 166.6 | 157.7 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| TORNTPHARM | BUY above | 5065.12 | 5005.0 | 5155.3 | 1.5 | 50 | Large | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| ALKEM | SELL below | 5061.75 | 5133.0 | 4954.87 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| BALKRISIND | BUY above | 2381.38 | 2327.8 | 2461.74 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| FORTIS | BUY above | 837.26 | 823.0 | 858.66 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| GICRE | BUY above | 337.6 | 333.0 | 344.51 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| FLUOROCHEM | BUY above | 4855.28 | 4736.4 | 5033.6 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| HDBFS | SELL below | 545.33 | 556.0 | 529.33 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| HINDCOPPER | SELL below | 415.52 | 424.75 | 401.68 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| ICICILIFE | BUY above | 473.96 | 465.2 | 487.1 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| ICICIGI | BUY above | 1759.67 | 1731.2 | 1802.38 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| IREDA | BUY above | 128.3 | 124.17 | 134.49 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| JSWENERGY | SELL below | 483.36 | 492.95 | 468.98 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| LGEINDIA | BUY above | 1794.49 | 1765.0 | 1838.73 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| M&MFIN | SELL below | 282.12 | 288.85 | 272.02 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| MCX | BUY above | 3953.77 | 3836.2 | 4130.12 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
+| NATIONALUM | SELL below | 298.88 | 305.45 | 289.02 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| RECLTD | SELL below | 294.29 | 299.35 | 286.7 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| SAIL | SELL below | 162.0 | 165.64 | 156.53 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| TORNTPOWER | SELL below | 1145.56 | 1160.1 | 1123.74 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend down (below 20 and 50-day averages) |
+| UPL | BUY above | 575.32 | 561.3 | 596.36 | 1.5 | 50 | Mid | narrowest range of last 7 days (NR7); trend up (above 20 and 50-day averages) |
